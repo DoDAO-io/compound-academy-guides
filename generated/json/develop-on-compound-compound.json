@@ -1,0 +1,69 @@
+{
+  "categories": [],
+  "content": "Learn from the project that are built on top of Compound",
+  "created": "2023-02-03T22:58:03.277Z",
+  "guideIntegrations": {
+    "discordRoleIds": []
+  },
+  "guideType": "course",
+  "key": "develop-on-compound-compound",
+  "name": "Develop on Compound",
+  "publishStatus": "Live",
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "content": "\n## Coming Soon        ",
+      "name": "Introduction",
+      "stepItems": [],
+      "uuid": "afa31391-4f45-4d9a-a101-c4a381270913"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "e0b88fa2"
+          ],
+          "choices": [
+            {
+              "content": "Planet",
+              "key": "de1d6d51"
+            },
+            {
+              "content": "Comet",
+              "key": "e0b88fa2"
+            },
+            {
+              "content": "Galaxy",
+              "key": "8818224d"
+            },
+            {
+              "content": "Star",
+              "key": "fda09fd9"
+            }
+          ],
+          "content": "What are the smart contracts repository in V3 called?",
+          "type": "SingleChoice",
+          "uuid": "d0449a33-b279-404e-9436-6e2f56783214"
+        }
+      ],
+      "uuid": "7b4eccfc-3676-410d-9a11-65fc72f4f4ae"
+    },
+    {
+      "content": "",
+      "name": "Your Info",
+      "stepItems": [
+        {
+          "label": "Nickname",
+          "required": true,
+          "type": "PublicShortInput",
+          "uuid": "a36a2e1c-faef-4d88-8743-4f329cc3447b"
+        }
+      ],
+      "uuid": "177abe31-cc74-4c1e-a13d-ebf1bac70f13"
+    }
+  ],
+  "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/developing_on_compound.png",
+  "uuid": "3dfaaff6-172f-4cfb-b388-8a32e552f620"
+}
