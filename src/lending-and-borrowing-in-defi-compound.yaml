@@ -1,0 +1,46 @@
+categories: []
+content: Basics of how lending and borrowing works in DeFi
+created: '2023-02-03T22:08:14.567Z'
+guideIntegrations:
+  discordRoleIds: []
+guideType: onboarding
+key: lending-and-borrowing-in-defi-compound
+name: 'Lending and Borrowing in DeFi '
+publishStatus: Live
+showIncorrectOnCompletion: true
+steps:
+  - content: |-
+
+      ## Coming Soon        
+    name: Introduction
+    stepItems: []
+    uuid: b6e7714a-4b6e-4073-afb2-5172d98b803f
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - d270a87b
+        choices:
+          - content: Planet
+            key: add33f88
+          - content: Comet
+            key: d270a87b
+          - content: Galaxy
+            key: 32308d7b
+          - content: Star
+            key: 5a53077c
+        content: What are the smart contracts repository in V3 called?
+        type: SingleChoice
+        uuid: 9914baa1-f590-4558-b650-57a7a757533d
+    uuid: e802f3d8-eaf5-450f-a2fd-b218a5b01b8b
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Nickname
+        required: true
+        type: PublicShortInput
+        uuid: fdd53748-36ad-4376-a81a-e2370220c8dd
+    uuid: 349cdb70-a1d9-47f7-9b22-7a4ede0a3d49
+thumbnail: >-
+  https://d31h13bdjwgzxs.cloudfront.net/academy/compound/lending_and_borrow_in_defi.png
+uuid: 18a80052-05b2-4074-a3ce-efdf8717ef05
