@@ -1,11 +1,11 @@
 categories: []
 content: Explains how compound works, how interest rates are calculated
-created: '2023-02-03T22:13:43.989Z'
+created: '2023-02-03T22:14:07.297Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
 key: compound-working-internals-compound
-name: Compound Working - Internals
+name: Compound - Internals
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
@@ -42,4 +42,4 @@ steps:
         uuid: 53e90f0b-5b5e-42bb-8b82-efd0ed37bc96
     uuid: 78cc0350-523a-41ed-b002-26a267b5ae64
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/how_compound_works.png
-uuid: cc119bd8-8103-4c07-9fc3-19e0d5e1b245
+uuid: compound-working-internals-compound
