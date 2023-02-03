@@ -1,0 +1,45 @@
+categories: []
+content: Explains how compound works, how interest rates are calculated
+created: '2023-02-03T22:13:43.989Z'
+guideIntegrations:
+  discordRoleIds: []
+guideType: onboarding
+key: compound-working-internals-compound
+name: Compound Working - Internals
+publishStatus: Live
+showIncorrectOnCompletion: true
+steps:
+  - content: |-
+
+      ## Coming Soon        
+    name: Introduction
+    stepItems: []
+    uuid: 942bd251-c524-4526-a23a-d7b4f87063e9
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - c6bc0412
+        choices:
+          - content: Planet
+            key: 8bf0fc5f
+          - content: Comet
+            key: c6bc0412
+          - content: Galaxy
+            key: 422bb79c
+          - content: Star
+            key: c781cda7
+        content: What are the smart contracts repository in V3 called?
+        type: SingleChoice
+        uuid: c66dfbf9-789c-45db-9da7-ccc337086bbf
+    uuid: 6d22ede4-3bfa-4165-9b4f-da454a60ee3b
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Nickname
+        required: true
+        type: PublicShortInput
+        uuid: 53e90f0b-5b5e-42bb-8b82-efd0ed37bc96
+    uuid: 78cc0350-523a-41ed-b002-26a267b5ae64
+thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/how_compound_works.png
+uuid: cc119bd8-8103-4c07-9fc3-19e0d5e1b245
