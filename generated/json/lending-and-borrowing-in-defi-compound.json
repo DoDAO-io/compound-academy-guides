@@ -1,13 +1,13 @@
 {
   "categories": [],
   "content": "Basics of how lending and borrowing works in DeFi",
-  "created": "2023-02-03T22:08:14.567Z",
+  "created": "2023-02-03T22:08:55.470Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
   "guideType": "onboarding",
   "key": "lending-and-borrowing-in-defi-compound",
-  "name": "Lending and Borrowing in DeFi ",
+  "name": "Lend & Borrow in DeFi ",
   "publishStatus": "Live",
   "showIncorrectOnCompletion": true,
   "steps": [
@@ -65,5 +65,5 @@
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/lending_and_borrow_in_defi.png",
-  "uuid": "18a80052-05b2-4074-a3ce-efdf8717ef05"
+  "uuid": "lending-and-borrowing-in-defi-compound"
 }
