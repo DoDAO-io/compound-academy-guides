@@ -5,3 +5,4 @@ guides:
   - compound-governance-compound.yaml
   - comet-compound.yaml
   - build-comet-extension-compound.yaml
+  - build-v3-liquidator-compound.yaml

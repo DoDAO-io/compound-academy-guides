@@ -4,5 +4,6 @@
   "compound-v2-vs-v3-compound.json",
   "compound-governance-compound.json",
   "comet-compound.json",
-  "build-comet-extension-compound.json"
+  "build-comet-extension-compound.json",
+  "build-v3-liquidator-compound.json"
 ]

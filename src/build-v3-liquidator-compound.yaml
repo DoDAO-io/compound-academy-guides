@@ -1,0 +1,45 @@
+categories: []
+content: How to build Liquidator for the new version of Compound
+created: '2023-02-03T22:53:30.224Z'
+guideIntegrations:
+  discordRoleIds: []
+guideType: course
+key: build-v3-liquidator-compound
+name: Build V3 Liquidator
+publishStatus: Live
+showIncorrectOnCompletion: true
+steps:
+  - content: |-
+
+      ## Coming Soon        
+    name: Introduction
+    stepItems: []
+    uuid: 90c244a7-4594-4935-ae57-cfce23c24be8
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - e1fe6ee1
+        choices:
+          - content: Planet
+            key: 48664ca2
+          - content: Comet
+            key: e1fe6ee1
+          - content: Galaxy
+            key: dfc8ed74
+          - content: Star
+            key: '45635101'
+        content: What are the smart contracts repository in V3 called?
+        type: SingleChoice
+        uuid: 71ad9ab9-2d4d-4fa4-b39e-3df2c97b3c7b
+    uuid: 07ea4ffb-c587-4446-b3a3-53bd57f3ed0b
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Nickname
+        required: true
+        type: PublicShortInput
+        uuid: ecfa9016-99cf-4dd4-81e3-94befbb86fb0
+    uuid: a7cbb86b-5c61-4c55-af12-e70efd6d3335
+thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_liquidator.png
+uuid: 22e2f737-df1f-4cd9-a6fc-f3aca0e02229
