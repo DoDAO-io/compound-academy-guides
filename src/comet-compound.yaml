@@ -1,0 +1,45 @@
+categories: []
+content: Into to Comet smart contracts, deployments and configurator
+created: '2023-02-03T22:42:53.523Z'
+guideIntegrations:
+  discordRoleIds: []
+guideType: course
+key: comet-compound
+name: Comet
+publishStatus: Live
+showIncorrectOnCompletion: true
+steps:
+  - content: |-
+
+      # Coming Soon        
+    name: Introduction
+    stepItems: []
+    uuid: 3b2af085-1e55-4e13-8f79-9b858692916d
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 35d9f952
+        choices:
+          - content: Planet
+            key: 508854d3
+          - content: Comet
+            key: 35d9f952
+          - content: Galaxy
+            key: d3621892
+          - content: Star
+            key: 710f6b21
+        content: What are the smart contracts repository in V3 called?
+        type: SingleChoice
+        uuid: 319ae455-5de8-4a5a-a450-d5759ce3efcd
+    uuid: 73a81735-14c4-426c-8bd8-950b6e0a2bbf
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Nickname
+        required: true
+        type: PublicShortInput
+        uuid: 2d36c04b-3e3e-44bc-9c02-3d037afb1927
+    uuid: 0743e67a-b458-4aab-b057-646ef4f96b44
+thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png
+uuid: 5c04828d-3d15-4cc9-bb8d-95ea32430631
