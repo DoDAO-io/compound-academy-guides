@@ -1,0 +1,69 @@
+{
+  "categories": [],
+  "content": "Differences in V2 and V3. How markets are structured in each",
+  "created": "2023-02-03T22:18:05.734Z",
+  "guideIntegrations": {
+    "discordRoleIds": []
+  },
+  "guideType": "course",
+  "key": "compound-v2-vs-v3-compound",
+  "name": "Compound V2 vs V3",
+  "publishStatus": "Live",
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "content": "\nIntroduction Comments \n        ",
+      "name": "Introduction",
+      "stepItems": [],
+      "uuid": "b23ec5de-91ab-41ab-b251-a08dfdb50b73"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "95d9971d"
+          ],
+          "choices": [
+            {
+              "content": "Planet",
+              "key": "f83950a4"
+            },
+            {
+              "content": "Comet",
+              "key": "95d9971d"
+            },
+            {
+              "content": "Mercury",
+              "key": "4d0f7a2a"
+            },
+            {
+              "content": "Pluto",
+              "key": "545f4d18"
+            }
+          ],
+          "content": "What are the smart contracts repository in V3 called?",
+          "type": "SingleChoice",
+          "uuid": "4cd4ce65-388f-4c65-b71c-cfdb2ecdf3f1"
+        }
+      ],
+      "uuid": "cc1dc11a-5ff4-4f68-a130-6948bb4925f7"
+    },
+    {
+      "content": "",
+      "name": "Your Info",
+      "stepItems": [
+        {
+          "label": "Nickname",
+          "required": true,
+          "type": "PublicShortInput",
+          "uuid": "ba19fc63-e119-4b89-941a-acdf526b5b68"
+        }
+      ],
+      "uuid": "f567a39f-c03d-49e2-a461-8984635cc353"
+    }
+  ],
+  "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_v2_v3.png",
+  "uuid": "5bf59bea-8e8a-4759-87f2-dacd345518a8"
+}
