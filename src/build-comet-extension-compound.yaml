@@ -1,0 +1,46 @@
+categories: []
+content: 'How to build a new comet extension '
+created: '2023-02-03T22:48:28.117Z'
+guideIntegrations:
+  discordRoleIds: []
+guideType: course
+key: build-comet-extension-compound
+name: Build Comet Extension
+publishStatus: Live
+showIncorrectOnCompletion: true
+steps:
+  - content: |-
+
+      ## Coming Soon        
+    name: Introduction
+    stepItems: []
+    uuid: 33b6802d-f3ed-4dd3-a548-5c6b8b480431
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 050666c0
+        choices:
+          - content: Planet
+            key: c12b9ad2
+          - content: Comet
+            key: 050666c0
+          - content: Galaxy
+            key: '79875451'
+          - content: Star
+            key: dc51f00a
+        content: What are the smart contracts repository in V3 called?
+        type: SingleChoice
+        uuid: f7d2dd28-819d-4f97-9cc4-afc997a93a42
+    uuid: 7d7413e7-3855-499c-b961-d7d4920a4b0e
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Nickname
+        required: true
+        type: PublicShortInput
+        uuid: caabf5cd-31ca-4f14-a955-a44043bd63cb
+    uuid: 5c13563b-bf63-4431-aa8a-a10e07dfc874
+thumbnail: >-
+  https://d31h13bdjwgzxs.cloudfront.net/academy/compound/build_comet_extension.png
+uuid: fdf84be3-d0de-423d-81b2-c0b509234acd
