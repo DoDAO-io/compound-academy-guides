@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains the governance process of Compound",
-  "created": "2023-02-12T22:52:57.850Z",
+  "created": "2023-02-12T23:02:05.909Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -63,8 +63,8 @@
       "uuid": "c745fdd3-c72b-4682-a151-eaa3400850fd"
     },
     {
-      "content": "",
-      "name": "Your Info",
+      "content": "There are three main roles in the Compound governance process:\n\n### Delegates\nDelegates have acquired voting power through delegation from other community members or self-delegation. The addresses are ranked by voting weight and only the top 100 delegates are displayed. Any individual holding more than 1% of COMP is eligible to propose a governance action.\n\nBecoming a delegate is open to everyone and does not require any applications. Delegates can access their voting history by visiting their profile.\n\n### Delegators\nDelegators are community members who own COMP but have assigned their voting power to another individual, referred to as a delegate.\n\n### Contributors\nContributors are members of the Compound DAO who actively contribute their time and effort to the organization. They participate by developing on top of the Compound Protocol or supporting the DAO through grants or partnerships, all while working towards common goals.",
+      "name": "Governance Roles",
       "stepItems": [
         {
           "label": "Nickname",
