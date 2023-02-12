@@ -1,6 +1,6 @@
 categories: []
 content: Explains the governance process of Compound
-created: '2023-02-12T14:45:44.252Z'
+created: '2023-02-12T14:49:04.185Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -9,15 +9,30 @@ name: Compound Governance
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
+  - content: "The \"Compound Governance\" guide serves as a comprehensive guide for those who want to contribute to the Compound DAO.  This document outlines the different responsibilities, procedures, and opportunities for all parties involved in the Compound DAO. It brings together essential information in a single, easy-to-use source.\n\n## Governance Process\nThe processes described in this section are an overview of the official ways to participate in Compound DAO, documenting the various paths for the lifecycle of a COMP holder, contributor or curious individual.\n\nMost governance discussions occur on the official Compound Forum and Compound\t Discord.\n\n### Proposals\nThere are 4 types of proposals.\n\n* Compound Governor Proposals\n* Compound Improvement Proposals (CIPs)\n  * Meta Process\n  * Protocol Enhancement\n  * Tooling & Support\n"
+    name: Introduction
+    stepItems: []
+    uuid: f649e4e9-8fac-46a9-bc41-eda744b0af79
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 6d26bc75
+        choices:
+          - content: Planet
+            key: 4b60a784
+          - content: Comet
+            key: 6d26bc75
+          - content: Galaxy
+            key: 9ce561fb
+          - content: Star
+            key: 7ee8778b
+        content: What are the smart contracts repository in V3 called?
+        type: SingleChoice
+        uuid: 2a9df6c4-281c-4c31-9de0-d24feec1edf7
+    uuid: ffc06027-a33d-4ed1-a0f8-095b49a27d7a
   - content: >-
-      The "Compound Governance" guide serves as a comprehensive guide for those
-      who want to contribute to the Compound DAO.  This document outlines the
-      different responsibilities, procedures, and opportunities for all parties
-      involved in the Compound DAO. It brings together essential information in
-      a single, easy-to-use source.
-
-
-      ## Governance Process
+      ## Compound Governor Proposals
 
       Compound Governor Proposals are utilized to authorize various executions
       of smart contracts, such as the adjustment of risk parameters,
@@ -64,27 +79,9 @@ steps:
       majority of editors are in favor during the second meeting, the CIP is
       approved and remains in the Last Call for 14 days before the
       implementation process begins.
-    name: Introduction
+    name: Proposal Types
     stepItems: []
-    uuid: f649e4e9-8fac-46a9-bc41-eda744b0af79
-  - content: ''
-    name: Evaluation
-    stepItems:
-      - answerKeys:
-          - 6d26bc75
-        choices:
-          - content: Planet
-            key: 4b60a784
-          - content: Comet
-            key: 6d26bc75
-          - content: Galaxy
-            key: 9ce561fb
-          - content: Star
-            key: 7ee8778b
-        content: What are the smart contracts repository in V3 called?
-        type: SingleChoice
-        uuid: 2a9df6c4-281c-4c31-9de0-d24feec1edf7
-    uuid: ffc06027-a33d-4ed1-a0f8-095b49a27d7a
+    uuid: 2272f649-aa1a-439d-82a5-e7d0123d79bc
   - content: >-
       Once a CIP is approved by the Working Group, the implementation process
       will vary depending on its type:
