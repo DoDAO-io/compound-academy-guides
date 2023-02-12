@@ -1,6 +1,6 @@
 categories: []
 content: Explains the governance process of Compound
-created: '2023-02-12T14:44:44.309Z'
+created: '2023-02-12T14:45:44.252Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -9,7 +9,7 @@ name: Compound Governance
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: >
+  - content: >-
       The "Compound Governance" guide serves as a comprehensive guide for those
       who want to contribute to the Compound DAO.  This document outlines the
       different responsibilities, procedures, and opportunities for all parties
@@ -64,20 +64,6 @@ steps:
       majority of editors are in favor during the second meeting, the CIP is
       approved and remains in the Last Call for 14 days before the
       implementation process begins.
-
-
-      Once a CIP is approved by the Working Group, the implementation process
-      will vary depending on its type:
-
-      1. Meta Process: Any process to be implemented or modified that better
-      coordinates Compounds governance, development, or community efforts.
-
-      2. Protocol Enhancement: This involves any changes to smart contracts that
-      are involved in Compound Protocol and Governor
-
-      3. Tooling & Support: This involves any additions or modifications to
-      off-chain infrastructure, tooling, documentation, or other components that
-      support the usage of Compound Protocol.
     name: Introduction
     stepItems: []
     uuid: f649e4e9-8fac-46a9-bc41-eda744b0af79
@@ -99,6 +85,22 @@ steps:
         type: SingleChoice
         uuid: 2a9df6c4-281c-4c31-9de0-d24feec1edf7
     uuid: ffc06027-a33d-4ed1-a0f8-095b49a27d7a
+  - content: >-
+      Once a CIP is approved by the Working Group, the implementation process
+      will vary depending on its type:
+
+      1. Meta Process: Any process to be implemented or modified that better
+      coordinates Compounds governance, development, or community efforts.
+
+      2. Protocol Enhancement: This involves any changes to smart contracts that
+      are involved in Compound Protocol and Governor
+
+      3. Tooling & Support: This involves any additions or modifications to
+      off-chain infrastructure, tooling, documentation, or other components that
+      support the usage of Compound Protocol.
+    name: Proposal Implementation Process
+    stepItems: []
+    uuid: c745fdd3-c72b-4682-a151-eaa3400850fd
   - content: ''
     name: Your Info
     stepItems:
