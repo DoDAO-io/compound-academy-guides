@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains the governance process of Compound",
-  "created": "2023-02-12T22:23:30.189Z",
+  "created": "2023-02-12T22:34:27.012Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -57,8 +57,8 @@
       "uuid": "2272f649-aa1a-439d-82a5-e7d0123d79bc"
     },
     {
-      "content": "Once a CIP is approved by the Working Group, the implementation process will vary depending on its type:\n1. Meta Process: Any process to be implemented or modified that better coordinates Compounds governance, development, or community efforts.\n2. Protocol Enhancement: This involves any changes to smart contracts that are involved in Compound Protocol and Governor\n3. Tooling & Support: This involves any additions or modifications to off-chain infrastructure, tooling, documentation, or other components that support the usage of Compound Protocol.",
-      "name": "Proposal Implementation Process",
+      "content": "The authors of CIPs will initiate the process by conceiving an idea, converting it into a CIP document, seeking a peer review, and then undergoing an approval procedure with the Compound Working Group.\n\nTo initiate a review, the CIP document should be posted in the #governance channel on Compound's Discord platform.\n\nPotential ideas can be submitted as issues on a shared GitHub repository, similar to Ethereum PM. CIPs can be drafted as pull requests and then request for a review to be scheduled for discussion at the bi-weekly Working Group meetings.\n\nCIP editors will provide feedback on CIPs. If objections are raised during its first meeting, the CIP must address the feedback and request another review at a future meeting. If there are no objections or a majority of editors support the CIP, it will be approved during its second meeting and remain in the Last Call stage for 14 days before the implementation process commences.\n\nOnce the Working Group approves a CIP, its implementation path will vary based on its type:\n\n1. Meta Process CIPs will be adopted officially through a majority Signal vote by COMP holders without the need for a quorum.\n2. Protocol Enhancements must pass through a Compound Governance vote, just like any other change to the smart contract.\n3. Other CIPs are left to the community to implement, which may include funding approved by a Grant Committee or any other entity willing to support them.",
+      "name": "CIP Lifecycle",
       "stepItems": [],
       "uuid": "c745fdd3-c72b-4682-a151-eaa3400850fd"
     },
