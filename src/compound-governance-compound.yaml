@@ -1,6 +1,6 @@
 categories: []
 content: Explains the governance process of Compound
-created: '2023-02-12T21:40:36.446Z'
+created: '2023-02-12T22:23:30.189Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -63,24 +63,26 @@ steps:
 
       ## Compound Improvement Proposals
 
-      Compound Improvement Proposals (CIPs) are proposals aimed at improving the
-      governance protocol of Compound by outlining standards, processes, and
-      enhancements. There are three types of CIPs: Meta Process, Protocol
-      Enhancement, and Tooling & Support.
+      The Compound Improvement Proposals (CIPs) outline the standards,
+      procedures, and upgrades aimed at enhancing the governance protocol. Their
+      objective is to refine both on-chain and off-chain governance of the
+      Compound.
 
 
-      The lifecycle of a CIP starts with the author coming up with an idea,
-      drafting it into a CIP document, seeking a peer review, and going through
-      an approval process with the Compound Working Group. The CIP document can
-      be linked in the #governance channel in the Compound Discord for a review.
+      CIPs come in three different forms, each with its distinct methodology,
+      which are detailed below.
 
 
-      CIP editors will provide feedback to the CIPs. If any objections are
-      raised during the first meeting, the CIP must address them and request
-      another review in a future meeting. If there are no objections or a
-      majority of editors are in favor during the second meeting, the CIP is
-      approved and remains in the Last Call for 14 days before the
-      implementation process begins.
+      1. Meta Process: Any process to be introduced or altered that enhances the
+      coordination of Compound's governance, development, or community
+      initiatives.
+
+      2. Protocol Enhancement: This encompasses any alterations to the smart
+      contracts involved in the Compound Protocol and Governor.
+
+      3. Tooling & Support: This encompasses any new additions or modifications
+      to off-chain infrastructure, tools, documentation, or other supportive
+      components for the use of Compound Protocol.
     name: Proposal Types
     stepItems: []
     uuid: 2272f649-aa1a-439d-82a5-e7d0123d79bc
