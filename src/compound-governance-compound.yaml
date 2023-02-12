@@ -1,6 +1,6 @@
 categories: []
 content: Explains the governance process of Compound
-created: '2023-02-12T22:36:39.453Z'
+created: '2023-02-12T22:52:57.850Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -131,6 +131,10 @@ steps:
       3. Other CIPs are left to the community to implement, which may include
       funding approved by a Grant Committee or any other entity willing to
       support them.
+
+
+      More Details about CIPs can be found
+      [here](https://github.com/compound-finance/cip-pm/pull/1/files)
     name: CIP Lifecycle
     stepItems: []
     uuid: c745fdd3-c72b-4682-a151-eaa3400850fd
