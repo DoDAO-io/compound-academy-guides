@@ -1,6 +1,6 @@
 categories: []
 content: Explains the governance process of Compound
-created: '2023-02-12T22:34:27.012Z'
+created: '2023-02-12T22:36:39.453Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -102,12 +102,20 @@ steps:
       Working Group meetings.
 
 
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-governance-compound/cip_appproval_process.png)
+
+
+
       CIP editors will provide feedback on CIPs. If objections are raised during
       its first meeting, the CIP must address the feedback and request another
       review at a future meeting. If there are no objections or a majority of
       editors support the CIP, it will be approved during its second meeting and
       remain in the Last Call stage for 14 days before the implementation
       process commences.
+
+
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-governance-compound/cip_implementation_process.png)
+
 
 
       Once the Working Group approves a CIP, its implementation path will vary
