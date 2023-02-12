@@ -1,6 +1,6 @@
 categories: []
 content: Explains the governance process of Compound
-created: '2023-02-12T14:49:04.185Z'
+created: '2023-02-12T21:40:36.446Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -60,6 +60,8 @@ steps:
       someone else to post the proposal on their behalf. The Compound multisig
       can also temporarily white-list proposers.
 
+
+      ## Compound Improvement Proposals
 
       Compound Improvement Proposals (CIPs) are proposals aimed at improving the
       governance protocol of Compound by outlining standards, processes, and
