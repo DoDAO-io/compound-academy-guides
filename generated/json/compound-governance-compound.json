@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains the governance process of Compound",
-  "created": "2023-02-03T22:39:13.306Z",
+  "created": "2023-02-12T14:44:44.309Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -12,7 +12,7 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "content": "\n## Coming Soon        ",
+      "content": "The \"Compound Governance\" guide serves as a comprehensive guide for those who want to contribute to the Compound DAO.  This document outlines the different responsibilities, procedures, and opportunities for all parties involved in the Compound DAO. It brings together essential information in a single, easy-to-use source.\n\n## Governance Process\nCompound Governor Proposals are utilized to authorize various executions of smart contracts, such as the adjustment of risk parameters, distribution parameters, primary modular contracts, and administrative functions (such as reducing reserves or transferring ERC-20 tokens).\n\nThe lifecycle of a Compound Governor Proposal involves three stages:\n\n1. Idea stage: Post the proposal in the \"Proposal\" category on the Compound Forum and provide enough information to demonstrate its impact on Compound.\n2. Community Feedback stage: Use the community's feedback to make any necessary changes to the proposal.\n3. Compound Governor stage: After the proposal is approved by the community and has a high chance of success, it is recommended to move it to an on-chain vote.\n\nAny individual with more than 1% of COMP can propose a proposal to Compound Governance. If they don't have enough COMP, they can request someone else to post the proposal on their behalf. The Compound multisig can also temporarily white-list proposers.\n\nCompound Improvement Proposals (CIPs) are proposals aimed at improving the governance protocol of Compound by outlining standards, processes, and enhancements. There are three types of CIPs: Meta Process, Protocol Enhancement, and Tooling & Support.\n\nThe lifecycle of a CIP starts with the author coming up with an idea, drafting it into a CIP document, seeking a peer review, and going through an approval process with the Compound Working Group. The CIP document can be linked in the #governance channel in the Compound Discord for a review.\n\nCIP editors will provide feedback to the CIPs. If any objections are raised during the first meeting, the CIP must address them and request another review in a future meeting. If there are no objections or a majority of editors are in favor during the second meeting, the CIP is approved and remains in the Last Call for 14 days before the implementation process begins.\n\nOnce a CIP is approved by the Working Group, the implementation process will vary depending on its type:\n1. Meta Process: Any process to be implemented or modified that better coordinates Compounds governance, development, or community efforts.\n2. Protocol Enhancement: This involves any changes to smart contracts that are involved in Compound Protocol and Governor\n3. Tooling & Support: This involves any additions or modifications to off-chain infrastructure, tooling, documentation, or other components that support the usage of Compound Protocol.\n",
       "name": "Introduction",
       "stepItems": [],
       "uuid": "f649e4e9-8fac-46a9-bc41-eda744b0af79"
@@ -65,5 +65,5 @@
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_governance.png",
-  "uuid": "0c7c9fb2-4ab4-4c8b-b2f5-8bda819a0504"
+  "uuid": "compound-governance-compound"
 }
