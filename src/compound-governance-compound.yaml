@@ -1,6 +1,6 @@
 categories: []
 content: Explains the governance process of Compound
-created: '2023-02-13T01:04:09.154Z'
+created: '2023-02-13T01:04:25.247Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -46,24 +46,6 @@ steps:
     name: Introduction
     stepItems: []
     uuid: f649e4e9-8fac-46a9-bc41-eda744b0af79
-  - content: ''
-    name: Evaluation
-    stepItems:
-      - answerKeys:
-          - 6d26bc75
-        choices:
-          - content: Planet
-            key: 4b60a784
-          - content: Comet
-            key: 6d26bc75
-          - content: Galaxy
-            key: 9ce561fb
-          - content: Star
-            key: 7ee8778b
-        content: What are the smart contracts repository in V3 called?
-        type: SingleChoice
-        uuid: 2a9df6c4-281c-4c31-9de0-d24feec1edf7
-    uuid: ffc06027-a33d-4ed1-a0f8-095b49a27d7a
   - content: >-
       ## Compound Governor Proposals
 

@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains the governance process of Compound",
-  "created": "2023-02-13T01:04:09.154Z",
+  "created": "2023-02-13T01:04:25.247Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -16,39 +16,6 @@
       "name": "Introduction",
       "stepItems": [],
       "uuid": "f649e4e9-8fac-46a9-bc41-eda744b0af79"
-    },
-    {
-      "content": "",
-      "name": "Evaluation",
-      "stepItems": [
-        {
-          "answerKeys": [
-            "6d26bc75"
-          ],
-          "choices": [
-            {
-              "content": "Planet",
-              "key": "4b60a784"
-            },
-            {
-              "content": "Comet",
-              "key": "6d26bc75"
-            },
-            {
-              "content": "Galaxy",
-              "key": "9ce561fb"
-            },
-            {
-              "content": "Star",
-              "key": "7ee8778b"
-            }
-          ],
-          "content": "What are the smart contracts repository in V3 called?",
-          "type": "SingleChoice",
-          "uuid": "2a9df6c4-281c-4c31-9de0-d24feec1edf7"
-        }
-      ],
-      "uuid": "ffc06027-a33d-4ed1-a0f8-095b49a27d7a"
     },
     {
       "content": "## Compound Governor Proposals\nCompound Governor Proposals are utilized to authorize various executions of smart contracts, such as the adjustment of risk parameters, distribution parameters, primary modular contracts, and administrative functions (such as reducing reserves or transferring ERC-20 tokens).\n\nThe lifecycle of a Compound Governor Proposal involves three stages:\n\n1. Idea stage: Post the proposal in the \"Proposal\" category on the Compound Forum and provide enough information to demonstrate its impact on Compound.\n2. Community Feedback stage: Use the community's feedback to make any necessary changes to the proposal.\n3. Compound Governor stage: After the proposal is approved by the community and has a high chance of success, it is recommended to move it to an on-chain vote.\n\nAny individual with more than 1% of COMP can propose a proposal to Compound Governance. If they don't have enough COMP, they can request someone else to post the proposal on their behalf. The Compound multisig can also temporarily white-list proposers.\n\n## Compound Improvement Proposals\nThe Compound Improvement Proposals (CIPs) outline the standards, procedures, and upgrades aimed at enhancing the governance protocol. Their objective is to refine both on-chain and off-chain governance of the Compound.\n\nCIPs come in three different forms, each with its distinct methodology, which are detailed below.\n\n1. Meta Process: Any process to be introduced or altered that enhances the coordination of Compound's governance, development, or community initiatives.\n2. Protocol Enhancement: This encompasses any alterations to the smart contracts involved in the Compound Protocol and Governor.\n3. Tooling & Support: This encompasses any new additions or modifications to off-chain infrastructure, tools, documentation, or other supportive components for the use of Compound Protocol.",
