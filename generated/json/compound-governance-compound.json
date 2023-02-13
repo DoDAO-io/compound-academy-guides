@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains the governance process of Compound",
-  "created": "2023-02-13T00:29:11.935Z",
+  "created": "2023-02-13T01:04:09.154Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -12,7 +12,7 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "content": "The \"Compound Governance\" guide serves as a comprehensive guide for those who want to contribute to the Compound DAO.  This document outlines the different responsibilities, procedures, and opportunities for all parties involved in the Compound DAO. It brings together essential information in a single, easy-to-use source.\n\n## Governance Process\nThe processes described in this section are an overview of the official ways to participate in Compound DAO, documenting the various paths for the lifecycle of a COMP holder, contributor or curious individual.\n\nMost governance discussions occur on the official Compound Forum and Compound\t Discord.\n\n### Proposals\nThere are 4 types of proposals.\n\n* Compound Governor Proposals\n* Compound Improvement Proposals (CIPs)\n  * Meta Process\n  * Protocol Enhancement\n  * Tooling & Support\n",
+      "content": "The goal of Compound is to create a sturdy financial infrastructure for developers and applications to rely on. To achieve this, the Compound protocol must be fully decentralized, eliminating the risk of a single point of failure (the team) and creating a robust, unbreakable system that can grow in new directions. The Compound protocol has established a governance structure that enables voters to make changes to the protocol through proposals, discussions, and executions, all without relying on or requiring the involvement of the team. Community governance takes the lead in this system as the administrator of the Compound protocol.\n\nWith the help of the COMP token, governance module (Governor Bravo), and Timelock, COMP token-holders govern and upgrade the Compound protocol. These three components work together to provide the community with the ability to propose, vote, and implement changes through the cToken's administrative functions or the Comptroller. These proposals can change system parameters, introduce new markets, or add new features to the protocol.\n\nThis system guarantees that the Compound protocol remains adaptive to the needs of its users and gives every COMP token holder a voice in determining the direction of the platform. If you are seeking a lending platform that places control in your hands, Compound is the perfect choice for you.\n\n\nThis \"Compound Governance\" guide serves as a comprehensive guide for those who want to contribute to the Compound DAO.  This document outlines the different responsibilities, procedures, and opportunities for all parties involved in the Compound DAO. It brings together essential information in a single, easy-to-use source.",
       "name": "Introduction",
       "stepItems": [],
       "uuid": "f649e4e9-8fac-46a9-bc41-eda744b0af79"
