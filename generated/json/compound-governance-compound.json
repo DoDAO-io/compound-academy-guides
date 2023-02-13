@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains the governance process of Compound",
-  "created": "2023-02-12T23:02:05.909Z",
+  "created": "2023-02-13T00:29:11.935Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -63,17 +63,22 @@
       "uuid": "c745fdd3-c72b-4682-a151-eaa3400850fd"
     },
     {
-      "content": "There are three main roles in the Compound governance process:\n\n### Delegates\nDelegates have acquired voting power through delegation from other community members or self-delegation. The addresses are ranked by voting weight and only the top 100 delegates are displayed. Any individual holding more than 1% of COMP is eligible to propose a governance action.\n\nBecoming a delegate is open to everyone and does not require any applications. Delegates can access their voting history by visiting their profile.\n\n### Delegators\nDelegators are community members who own COMP but have assigned their voting power to another individual, referred to as a delegate.\n\n### Contributors\nContributors are members of the Compound DAO who actively contribute their time and effort to the organization. They participate by developing on top of the Compound Protocol or supporting the DAO through grants or partnerships, all while working towards common goals.",
+      "content": "There are three main roles in the Compound governance process:\n\n### Delegates\nDelegates have acquired voting power through delegation from other community members or self-delegation. The addresses are ranked by voting weight and only the top 100 delegates are displayed. Any individual holding more than 1% of COMP is eligible to propose a governance action.\n\nBecoming a delegate is open to everyone and does not require any applications. Delegates can access their voting history by visiting their profile.\n\n### Delegators\nDelegators are community members who own COMP but have assigned their voting power to another individual, referred to as a delegate.\n\n### Contributors\nContributors are members of the Compound DAO who actively contribute their time and effort to the organization. They participate by developing on top of the Compound Protocol or supporting the DAO through grants or partnerships, all while working towards common goals.\n\n\nIn Compound DAO, there are no established working groups, and no templates exist for creating such groups. Compound DAO has entered into service provider agreements with Open Zeppelin and Gauntlet.\n\nTo streamline the process for individuals or teams to participate in the DAO, a standardized \"Service Provider\" template should be established.",
       "name": "Governance Roles",
-      "stepItems": [
-        {
-          "label": "Nickname",
-          "required": true,
-          "type": "PublicShortInput",
-          "uuid": "70d73375-a675-4dec-a6dd-8817193007d7"
-        }
-      ],
+      "stepItems": [],
       "uuid": "27c079bd-e01c-4d05-9d09-e11d070cbc4f"
+    },
+    {
+      "content": "Compound DAO has two sources of funding:\n\n### 1. Direct funding through governance\n- Service providers can enter into agreements with Compound DAO in exchange for payment. This option is currently not frequently used within Compound DAO, but it may become more prevalent in the future as service providers become more common.\n- Open Zeppelin serves as an example of a service provider for Compound DAO.\n\n### 2. Compound Grants Program 2.0\n- The Compound Grants Program focuses on four areas: Multichain strategy, Developer Tooling, Security Tooling, and New Protocol Ideas & Dapps. Applicants can apply directly for funding through the program.\n- If your proposal does not fall within the specified domains, or if you have any questions about the grants program, please reach out to the team in the #grants channel on the Compound Discord.",
+      "name": "Funding",
+      "stepItems": [],
+      "uuid": "9c8b2bb8-1256-4ae6-aeba-0bc246101334"
+    },
+    {
+      "content": "All protocol modifications in Compound DAO are executed through Compound Governor. Proposals are actual executable code, not just suggestions for the team or foundation to execute.\n\nAfter a proposal has been submitted, it goes through a 3-day voting period. For a proposal to be approved, it must receive a minimum of 400,000 votes and achieve a majority. Once the proposal has been approved, it is immediately scheduled in the timelock and will be put into effect after a 2-day waiting period.\n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-governance-compound/voting.jpeg)\n",
+      "name": "Voting",
+      "stepItems": [],
+      "uuid": "975f7417-1996-44d4-bed2-39c034f64c6c"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_governance.png",
