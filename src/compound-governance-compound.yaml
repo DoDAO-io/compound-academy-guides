@@ -1,6 +1,6 @@
 categories: []
 content: Explains the governance process of Compound
-created: '2023-02-13T01:04:25.247Z'
+created: '2023-02-16T17:57:43.244Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -17,8 +17,8 @@ steps:
       can grow in new directions. The Compound protocol has established a
       governance structure that enables voters to make changes to the protocol
       through proposals, discussions, and executions, all without relying on or
-      requiring the involvement of the team. Community governance takes the lead
-      in this system as the administrator of the Compound protocol.
+      requiring a centralized team. Community governance takes the lead in this
+      system as the administrator of the Compound protocol.
 
 
       With the help of the COMP token, governance module (Governor Bravo), and
