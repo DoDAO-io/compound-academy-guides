@@ -1,6 +1,6 @@
 categories: []
 content: Basics of how lending and borrowing works in DeFi
-created: '2023-02-28T23:08:10.107Z'
+created: '2023-02-28T23:20:14.019Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -55,19 +55,37 @@ steps:
     name: Evaluation
     stepItems:
       - answerKeys:
-          - d270a87b
+          - add33f88
         choices:
-          - content: Planet
+          - content: >-
+              Permitting an individual or organization to utilize the resources
+              of the lender in exchange for compensation
             key: add33f88
-          - content: Comet
+          - content: >-
+              Receiving an item from another party with an agreement to return
+              it at a specified time
             key: d270a87b
-          - content: Galaxy
+          - content: Providing something as security for repayment of a borrowed item
             key: 32308d7b
-          - content: Star
+          - content: None of the above
             key: 5a53077c
-        content: What are the smart contracts repository in V3 called?
+        content: What is lending?
         type: SingleChoice
         uuid: 9914baa1-f590-4558-b650-57a7a757533d
+      - answerKeys:
+          - 9d906732
+        choices:
+          - content: A surplus resource held by an individual or organization
+            key: ec4aebf2
+          - content: Compensation received by the lender for their contribution
+            key: 9d906732
+          - content: An item provided as security for repayment of a borrowed item
+            key: 1200d2a6
+          - content: None of the above
+            key: 2ed1878a
+        content: What is collateral?
+        type: SingleChoice
+        uuid: 852009b5-a713-441b-9878-d2d8072d5322
     uuid: e802f3d8-eaf5-450f-a2fd-b218a5b01b8b
   - content: >
       The principle behind lending involves depositing money in banks, which are
@@ -106,6 +124,43 @@ steps:
     name: TradFi - Lending and Borrowing
     stepItems: []
     uuid: 349cdb70-a1d9-47f7-9b22-7a4ede0a3d49
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - bac4f0c3
+        choices:
+          - content: Through profits earned from investing in other businesses
+            key: c360832b
+          - content: Through fees charged to borrowers
+            key: 40139fe2
+          - content: Through interest paid by borrowers on their loans
+            key: bac4f0c3
+          - content: None of the above
+            key: 38562aa4
+        content: How do lenders earn compensation in lending?
+        type: SingleChoice
+        uuid: c5449c09-8c78-4c1c-954a-492f47784870
+      - answerKeys:
+          - a106dfcf
+        choices:
+          - content: >-
+              Lack of innovation and operating on the same principles for a long
+              time
+            key: 5db34a1a
+          - content: Not disclosing profits and margins to the public
+            key: 842bfc7d
+          - content: >-
+              Governments sometime using tax payer's money to handle
+              bankruptcies
+            key: 8be56d79
+          - content: All of the above
+            key: a106dfcf
+        content: |
+          What is/are the potential problem/s with the banking sector?
+        type: SingleChoice
+        uuid: 51b73796-2887-4e7a-bf27-2bf00f1f97e9
+    uuid: 454af48f-1b9b-4b91-bdde-0e4c6572c1ea
   - content: >
       Similar to individuals, a smart contract in blockchain has a unique wallet
       address that serves as an account number. Lenders can send funds to the
@@ -150,6 +205,10 @@ steps:
     name: DeFi Lending and Borrowing
     stepItems: []
     uuid: 353ebf9a-ec76-4072-9530-299a64c4c816
+  - content: ''
+    name: Evaluation
+    stepItems: []
+    uuid: dc3bb217-ffc3-43a6-b5d8-b35932aedbe6
   - content: >
       One of the key benefits of using DeFi lending and borrowing is the speed
       at which transactions can be carried out. Since the lending and borrowing
