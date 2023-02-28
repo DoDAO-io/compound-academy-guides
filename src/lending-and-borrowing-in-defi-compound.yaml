@@ -1,6 +1,6 @@
 categories: []
 content: Basics of how lending and borrowing works in DeFi
-created: '2023-02-28T23:07:48.859Z'
+created: '2023-02-28T23:08:10.107Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -169,7 +169,7 @@ steps:
       immutability of blockchain technology. Because it is decentralized, data
       stored on the blockchain cannot be tampered with, resulting in full
       verifiability and reliability.
-    name: Advantages of DeFi
+    name: Advantages of DeFi over TradFi
     stepItems: []
     uuid: 247ee881-4f73-42b7-bc5e-120e7f2c7210
 thumbnail: >-
