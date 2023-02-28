@@ -1,6 +1,6 @@
 categories: []
 content: Basics of how lending and borrowing works in DeFi
-created: '2023-02-28T23:05:43.969Z'
+created: '2023-02-28T23:07:48.859Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -107,8 +107,6 @@ steps:
     stepItems: []
     uuid: 349cdb70-a1d9-47f7-9b22-7a4ede0a3d49
   - content: >
-      ## DeFi
-
       Similar to individuals, a smart contract in blockchain has a unique wallet
       address that serves as an account number. Lenders can send funds to the
       smart contract address, and borrowers can obtain loans from this address,
@@ -149,9 +147,31 @@ steps:
       often quite low due to competition and transparency. In order to promote a
       particular side or the overall growth of the platform, the platform may
       choose to incentivize lenders, borrowers, or both.
-    name: DeFi - Lending and Borrowing
+    name: DeFi Lending and Borrowing
     stepItems: []
     uuid: 353ebf9a-ec76-4072-9530-299a64c4c816
+  - content: >
+      One of the key benefits of using DeFi lending and borrowing is the speed
+      at which transactions can be carried out. Since the lending and borrowing
+      rules are encoded into a Smart Contract using blockchain technology, there
+      is no need for human interaction, and actions can be executed instantly.
+      Furthermore, all DeFi platforms operate 24/7, making their services
+      readily accessible.
+
+
+      DeFi lending and borrowing also offers an open system, which eliminates
+      the need for extensive assessments, paperwork, and other time-consuming
+      procedures typically associated with loan applications. All that is
+      required is a crypto wallet.
+
+
+      Another significant advantage of DeFi lending and borrowing is the
+      immutability of blockchain technology. Because it is decentralized, data
+      stored on the blockchain cannot be tampered with, resulting in full
+      verifiability and reliability.
+    name: Advantages of DeFi
+    stepItems: []
+    uuid: 247ee881-4f73-42b7-bc5e-120e7f2c7210
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/academy/compound/lending_and_borrow_in_defi.png
 uuid: lending-and-borrowing-in-defi-compound
