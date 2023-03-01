@@ -1,6 +1,6 @@
 categories: []
 content: Differences in V2 and V3. How markets are structured in each
-created: '2023-03-01T13:15:26.361Z'
+created: '2023-03-01T14:28:39.785Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -86,13 +86,26 @@ steps:
     name: Features and Advantages of V3
     stepItems: []
     uuid: cc1dc11a-5ff4-4f68-a130-6948bb4925f7
-  - content: |-
+  - content: >-
+
+
       | Compound II | Compound III |
+
       | - | - |
-      | content | content |
-      | content | content |
-      | content | content |
-      | content | content |
+
+      | Uses pools for assets with no separation  | Each market has a base
+      asset  and no assets are shared between the markets |
+
+      | There is a single deployment of the protocol contracts on a blockchain |
+      Each market is a separate instance of new Comet contracts|
+
+      | Risk Level of some hack draining all the funds is relatively high | Risk
+      Level of some hack draining all the funds is relatively low as the markets
+      are completely isolated |
+
+      | Lender earns interest on all the assets that lent to the protocol | Only
+      the base asset earns interest, while all other assets in the market act as
+      collateral |
     name: V2 vs V3
     stepItems: []
     uuid: f567a39f-c03d-49e2-a461-8984635cc353
