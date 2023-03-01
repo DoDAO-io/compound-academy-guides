@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Differences in V2 and V3. How markets are structured in each",
-  "created": "2023-03-01T15:00:37.193Z",
+  "created": "2023-03-01T15:07:18.683Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -83,10 +83,82 @@
       "uuid": "cc1dc11a-5ff4-4f68-a130-6948bb4925f7"
     },
     {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "fa5765af"
+          ],
+          "choices": [
+            {
+              "content": "Reduced risk, and potentially improved capital efficiency",
+              "key": "fa5765af"
+            },
+            {
+              "content": "Allows for unlimited borrowing",
+              "key": "17b0b207"
+            },
+            {
+              "content": "Eliminates the need for collateral",
+              "key": "09344250"
+            },
+            {
+              "content": "Minimal risk of liquidation",
+              "key": "d15e53e2"
+            }
+          ],
+          "content": "What is the major benefit of each Compound III deployment featuring a single interest-earning base asset?",
+          "type": "SingleChoice",
+          "uuid": "8581f58c-17eb-4e5f-90bb-2607e0546bf5"
+        },
+        {
+          "answerKeys": [
+            "24a5591e"
+          ],
+          "choices": [
+            {
+              "content": "They are no longer used in the protocol.",
+              "key": "c8537322"
+            },
+            {
+              "content": "They have been combined into a single factor for simplicity",
+              "key": "1afcd875"
+            },
+            {
+              "content": "They are now separate, protecting liquidators from taking too much collateral",
+              "key": "8a10524d"
+            },
+            {
+              "content": "They are now separate, protecting borrowers from early liquidation",
+              "key": "24a5591e"
+            }
+          ],
+          "content": "How have borrowing collateral factors and liquidation collateral factors been separated in Compound III?",
+          "type": "SingleChoice",
+          "uuid": "9d13ab93-3bad-4b70-960b-07feacc1c68d"
+        }
+      ],
+      "uuid": "4ad4e3ff-db1f-4f98-b1f6-1ab6e586e2bb"
+    },
+    {
       "content": "\n\n| Compound II | Compound III |\n| - | - |\n| Uses pools for assets with no separation  | Each market has a base asset  and no assets are shared between the markets |\n| There is a single deployment of the protocol contracts on a blockchain | Each market is a separate instance of new Comet contracts|\n| Risk Level of some hack draining all the funds is relatively high | Risk Level of some hack draining all the funds is relatively low as the markets are completely isolated |\n| Lender earns interest on all the assets that lent to the protocol | Only the base asset earns interest, while all other assets in the market act as collateral |",
       "name": "V2 vs V3",
       "stepItems": [],
       "uuid": "f567a39f-c03d-49e2-a461-8984635cc353"
+    },
+    {
+      "content": "",
+      "name": "Your Info",
+      "stepItems": [
+        {
+          "label": "Nickname",
+          "required": true,
+          "type": "PublicShortInput",
+          "uuid": "0dd3779b-c79b-4c37-934a-498e7f5ec6ea"
+        }
+      ],
+      "uuid": "e680fb01-8f87-4c59-97f9-e8d030c34043"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_v2_v3.png",
