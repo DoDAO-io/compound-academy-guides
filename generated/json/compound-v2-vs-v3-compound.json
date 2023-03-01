@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Differences in V2 and V3. How markets are structured in each",
-  "created": "2023-03-01T01:03:27.788Z",
+  "created": "2023-03-01T13:15:26.361Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -24,7 +24,7 @@
       "uuid": "cc1dc11a-5ff4-4f68-a130-6948bb4925f7"
     },
     {
-      "content": "",
+      "content": "| Compound II | Compound III |\n| - | - |\n| content | content |\n| content | content |\n| content | content |\n| content | content |",
       "name": "V2 vs V3",
       "stepItems": [],
       "uuid": "f567a39f-c03d-49e2-a461-8984635cc353"
