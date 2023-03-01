@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Differences in V2 and V3. How markets are structured in each",
-  "created": "2023-02-03T22:18:05.734Z",
+  "created": "2023-03-01T00:46:33.872Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -12,58 +12,24 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "content": "\nIntroduction Comments \n        ",
-      "name": "Introduction",
+      "content": "Compound III is a streamlined version of the protocol, with an emphasis on security, capital efficiency, and user experience. Complexity wasn’t added — it was removed. What remains is the most effective tool for borrowers in DeFi.\n\nThe most profound change was to move away from a pooled-risk model, where users can borrow any asset. In this model (which Compound pioneered) collateral is constantly rehypothecated. A single bad asset (or oracle update) can drain all assets from the protocol.\n\nInstead, each deployment of Compound III features a single borrowable asset. When you supply collateral, it remains your property. It can never be withdrawn by other users (except during liquidation). Capital efficiency increases too — collateral is more “useful” when you know which asset is being borrowed ahead of time.\n\nThe first deployment of Compound III allows you to borrow USDC using ETH, WBTC, LINK, UNI, and COMP as collateral.\n\nWhile you won’t earn interest on collateral anymore, you’ll be able to borrow more; with less risk of liquidation and lower liquidation penalties; while spending less on gas.\n\n",
+      "name": "Compound V3 Launch",
       "stepItems": [],
       "uuid": "b23ec5de-91ab-41ab-b251-a08dfdb50b73"
     },
     {
       "content": "",
-      "name": "Evaluation",
-      "stepItems": [
-        {
-          "answerKeys": [
-            "95d9971d"
-          ],
-          "choices": [
-            {
-              "content": "Planet",
-              "key": "f83950a4"
-            },
-            {
-              "content": "Comet",
-              "key": "95d9971d"
-            },
-            {
-              "content": "Mercury",
-              "key": "4d0f7a2a"
-            },
-            {
-              "content": "Pluto",
-              "key": "545f4d18"
-            }
-          ],
-          "content": "What are the smart contracts repository in V3 called?",
-          "type": "SingleChoice",
-          "uuid": "4cd4ce65-388f-4c65-b71c-cfdb2ecdf3f1"
-        }
-      ],
+      "name": "Features and Advantages of V3",
+      "stepItems": [],
       "uuid": "cc1dc11a-5ff4-4f68-a130-6948bb4925f7"
     },
     {
       "content": "",
-      "name": "Your Info",
-      "stepItems": [
-        {
-          "label": "Nickname",
-          "required": true,
-          "type": "PublicShortInput",
-          "uuid": "ba19fc63-e119-4b89-941a-acdf526b5b68"
-        }
-      ],
+      "name": "V2 vs V3",
+      "stepItems": [],
       "uuid": "f567a39f-c03d-49e2-a461-8984635cc353"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_v2_v3.png",
-  "uuid": "5bf59bea-8e8a-4759-87f2-dacd345518a8"
+  "uuid": "compound-v2-vs-v3-compound"
 }
