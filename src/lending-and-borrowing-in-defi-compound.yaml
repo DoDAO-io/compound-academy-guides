@@ -1,6 +1,6 @@
 categories: []
 content: Basics of how lending and borrowing works in DeFi
-created: '2023-02-28T23:53:25.940Z'
+created: '2023-03-01T00:07:24.802Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -209,7 +209,43 @@ steps:
     uuid: 353ebf9a-ec76-4072-9530-299a64c4c816
   - content: ''
     name: Evaluation
-    stepItems: []
+    stepItems:
+      - answerKeys:
+          - 059c2724
+        choices:
+          - content: >-
+              They are typically quite high, resulting in greater profits for
+              the platform
+            key: db807be6
+          - content: They are often quite low due to competition and transparency
+            key: 059c2724
+          - content: They are only added if the loan is liquidated
+            key: 383a11a0
+          - content: They are used to incentivize borrowers to take out risky loans
+            key: b9071354
+        content: >
+          What is the benefit related fees in DeFi lending & borrowing as
+          compared to TradFi?
+        type: SingleChoice
+        uuid: 4734999a-2bb1-410f-b6fa-2ca4e10f9b72
+      - answerKeys:
+          - 7ad86602
+        choices:
+          - content: Platform sends a warning notification
+            key: 82b055dd
+          - content: The loan is cancelled, and the collateral is returned
+            key: 04b5ab80
+          - content: >-
+              The loan is liquidated, and the liquidated funds are sold to
+              independent liquidators at a discounted price
+            key: 7ad86602
+          - content: The platform blocks the user from doing anything
+            key: fb14d64b
+        content: >-
+          What is the consequence if the value of the collateral provided by a
+          borrower falls below a certain threshold in DeFi lending?
+        type: SingleChoice
+        uuid: bbe6235a-690f-421d-8d15-2a83b239a586
     uuid: dc3bb217-ffc3-43a6-b5d8-b35932aedbe6
   - content: >
       One of the key benefits of using DeFi lending and borrowing is the speed
