@@ -1,6 +1,6 @@
 categories: []
 content: Basics of how lending and borrowing works in DeFi
-created: '2023-03-01T00:07:24.802Z'
+created: '2023-03-01T00:10:46.105Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -269,6 +269,34 @@ steps:
     name: Advantages of DeFi over TradFi
     stepItems: []
     uuid: 247ee881-4f73-42b7-bc5e-120e7f2c7210
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - d1330bf5
+        choices:
+          - content: Tamper-proof data due to blockchain technology
+            key: d1330bf5
+          - content: Low profit margins for lenders
+            key: 3308bec4
+          - content: Limited accessibility to loan services
+            key: b782fe50
+          - content: Slow transaction processing times.
+            key: e1c1e969
+        content: >-
+          What is a significant advantage of using blockchain technology in DeFi
+          lending and borrowing?
+        type: SingleChoice
+        uuid: 839cb55a-e467-45de-83a5-f44282b28444
+    uuid: 5f1f226f-9da3-4f50-b293-804e19d45417
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Nickname
+        required: true
+        type: PublicShortInput
+        uuid: 5dfd3f5e-4d40-479a-8e0e-e1b272970528
+    uuid: 88ba7785-6835-4b14-8afa-4e247efb3059
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/academy/compound/lending_and_borrow_in_defi.png
 uuid: lending-and-borrowing-in-defi-compound
