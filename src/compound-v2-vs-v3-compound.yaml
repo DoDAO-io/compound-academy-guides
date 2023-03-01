@@ -1,6 +1,6 @@
 categories: []
 content: Differences in V2 and V3. How markets are structured in each
-created: '2023-03-01T14:34:08.154Z'
+created: '2023-03-01T14:55:21.537Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -33,6 +33,10 @@ steps:
       WBTC, LINK, UNI, and COMP as collateral. Although borrowers will not earn
       interest on their collateral, they will be able to borrow more with lower
       risks of liquidation and penalties while spending less on gas fees.
+
+
+      wETH market is also live now, with 'Coinbase Wrapped Staked ETH(cbETH)'
+      and `Lido Staked ETH(stETH)` as collateral.
 
 
       The repository uses a business source license, which Compound governance
