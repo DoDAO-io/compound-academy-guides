@@ -1,6 +1,6 @@
 categories: []
 content: Differences in V2 and V3. How markets are structured in each
-created: '2023-03-01T14:55:21.537Z'
+created: '2023-03-01T14:55:51.170Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -35,7 +35,7 @@ steps:
       risks of liquidation and penalties while spending less on gas fees.
 
 
-      wETH market is also live now, with 'Coinbase Wrapped Staked ETH(cbETH)'
+      wETH market is also live now, with `Coinbase Wrapped Staked ETH(cbETH)`
       and `Lido Staked ETH(stETH)` as collateral.
 
 
