@@ -1,6 +1,6 @@
 categories: []
 content: Differences in V2 and V3. How markets are structured in each
-created: '2023-03-01T00:46:33.872Z'
+created: '2023-03-01T01:03:27.788Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -9,38 +9,80 @@ name: Compound V2 vs V3
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: >+
-      Compound III is a streamlined version of the protocol, with an emphasis on
-      security, capital efficiency, and user experience. Complexity wasn’t added
-      — it was removed. What remains is the most effective tool for borrowers in
-      DeFi.
+  - content: >-
+      Compound III is a refined version of the protocol that prioritizes
+      security, capital efficiency, and user experience. Its design focuses on
+      simplification rather than complexity, resulting in the most effective
+      borrowing tool in DeFi.
 
 
-      The most profound change was to move away from a pooled-risk model, where
-      users can borrow any asset. In this model (which Compound pioneered)
-      collateral is constantly rehypothecated. A single bad asset (or oracle
-      update) can drain all assets from the protocol.
+      The most significant improvement was moving away from the pooled-risk
+      model, which allowed users to borrow any asset but constantly
+      rehypothecated collateral. This model was vulnerable to a single bad asset
+      or oracle update draining all assets from the protocol.
 
 
-      Instead, each deployment of Compound III features a single borrowable
-      asset. When you supply collateral, it remains your property. It can never
-      be withdrawn by other users (except during liquidation). Capital
-      efficiency increases too — collateral is more “useful” when you know which
-      asset is being borrowed ahead of time.
+      In Compound III, each market deployment offers a single borrowable asset,
+      and the supplied collateral remains the property of the borrower, except
+      during liquidation. This new approach increases capital efficiency and
+      reduces risk since the collateral is more "useful" when the borrower knows
+      the specific asset being borrowed in advance.
 
 
-      The first deployment of Compound III allows you to borrow USDC using ETH,
-      WBTC, LINK, UNI, and COMP as collateral.
+      The first release of Compound III allows borrowing of USDC using ETH,
+      WBTC, LINK, UNI, and COMP as collateral. Although borrowers will not earn
+      interest on their collateral, they will be able to borrow more with lower
+      risks of liquidation and penalties while spending less on gas fees.
 
 
-      While you won’t earn interest on collateral anymore, you’ll be able to
-      borrow more; with less risk of liquidation and lower liquidation
-      penalties; while spending less on gas.
-
+      The repository uses a business source license 94, which Compound
+      governance can grant usage to, as it sees fit.
     name: Compound V3 Launch
     stepItems: []
     uuid: b23ec5de-91ab-41ab-b251-a08dfdb50b73
-  - content: ''
+  - content: >+
+      ## New Features of Compound V3
+
+      The major changes to the existing protocol in Compound III can be
+      summarized as follows:
+
+
+      1. Each Compound III deployment features a single interest-earning base
+      asset, with all other assets serving as collateral. This simplifies the
+      protocol, reduces risk, and potentially improves capital efficiency.
+
+      2. Collateral size limits, or supply caps, can be set for each collateral
+      asset.
+
+      3. Borrowing collateral factors and liquidation collateral factors are
+      separate, protecting borrowers from early liquidation and improving risk
+      management.
+
+      4. The risk management and liquidation engine has been redesigned to
+      increase the safety of the protocol while maintaining liquidator
+      incentives.
+
+      5. The price feed is designed to use Chainlink directly, without requiring
+      a custom price oracle, making it portable to EVM chains beyond Ethereum.
+      Governance retains the ability to modify this decision in the future.
+
+      6. Supply and borrow interest rate models can be decoupled, giving
+      governance full control over economic policy.
+
+      7. Advanced account management tools enable new user experience patterns
+      and applications to be built on top of the protocol.
+
+      8. An abstract incentive metric is natively built into the core contract
+      to reward user activity from the protocol's inception. A rewards system is
+      also added on top to provide flexible incentives that can be extended by
+      governance.
+
+      9. A code repository includes sophisticated tooling for managing and
+      testing deployments, based on years of experience and feedback from prior
+      versions of the protocol.
+
+
+
     name: Features and Advantages of V3
     stepItems: []
     uuid: cc1dc11a-5ff4-4f68-a130-6948bb4925f7
