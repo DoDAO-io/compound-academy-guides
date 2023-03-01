@@ -1,6 +1,6 @@
 categories: []
 content: Differences in V2 and V3. How markets are structured in each
-created: '2023-03-01T14:55:51.170Z'
+created: '2023-03-01T15:00:37.193Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -44,6 +44,42 @@ steps:
     name: Compound V3 Launch
     stepItems: []
     uuid: b23ec5de-91ab-41ab-b251-a08dfdb50b73
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 694cbeb5
+        choices:
+          - content: Complexity
+            key: 7cdaa480
+          - content: ' Security, capital efficiency, and user experience'
+            key: 694cbeb5
+          - content: KYC/AML
+            key: a100b661
+          - content: Support at least top 200 assets
+            key: bf6a5ce5
+        content: What is the focus of Compound III's design?
+        type: SingleChoice
+        uuid: 8e6b0596-c2cd-470d-aa2e-63743835cbc3
+      - answerKeys:
+          - 38f54060
+        choices:
+          - content: Borrowers couldn't earn interest on their collateral.
+            key: eab83ed4
+          - content: >-
+              The collateral remained the property of the borrower, except
+              during liquidation.
+            key: 8f9740f9
+          - content: The model was vulnerable to a single bad asset or oracle update.
+            key: 38f54060
+          - content: Borrowers could borrow any asset without collateral.
+            key: 16074dca
+        content: >
+          What was the problem with the pooled-risk model in the previous
+          protocol?
+        type: SingleChoice
+        uuid: e7ebf5d0-0e17-447e-b90d-8a7946a95332
+    uuid: 34362683-228d-4373-80d9-646234dd40e6
   - content: >+
       ## New Features of Compound V3
 

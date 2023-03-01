@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Differences in V2 and V3. How markets are structured in each",
-  "created": "2023-03-01T14:55:51.170Z",
+  "created": "2023-03-01T15:00:37.193Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -16,6 +16,65 @@
       "name": "Compound V3 Launch",
       "stepItems": [],
       "uuid": "b23ec5de-91ab-41ab-b251-a08dfdb50b73"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "694cbeb5"
+          ],
+          "choices": [
+            {
+              "content": "Complexity",
+              "key": "7cdaa480"
+            },
+            {
+              "content": " Security, capital efficiency, and user experience",
+              "key": "694cbeb5"
+            },
+            {
+              "content": "KYC/AML",
+              "key": "a100b661"
+            },
+            {
+              "content": "Support at least top 200 assets",
+              "key": "bf6a5ce5"
+            }
+          ],
+          "content": "What is the focus of Compound III's design?",
+          "type": "SingleChoice",
+          "uuid": "8e6b0596-c2cd-470d-aa2e-63743835cbc3"
+        },
+        {
+          "answerKeys": [
+            "38f54060"
+          ],
+          "choices": [
+            {
+              "content": "Borrowers couldn't earn interest on their collateral.",
+              "key": "eab83ed4"
+            },
+            {
+              "content": "The collateral remained the property of the borrower, except during liquidation.",
+              "key": "8f9740f9"
+            },
+            {
+              "content": "The model was vulnerable to a single bad asset or oracle update.",
+              "key": "38f54060"
+            },
+            {
+              "content": "Borrowers could borrow any asset without collateral.",
+              "key": "16074dca"
+            }
+          ],
+          "content": "What was the problem with the pooled-risk model in the previous protocol?\n",
+          "type": "SingleChoice",
+          "uuid": "e7ebf5d0-0e17-447e-b90d-8a7946a95332"
+        }
+      ],
+      "uuid": "34362683-228d-4373-80d9-646234dd40e6"
     },
     {
       "content": "## New Features of Compound V3\nThe major changes to the existing protocol in Compound III can be summarized as follows:\n\n1. Each Compound III deployment features a single interest-earning base asset, with all other assets serving as collateral. This simplifies the protocol, reduces risk, and potentially improves capital efficiency.\n2. Collateral size limits, or supply caps, can be set for each collateral asset.\n3. Borrowing collateral factors and liquidation collateral factors are separate, protecting borrowers from early liquidation and improving risk management.\n4. The risk management and liquidation engine has been redesigned to increase the safety of the protocol while maintaining liquidator incentives.\n5. The price feed is designed to use Chainlink directly, without requiring a custom price oracle, making it portable to EVM chains beyond Ethereum. Governance retains the ability to modify this decision in the future.\n6. Supply and borrow interest rate models can be decoupled, giving governance full control over economic policy.\n7. Advanced account management tools enable new user experience patterns and applications to be built on top of the protocol.\n8. An abstract incentive metric is natively built into the core contract to reward user activity from the protocol's inception. A rewards system is also added on top to provide flexible incentives that can be extended by governance.\n9. A code repository includes sophisticated tooling for managing and testing deployments, based on years of experience and feedback from prior versions of the protocol.\n\n\n\n",
