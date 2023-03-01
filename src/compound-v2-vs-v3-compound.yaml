@@ -1,6 +1,6 @@
 categories: []
 content: Differences in V2 and V3. How markets are structured in each
-created: '2023-03-01T14:28:39.785Z'
+created: '2023-03-01T14:34:08.154Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -35,8 +35,8 @@ steps:
       risks of liquidation and penalties while spending less on gas fees.
 
 
-      The repository uses a business source license 94, which Compound
-      governance can grant usage to, as it sees fit.
+      The repository uses a business source license, which Compound governance
+      can grant usage to, as it sees fit.
     name: Compound V3 Launch
     stepItems: []
     uuid: b23ec5de-91ab-41ab-b251-a08dfdb50b73
