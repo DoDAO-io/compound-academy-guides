@@ -140,13 +140,13 @@ steps:
       - answerKeys:
           - C
         choices:
-          - content: Proposals outline the standards, procedures, and upgrades aimed at enhancing the governance protocol
+          - content: Proposals that outline the standards, procedures, and upgrades aimed at enhancing the governance protocol
             key: A
-          - content: Proposal prevents fund loss
+          - content: Proposals that govern service providers
             key: B
-          - content: Proposals are used to approve different smart contract executions and administrative tasks.
+          - content: Proposals that are used to approve different smart contract executions and administrative tasks.
             key: C
-          - content: Main objective of the proposal is to refine both on-chain and off-chain governance of the Compound
+          - content: Proposals that are used to update the Compound DAO size.
             key: D
         content: Which of these types of proposals qualify for Compound Governor Proposals?
         type: SingleChoice
@@ -210,13 +210,13 @@ steps:
       - answerKeys:
           - D
         choices:
-          - content: Proposals are used for governance changes
+          - content: Proposals that are used for governance changes
             key: A
-          - content: Proposal prevents fund loss
+          - content: Proposal that govern service providers
             key: B
-          - content: Proposals outline the standards, procedures, and upgrades aimed at enhancing the governance protocol
+          - content: Proposals that outline the standards, procedures, and upgrades aimed at enhancing the governance protocol
             key: C
-          - content: Proposals are used to approve different smart contract executions and administrative tasks.
+          - content: Proposals that are used to approve different smart contract executions and administrative tasks.
             key: D
         content: Which of these types of proposals qualify for Compound Improvement Proposals?
         type: SingleChoice
@@ -226,7 +226,7 @@ steps:
         choices:
           - content: Authors of CIPs will initiate the process by conceiving an idea, converting it into a CIP document
             key: A
-          - content: Proposal prevents fund loss
+          - content: Organize a twitter spaces to collect feeback from broader DeFi comunity
             key: B
           - content: After the draft a peer review is the next step
             key: C
@@ -292,13 +292,13 @@ steps:
             key: C
           - content: Contributors
             key: D
-        content: Which of these is not a main role in the Compound governance process?
+        content: Which of these is not a valid role in the Compound governance process?
         type: SingleChoice
         uuid: a61fd7c1-76ec-465b-9472-3c64c039e8af
       - answerKeys:
           - C
         choices:
-          - content: The developing team can propose proposals
+          - content: Only the developing team can propose proposals
             key: A
           - content: Only the management team can propose governance actions
             key: B
