@@ -1,6 +1,6 @@
 categories: []
 content: Explains how compound works, how interest rates are calculated
-created: '2023-02-03T22:14:07.297Z'
+created: '2023-03-03T22:18:23.823Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -41,5 +41,34 @@ steps:
         type: PublicShortInput
         uuid: 53e90f0b-5b5e-42bb-8b82-efd0ed37bc96
     uuid: 78cc0350-523a-41ed-b002-26a267b5ae64
+  - content: >
+      ```
+
+      Updated recs (Option 2):
+
+      borrowKink = 900000000000000000
+
+      borrowPerSecondInterestRateBase = 157680000
+
+      borrowPerSecondInterestRateSlopeHigh = 19552320000
+
+      borrowPerSecondInterestRateSlopeLow = 1639871893
+
+
+      supplyKink = 900000000000000000
+
+      supplyPerSecondInterestRateBase = 0
+
+      supplyPerSecondInterestRateSlopeHigh = 9460800000
+
+      supplyPerSecondInterestRateSlopeLow = 1356048000
+
+      ```
+
+
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-working-internals-compound/compund_3_eth_3.jpeg)
+    name: Parameters
+    stepItems: []
+    uuid: 00007ae1-2e33-43a0-ab40-b8d9bd635fa7
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/how_compound_works.png
 uuid: compound-working-internals-compound

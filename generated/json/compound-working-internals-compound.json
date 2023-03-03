@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains how compound works, how interest rates are calculated",
-  "created": "2023-02-03T22:14:07.297Z",
+  "created": "2023-03-03T22:18:23.823Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -62,6 +62,12 @@
         }
       ],
       "uuid": "78cc0350-523a-41ed-b002-26a267b5ae64"
+    },
+    {
+      "content": "```\nUpdated recs (Option 2):\nborrowKink = 900000000000000000\nborrowPerSecondInterestRateBase = 157680000\nborrowPerSecondInterestRateSlopeHigh = 19552320000\nborrowPerSecondInterestRateSlopeLow = 1639871893\n\nsupplyKink = 900000000000000000\nsupplyPerSecondInterestRateBase = 0\nsupplyPerSecondInterestRateSlopeHigh = 9460800000\nsupplyPerSecondInterestRateSlopeLow = 1356048000\n```\n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-working-internals-compound/compund_3_eth_3.jpeg)\n",
+      "name": "Parameters",
+      "stepItems": [],
+      "uuid": "00007ae1-2e33-43a0-ab40-b8d9bd635fa7"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/how_compound_works.png",
