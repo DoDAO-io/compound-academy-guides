@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-02-03T22:42:53.523Z'
+created: '2023-03-04T18:13:53.578Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -9,9 +9,16 @@ name: Comet
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: |-
+  - content: >+
+      Compound III has an opinionated design that embeds security into its
+      upgrade process. Upgradability with little restriction carries additional
+      risk, like we have seen so far with Compound v2. All of the parameters of
+      a deployment of Compound III are managed by a contract called the
+      Configurator. This special contract deploys and sets all of the parameters
+      for the instance. In order to change the core implementation of the
+      protocol, the configurator contract must be redeployed, which should not
+      be common.
 
-      # Coming Soon        
     name: Introduction
     stepItems: []
     uuid: 3b2af085-1e55-4e13-8f79-9b858692916d
@@ -42,4 +49,4 @@ steps:
         uuid: 2d36c04b-3e3e-44bc-9c02-3d037afb1927
     uuid: 0743e67a-b458-4aab-b057-646ef4f96b44
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png
-uuid: 5c04828d-3d15-4cc9-bb8d-95ea32430631
+uuid: comet-compound
