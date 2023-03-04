@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Into to Comet smart contracts, deployments and configurator",
-  "created": "2023-03-04T18:13:53.578Z",
+  "created": "2023-03-04T18:16:25.592Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -12,7 +12,7 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "content": "Compound III has an opinionated design that embeds security into its upgrade process. Upgradability with little restriction carries additional risk, like we have seen so far with Compound v2. All of the parameters of a deployment of Compound III are managed by a contract called the Configurator. This special contract deploys and sets all of the parameters for the instance. In order to change the core implementation of the protocol, the configurator contract must be redeployed, which should not be common.\n\n",
+      "content": "Compound III is a computer program that holds a lot of money. People can suggest changes to how the program works, but these changes can make the program less secure. To make sure the program stays safe, developers need to write tests that check if the new code works well and doesn't have any weaknesses. Companies like OpenZeppelin, ChainSecurity, and Certora also help to make sure the program is safe.\n\nThis guide explains how to make changes to the Compound III program safely. It talks about things like creating tests for the new code, running tests to make sure everything works, and using a tool called GitHub Actions to help with testing. The guide also explains how the program is set up, how to make changes to it, and how to make sure the changes are safe before they are added to the program.\n\n\n\n",
       "name": "Introduction",
       "stepItems": [],
       "uuid": "3b2af085-1e55-4e13-8f79-9b858692916d"
