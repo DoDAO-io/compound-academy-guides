@@ -1,6 +1,6 @@
 categories: []
 content: Explains how compound works, how interest rates are calculated
-created: '2023-03-04T02:06:11.260Z'
+created: '2023-03-04T02:16:43.534Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -9,9 +9,42 @@ name: Compound - Internals
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: |+
+  - content: >-
+      `supplyKink`  - The point in the supply rates separating the low interest
+      rate slope and the high interest rate slope (factor)
 
 
+      `borrowKink` - The point in the borrow rate separating the low interest
+      rate slope and the high interest rate slope (factor)
+
+
+      `supplyPerSecondInterestRateBase` - Per second supply base interest rate
+      (factor)
+
+
+      `supplyPerSecondInterestRateSlopeLow` - Per second supply interest rate
+      slope applied when utilization is below kink (factor)
+
+
+      `supplyPerSecondInterestRateSlopeHigh` - Per second supply interest rate
+      slope applied when utilization is above kink (factor)
+
+
+      `borrowPerSecondInterestRateSlopeLow` - Per second borrow interest rate
+      slope applied when utilization is below kink (factor)
+
+
+      `borrowPerSecondInterestRateSlopeHigh` - Per second borrow interest rate
+      slope applied when utilization is above kink (factor)
+
+
+      `borrowPerSecondInterestRateBase` - Per second borrow base interest rate
+      (factor)
+
+
+
+
+      `
     name: Introduction
     stepItems: []
     uuid: 942bd251-c524-4526-a23a-d7b4f87063e9
