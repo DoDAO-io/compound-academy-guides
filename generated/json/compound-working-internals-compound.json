@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains how compound works, how interest rates are calculated",
-  "created": "2023-03-04T02:04:52.084Z",
+  "created": "2023-03-04T02:06:11.260Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -18,7 +18,7 @@
       "uuid": "942bd251-c524-4526-a23a-d7b4f87063e9"
     },
     {
-      "content": "### Supply Rate\nwhen `utilization <= supplyKink`: supply rate  =  interestRateBase + interestRateSlopeLow * utilization \n\nwhen `utilization > supplyKink`: supply rate  =  interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)\n\n### Borrow Rate\nwhen `utilization <= borrowKink`: interestRateBase + interestRateSlopeLow * utilization\n\nwhen `utilization > borrowKink` : interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)",
+      "content": "### Supply Rate\n##### when `utilization <= supplyKink`\nsupply rate  =  interestRateBase + interestRateSlopeLow * utilization \n\n##### when `utilization > supplyKink`\nsupply rate  =  interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)\n\n### Borrow Rate\n##### when `utilization <= borrowKink`\nborrow rate = interestRateBase + interestRateSlopeLow * utilization\n\n##### when `utilization > borrowKink`\nborrow rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)",
       "name": "Interest Rate Calculations",
       "stepItems": [],
       "uuid": "4bf5a6e0-7305-4fdc-aa05-e26ebd07ff90"

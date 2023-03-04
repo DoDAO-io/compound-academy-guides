@@ -1,6 +1,6 @@
 categories: []
 content: Explains how compound works, how interest rates are calculated
-created: '2023-03-04T02:04:52.084Z'
+created: '2023-03-04T02:06:11.260Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -18,22 +18,28 @@ steps:
   - content: >-
       ### Supply Rate
 
-      when `utilization <= supplyKink`: supply rate  =  interestRateBase +
-      interestRateSlopeLow * utilization 
+      ##### when `utilization <= supplyKink`
+
+      supply rate  =  interestRateBase + interestRateSlopeLow * utilization 
 
 
-      when `utilization > supplyKink`: supply rate  =  interestRateBase +
-      interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)
+      ##### when `utilization > supplyKink`
+
+      supply rate  =  interestRateBase + interestRateSlopeLow * kink +
+      interestRateSlopeHigh * (utilization - kink)
 
 
       ### Borrow Rate
 
-      when `utilization <= borrowKink`: interestRateBase + interestRateSlopeLow
-      * utilization
+      ##### when `utilization <= borrowKink`
+
+      borrow rate = interestRateBase + interestRateSlopeLow * utilization
 
 
-      when `utilization > borrowKink` : interestRateBase + interestRateSlopeLow
-      * kink + interestRateSlopeHigh * (utilization - kink)
+      ##### when `utilization > borrowKink`
+
+      borrow rate = interestRateBase + interestRateSlopeLow * kink +
+      interestRateSlopeHigh * (utilization - kink)
     name: Interest Rate Calculations
     stepItems: []
     uuid: 4bf5a6e0-7305-4fdc-aa05-e26ebd07ff90
