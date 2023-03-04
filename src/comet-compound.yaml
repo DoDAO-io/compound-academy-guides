@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-04T21:34:38.556Z'
+created: '2023-03-04T21:40:41.579Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -134,13 +134,13 @@ steps:
 
       ## Run workflow
 
-      Then, we click the Actions tab again and select the Run Scenarios workflow
-      on the left. We click the Run workflow button on the right, select our
-      branch in the dropdown menu, and then click the green Run workflow button.
-      It will take several minutes to run. Our scenario might not succeed on all
-      instances of Comet because the ZRX token and Chainlink price feed smart
-      contracts are nonexistent at the specified address on other chains than
-      Ethereum mainnet.
+      We can click the Actions tab in forked github repo and select the Run
+      Scenarios workflow on the left. We click the Run workflow button on the
+      right, select our branch in the dropdown menu, and then click the green
+      Run workflow button. It will take several minutes to run. 
+
+
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/comet_workflow.png)
 
 
       Lastly, we should consider that scenarios will check existing pending
