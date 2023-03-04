@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-04T18:19:38.887Z'
+created: '2023-03-04T18:20:01.185Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -28,7 +28,7 @@ steps:
       changes are safe before they are added to the program.
 
 
-      ### Architecture
+      ## Architecture
 
 
       The Configurator is a special contract that manages all the settings for
