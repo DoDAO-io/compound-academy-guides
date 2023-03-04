@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-04T18:16:25.592Z'
+created: '2023-03-04T18:17:38.783Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -26,6 +26,18 @@ steps:
       changes are safe before they are added to the program.
 
 
+
+      The Configurator is a special contract that manages all the settings for
+      the Compound III protocol. It's important to be careful when making
+      changes to the protocol, because even small changes can have big
+      consequences. To make changes safely, developers need to write tests,
+      scenarios, and migration scripts.
+
+
+      A workflow is a set of tasks that can run automatically to check new code
+      changes. GitHub Actions is a tool that can be used to run these workflows.
+      Developers should make sure their code changes pass all the tests and
+      checks before proposing any changes to the protocol.
 
     name: Introduction
     stepItems: []
