@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-04T20:55:14.868Z'
+created: '2023-03-04T21:25:16.185Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -56,6 +56,39 @@ steps:
     stepItems: []
     uuid: 3b2af085-1e55-4e13-8f79-9b858692916d
   - content: >-
+      ## Comet Contracts
+
+      The Comet protocol is made up of different contracts that work together to
+      create a system for exchanging a digital asset called Comet.
+
+
+      The main contract, `Comet.sol`, is responsible for most of Comet's core
+      functionalities. It uses another contract, `CometExt.sol`, for functions
+      that don't fit within Comet.sol.
+
+
+      `CometInterface.sol` is an abstract contract that contains all the
+      functions and events for Comet.sol and CometExt.sol and is compatible with
+      ERC-20.
+
+
+      The `Configurator` contracts manage Comet's configurations and deploy new
+      implementations of Comet.
+
+
+      There are some supplementary contracts like `Bulker.sol`, which allows
+      multiple Comet functions to be called in a single transaction, and
+      CometRewards.sol, which allows users to claim rewards based on their
+      protocol participation.
+
+
+      Finally, there are Vendor contracts like `ConfiguratorProxy.sol` and
+      `CometProxyAdmin.sol`, which inherit from OZ proxies and are used to
+      deploy and upgrade Comet.
+
+
+      ## Scenario Tests
+
       The Scenario Hardhat 2 plugin is a tool that helps test smart contract
       functions to ensure they work properly. Before we can run all the tests,
       we need to set some environment variables that the tool will use to fetch
@@ -83,7 +116,7 @@ steps:
       We can run our scenario locally to make sure it works as intended. We can
       also run all the scenarios by removing the ".only" method before checking
       in the code.
-    name: Add Scenarios
+    name: Comet Contract
     stepItems: []
     uuid: 0743e67a-b458-4aab-b057-646ef4f96b44
   - content: >-
