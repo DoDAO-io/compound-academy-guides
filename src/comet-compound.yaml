@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-04T20:47:03.855Z'
+created: '2023-03-04T20:50:26.234Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -137,13 +137,40 @@ steps:
     name: Migrations
     stepItems: []
     uuid: 73a81735-14c4-426c-8bd8-950b6e0a2bbf
-  - content: ''
-    name: Your Info
-    stepItems:
-      - label: Nickname
-        required: true
-        type: PublicShortInput
-        uuid: 2d36c04b-3e3e-44bc-9c02-3d037afb1927
+  - content: >-
+      The Scenario Hardhat 2 plugin is a tool that helps test smart contract
+      functions to ensure they work properly. Before we can run all the tests,
+      we need to set some environment variables that the tool will use to fetch
+      existing data from supported blockchains. Once we have set the API keys,
+      we can run all the tests with a single command.
+
+
+      To create a new test scenario, we need to create a new file and write the
+      code for the actions we want to test. In this example, we will create a
+      scenario that adds a new type of collateral to the smart contract. We will
+      test this scenario on the Ethereum mainnet.
+
+
+      The scenario will perform a few actions on the blockchain, such as
+      importing an existing token, moving tokens to a test account, and adding
+      the token as collateral. We can then test that the balances are correct.
+
+
+      It's important to note that scenarios should be added when introducing a
+      fundamentally new protocol feature and should always pass in all
+      deployments of the protocol. However, the scenario we will create in this
+      example is just for educational purposes.
+
+
+      We can run our scenario locally to make sure it works as intended. We can
+      also run all the scenarios by removing the ".only" method before checking
+      in the code.
+    name: Add Scenarios
+    stepItems: []
     uuid: 0743e67a-b458-4aab-b057-646ef4f96b44
+  - content: ''
+    name: Step 5
+    stepItems: []
+    uuid: d9acccfb-0962-4800-aee7-cb9d16494635
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png
 uuid: comet-compound
