@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-04T18:20:01.185Z'
+created: '2023-03-04T18:29:58.021Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -30,6 +30,13 @@ steps:
 
       ## Architecture
 
+      ### Comet protocol
+
+
+      ### Tests
+
+
+      ### Configurator
 
       The Configurator is a special contract that manages all the settings for
       the Compound III protocol. It's important to be careful when making
@@ -37,6 +44,8 @@ steps:
       consequences. To make changes safely, developers need to write tests,
       scenarios, and migration scripts.
 
+
+      ### Github Actions
 
       A workflow is a set of tasks that can run automatically to check new code
       changes. GitHub Actions is a tool that can be used to run these workflows.
