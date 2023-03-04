@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-04T21:33:28.662Z'
+created: '2023-03-04T21:34:38.556Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -68,8 +68,8 @@ steps:
 
 
       `CometInterface.sol` is an abstract contract that contains all the
-      functions and events for Comet.sol and CometExt.sol and is compatible with
-      ERC-20.
+      functions and events for `Comet.sol` and `CometExt.sol` and is compatible
+      with ERC-20.
 
 
       The `Configurator` contracts manage Comet's configurations and deploy new
