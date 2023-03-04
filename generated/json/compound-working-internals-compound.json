@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains how compound works, how interest rates are calculated",
-  "created": "2023-03-03T22:18:23.823Z",
+  "created": "2023-03-04T02:00:01.118Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -12,7 +12,7 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "content": "\n## Coming Soon        ",
+      "content": "`getSupplyRate`: This function takes a utilization parameter and calculates the per-second supply rate for lending assets based on the utilization. If the utilization is less than or equal to a certain threshold (supplyKink), the function uses a linear formula to calculate the supply rate. If the utilization is greater than the supplyKink, the function uses a more complex formula to calculate the supply rate.\n\n`getBorrowRate`: This function takes a utilization parameter and calculates the per-second borrow rate for borrowing assets based on the utilization. The calculation is similar to getSupplyRate, but uses different parameters.\n\n`getUtilization`: This function calculates the utilization rate of the protocol's base asset, which is the ratio of total borrowed assets to total supplied assets.\n\n`getPrice`: This function retrieves the current price of an asset from an external price feed.\n\n`getCollateralReserves`: This function calculates the total balance of protocol collateral reserves for a given asset.\n\n`getReserves`: This function calculates the total amount of protocol reserves of the base asset, taking into account the balance of the base asset, the present value of supplied assets, and the present value of borrowed assets.",
       "name": "Introduction",
       "stepItems": [],
       "uuid": "942bd251-c524-4526-a23a-d7b4f87063e9"
