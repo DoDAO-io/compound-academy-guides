@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-04T18:17:38.783Z'
+created: '2023-03-04T18:19:38.887Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -10,6 +10,8 @@ publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
   - content: >+
+      ## Compound III
+
       Compound III is a computer program that holds a lot of money. People can
       suggest changes to how the program works, but these changes can make the
       program less secure. To make sure the program stays safe, developers need
@@ -25,6 +27,8 @@ steps:
       program is set up, how to make changes to it, and how to make sure the
       changes are safe before they are added to the program.
 
+
+      ### Architecture
 
 
       The Configurator is a special contract that manages all the settings for
