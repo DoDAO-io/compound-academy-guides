@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-04T21:25:16.185Z'
+created: '2023-03-04T21:33:28.662Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -91,50 +91,39 @@ steps:
 
       The Scenario Hardhat 2 plugin is a tool that helps test smart contract
       functions to ensure they work properly. Before we can run all the tests,
-      we need to set some environment variables that the tool will use to fetch
-      existing data from supported blockchains. Once we have set the API keys,
-      we can run all the tests with a single command.
+      we need to set some environment variables will be used to fetch existing
+      data from supported blockchains. Once we have set the API keys, we can run
+      all the tests with a single command. All the steps are explained in detail
+      [here](https://www.comp.xyz/t/compound-iii-scenarios-migrations-and-workflows)
 
 
       To create a new test scenario, we need to create a new file and write the
-      code for the actions we want to test. In this example, we will create a
-      scenario that adds a new type of collateral to the smart contract. We will
-      test this scenario on the Ethereum mainnet.
-
-
-      The scenario will perform a few actions on the blockchain, such as
-      importing an existing token, moving tokens to a test account, and adding
-      the token as collateral. We can then test that the balances are correct.
-
-
-      It's important to note that scenarios should be added when introducing a
-      fundamentally new protocol feature and should always pass in all
-      deployments of the protocol. However, the scenario we will create in this
-      example is just for educational purposes.
+      code for the actions we want to test.  The scenario can perform a few
+      actions on the blockchain, such as importing an existing token, moving
+      tokens to a test account, and adding the token as collateral. We can then
+      test that the balances are correct. It's important to note that scenarios
+      should be added when introducing a new protocol feature and should always
+      pass in all deployments of the protocol. 
 
 
       We can run our scenario locally to make sure it works as intended. We can
       also run all the scenarios by removing the ".only" method before checking
       in the code.
-    name: Comet Contract
+    name: Contracts and Tests
     stepItems: []
     uuid: 0743e67a-b458-4aab-b057-646ef4f96b44
   - content: >-
-      So, the first thing we need to do is run our scenarios in our CI workflow.
-      To do this, we need to commit our code and push it to GitHub. We'll delete
-      it later after we learn how to use workflows. Then, we go back to the
-      forked Comet repo in GitHub and click on the Actions tab at the top of the
-      page. We then click the green button that says "I understand my workflows"
-      and enable them. This sets up the same workflows defined in the official
-      Comet repository when we forked it. We can run them independently from the
-      official repository.
+      ## Enable Workflows and Add Secrets
+
+      After we update the code and add the tests, the first thing we need to do
+      is run our scenarios in our CI workflow. To do this, we need to commit our
+      code and push it to GitHub. For the forked comet repo we need to first
+      enable the workflows. The workflows in the forked repository run
+      independently from the official repository.
 
 
-      Next, we need to add the same environment variables as Actions secrets in
-      the repository, like we did for the command line earlier. We click on the
-      Settings tab on the top right, then Secrets on the bottom left, then
-      Actions subtab, then the green New repository secret button on the top
-      right.
+      We will also need to add the same environment variables as Actions secrets
+      in the repository.
 
 
       After adding all the keys, we can run the workflows in our fork. It's a
@@ -142,6 +131,8 @@ steps:
       official Comet repository. If our branch is up to date, all passing tests
       in the fork CI will result in passing tests in the pull request to main.
 
+
+      ## Run workflow
 
       Then, we click the Actions tab again and select the Run Scenarios workflow
       on the left. We click the Run workflow button on the right, select our
@@ -162,7 +153,7 @@ steps:
       Now that we know how to write a scenario test, run it locally, and run it
       in CI, we can delete this branch and apply what we learned to a Compound
       III migration script.
-    name: Add tests and run CI
+    name: Continuous Integration
     stepItems: []
     uuid: 20bda8f8-ca1a-4bc8-bdde-815d71401f36
   - content: >-
