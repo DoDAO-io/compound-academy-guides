@@ -1,6 +1,6 @@
 categories: []
 content: 'How to build a new comet extension '
-created: '2023-02-03T22:48:28.117Z'
+created: '2023-03-05T22:43:28.751Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -9,9 +9,62 @@ name: Build Comet Extension
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: |-
+  - content: >-
+      Compound III, has launched a new feature called "Extensions". This feature
+      is designed to allow community developers to create optional add-ons that
+      can be used to enhance the Compound experience for users.
 
-      ## Coming Soon        
+
+      When a user enables an extension, it can leverage Compound III's advanced
+      account management functionality to add new features to their account.
+      These can include automation, position management, and composability with
+      other DeFi protocols. Alternatively, an extension can run without
+      requiring any permissions and simply provide useful information like
+      liquidation alerts.
+
+
+      There are two types of extensions: 
+
+      1. Web Extensions - Web extensions are like mini-websites that are
+      embedded into the Compound III interface, allowing users to interact with
+      the platform in new and different ways 
+
+      2. Operators - Operators, on the other hand, are smart contracts that
+      allow users to do things like move positions from other DeFi platforms to
+      Compound III. 
+
+
+      Some extensions have both a web extension and an operator, while others
+      have only one or the other.
+
+
+      At launch, there are four extensions available to users:
+
+
+      1. Advanced Transactions – This extension allows users to bundle multiple
+      actions into a single transaction.
+
+      2. Position Migrator – This extension enables users to import positions
+      from Compound v2 and Aave v2 into their Compound III balance.
+
+      3. DeFi Saver – This extension adds sophisticated tools to manage a user's
+      Compound III position.
+
+      4. Comp.Vote – This extension provides a gas-free voting experience.
+
+
+      However, these four extensions are just the beginning. There are dozens of
+      other extensions waiting to be developed, limited only by the creativity
+      of community developers. 
+
+
+      Each extension runs inside the Compound interface in a sandboxed iframe.
+      The Extension Repo contains the base code for implementing an extension,
+      as well as a curated list of available extensions. Currently, there are no
+      set standards for including an extension in the Compound interface. The
+      community is expected to help develop guidelines for approving or
+      accepting new extensions, including security audit requirements for new
+      contracts.
     name: Introduction
     stepItems: []
     uuid: 33b6802d-f3ed-4dd3-a548-5c6b8b480431
@@ -43,4 +96,4 @@ steps:
     uuid: 5c13563b-bf63-4431-aa8a-a10e07dfc874
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/academy/compound/build_comet_extension.png
-uuid: fdf84be3-d0de-423d-81b2-c0b509234acd
+uuid: build-comet-extension-compound
