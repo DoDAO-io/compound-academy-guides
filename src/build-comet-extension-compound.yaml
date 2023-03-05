@@ -1,6 +1,6 @@
 categories: []
 content: 'How to build a new comet extension '
-created: '2023-03-05T22:43:28.751Z'
+created: '2023-03-05T22:44:35.416Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -10,6 +10,8 @@ publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
   - content: >-
+      ## Extensions
+
       Compound III, has launched a new feature called "Extensions". This feature
       is designed to allow community developers to create optional add-ons that
       can be used to enhance the Compound experience for users.
@@ -22,6 +24,8 @@ steps:
       requiring any permissions and simply provide useful information like
       liquidation alerts.
 
+
+      ## Extension Types
 
       There are two types of extensions: 
 
@@ -37,6 +41,8 @@ steps:
       Some extensions have both a web extension and an operator, while others
       have only one or the other.
 
+
+      ## Default Extensions
 
       At launch, there are four extensions available to users:
 
