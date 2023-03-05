@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-05T13:46:28.402Z'
+created: '2023-03-05T13:53:16.846Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -89,26 +89,39 @@ steps:
 
       ## Scenario Tests
 
-      The Scenario Hardhat 2 plugin is a tool that helps test smart contract
-      functions to ensure they work properly. Before we can run all the tests,
+
+      Scenarios are tests that check if Comet protocol is working correctly. To
+      run these tests, you use a tool called Hardhat. You can run different
+      scenarios against different versions of the Comet protocol. You can also
+      change the number of workers, which can make the tests run faster.
+
+
+      To run the scenarios, Hardhat plugin is used. The command `npx hardhat
+      scenario` is used to run the tests. You can also run scenarios against
+      different versions of the Comet protocol using the `--bases` option.
+      Additionally, the `--workers` option can be used to change the number of
+      workers to speed up the testing process. Before we can run all the tests,
       we need to set some environment variables will be used to fetch existing
-      data from supported blockchains. Once we have set the API keys, we can run
-      all the tests with a single command. All the steps are explained in detail
-      [here](https://www.comp.xyz/t/compound-iii-scenarios-migrations-and-workflows)
+      data from supported blockchains.
 
 
-      To create a new test scenario, we need to create a new file and write the
-      code for the actions we want to test.  The scenario can perform a few
-      actions on the blockchain, such as importing an existing token, moving
-      tokens to a test account, and adding the token as collateral. We can then
-      test that the balances are correct. It's important to note that scenarios
-      should be added when introducing a new protocol feature and should always
-      pass in all deployments of the protocol. 
+      `npx hardhat scenario --bases development,goerli,fuji`
 
 
-      We can run our scenario locally to make sure it works as intended. We can
-      also run all the scenarios by removing the ".only" method before checking
-      in the code.
+      To add a new test, you create a new file in a folder called "scenario".
+      You then write the test in the file using a programming language called
+      TypeScript. The test checks that a specific feature of the Comet protocol
+      works correctly.
+
+
+      All the steps are explained in detail
+      [here](https://github.com/compound-finance/comet/blob/main/SCENARIO.md)
+
+
+      Sometimes, a scenario requires the most recent version of the Comet
+      contract. In this case, you add a "constraint" to the scenario that says
+      it needs to use the most recent version. This makes sure that the scenario
+      can run on any network, even if some features are not available.
     name: Contracts and Tests
     stepItems: []
     uuid: 0743e67a-b458-4aab-b057-646ef4f96b44
