@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Into to Comet smart contracts, deployments and configurator",
-  "created": "2023-03-05T13:53:16.846Z",
+  "created": "2023-03-05T13:54:28.322Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -24,7 +24,7 @@
       "uuid": "0743e67a-b458-4aab-b057-646ef4f96b44"
     },
     {
-      "content": "## Enable Workflows and Add Secrets\nAfter we update the code and add the tests, the first thing we need to do is run our scenarios in our CI workflow. To do this, we need to commit our code and push it to GitHub. For the forked comet repo we need to first enable the workflows. The workflows in the forked repository run independently from the official repository.\n\nWe will also need to add the same environment variables as Actions secrets in the repository.\n\nAfter adding all the keys, we can run the workflows in our fork. It's a good idea to run tests in our fork CI before opening a pull request on the official Comet repository. If our branch is up to date, all passing tests in the fork CI will result in passing tests in the pull request to main.\n\n## Run workflow\nWe can click the Actions tab in forked github repo and select the Run Scenarios workflow on the left. We click the Run workflow button on the right, select our branch in the dropdown menu, and then click the green Run workflow button. It will take several minutes to run. \n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/comet_workflow.png)\n\nLastly, we should consider that scenarios will check existing pending on-chain governance proposals against the test to make sure there are no conflicts caused. This might be the cause of a failing scenario that previously succeeded, even when no code changes have been made in the interim.\n\nNow that we know how to write a scenario test, run it locally, and run it in CI, we can delete this branch and apply what we learned to a Compound III migration script.",
+      "content": "## Enable Workflows and Add Secrets\nAfter we update the code and add the tests, the first thing we need to do is run our scenarios in our CI workflow. To do this, we need to commit our code and push it to GitHub. For the forked comet repo we need to first enable the workflows. The workflows in the forked repository run independently from the official repository.\n\nWe will also need to add the same environment variables as Actions secrets in the repository.\n\nAfter adding all the keys, we can run the workflows in our fork. It's a good idea to run tests in our fork CI before opening a pull request on the official Comet repository. If our branch is up to date, all passing tests in the fork CI will result in passing tests in the pull request to main.\n\n## Run workflow\nWe can click the Actions tab in forked github repo and select the Run Scenarios workflow on the left. We click the Run workflow button on the right, select our branch in the dropdown menu, and then click the green Run workflow button. It will take several minutes to run. \n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/comet_workflow.png)\n\nLastly, we should consider that scenarios will check existing pending on-chain governance proposals against the test to make sure there are no conflicts caused. This might be the cause of a failing scenario that previously succeeded, even when no code changes have been made in the interim.",
       "name": "Continuous Integration",
       "stepItems": [],
       "uuid": "20bda8f8-ca1a-4bc8-bdde-815d71401f36"

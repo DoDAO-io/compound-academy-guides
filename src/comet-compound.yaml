@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-05T13:53:16.846Z'
+created: '2023-03-05T13:54:28.322Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -161,11 +161,6 @@ steps:
       conflicts caused. This might be the cause of a failing scenario that
       previously succeeded, even when no code changes have been made in the
       interim.
-
-
-      Now that we know how to write a scenario test, run it locally, and run it
-      in CI, we can delete this branch and apply what we learned to a Compound
-      III migration script.
     name: Continuous Integration
     stepItems: []
     uuid: 20bda8f8-ca1a-4bc8-bdde-815d71401f36
