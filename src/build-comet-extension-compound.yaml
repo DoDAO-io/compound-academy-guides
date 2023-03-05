@@ -1,6 +1,6 @@
 categories: []
 content: 'How to build a new comet extension '
-created: '2023-03-05T22:44:35.416Z'
+created: '2023-03-05T22:46:18.513Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -9,7 +9,7 @@ name: Build Comet Extension
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: >-
+  - content: >
       ## Extensions
 
       Compound III, has launched a new feature called "Extensions". This feature
@@ -42,7 +42,7 @@ steps:
       have only one or the other.
 
 
-      ## Default Extensions
+      ## Initial Extensions
 
       At launch, there are four extensions available to users:
 
@@ -62,15 +62,6 @@ steps:
       However, these four extensions are just the beginning. There are dozens of
       other extensions waiting to be developed, limited only by the creativity
       of community developers. 
-
-
-      Each extension runs inside the Compound interface in a sandboxed iframe.
-      The Extension Repo contains the base code for implementing an extension,
-      as well as a curated list of available extensions. Currently, there are no
-      set standards for including an extension in the Compound interface. The
-      community is expected to help develop guidelines for approving or
-      accepting new extensions, including security audit requirements for new
-      contracts.
     name: Introduction
     stepItems: []
     uuid: 33b6802d-f3ed-4dd3-a548-5c6b8b480431
