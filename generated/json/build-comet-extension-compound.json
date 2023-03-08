@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "How to build a new comet extension ",
-  "created": "2023-03-08T23:11:00.545Z",
+  "created": "2023-03-08T23:18:16.161Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -18,7 +18,7 @@
       "uuid": "33b6802d-f3ed-4dd3-a548-5c6b8b480431"
     },
     {
-      "content": "Web Extensions are used to expand the functionality of the Frontend by allowing users to perform actions or retrieve information related to their accounts. \n\nThese extensions are incorporated into the main Compound III app as iframes, but the inner window of the iframe lacks access to the web3 context required for signing messages or transactions when interacting with smart contracts. To overcome this limitation, the Web Extension sends a message to the parent window, which then uses the context and forwards the message. `@compound-finance/comet-extension` provides all the glue code needed to interact with the parent window.\n\n```javascript\nimport { useMemo, useEffect } from 'react';\nimport { RPC, buildRPC } from '@compound-finance/comet-extension';\n\nexport function useRPC(): RPC {\n  let rpc = useMemo<RPC>(buildRPC, []);\n\n  useEffect(() => {\n    rpc.attachHandler()\n    return rpc.detachHandler;\n  }, [rpc]);\n\n  return rpc;\n}\n\n```\n\nCompound also provides an extension template which has all the setup code along with the latest frameworks needed to create a frontend application.\n\nTo develop a Comet Web Extension, the first step is for the developer to clone the template repository's boilerplate onto their local machine. Using Foundry and Vite, they can then construct the Extension's front end and smart contracts while leveraging a localhost development environment to ensure the code functions as intended.",
+      "content": "Web Extensions are used to expand the functionality of the Frontend by allowing users to perform actions or retrieve information related to their accounts. \n\nThese extensions are incorporated into the main Compound III app as iframes, but the inner window of the iframe lacks access to the web3 context required for signing messages or transactions when interacting with smart contracts. To overcome this limitation, the Web Extension sends a message to the parent window, which then uses the context and forwards the message. `@compound-finance/comet-extension` provides all the glue code needed to interact with the parent window.\n\n```javascript\nimport { useMemo, useEffect } from 'react';\nimport { RPC, buildRPC } from '@compound-finance/comet-extension';\n\nexport function useRPC(): RPC {\n  let rpc = useMemo<RPC>(buildRPC, []);\n\n  useEffect(() => {\n    rpc.attachHandler()\n    return rpc.detachHandler;\n  }, [rpc]);\n\n  return rpc;\n}\n\n```\n\nCompound offers an extension template that includes all the necessary setup code and up-to-date frameworks for creating a frontend application.\n\nhttps://github.com/compound-finance/comet-extension-template\n\nTo create a Comet Web Extension, developers should start by cloning the template repository's boilerplate to their local machine. With Foundry and Vite, they can then develop the Extension's frontend and smart contracts while utilizing a localhost development environment to verify that the code works correctly.",
       "name": "Web Extensions",
       "stepItems": [],
       "uuid": "7d7413e7-3855-499c-b961-d7d4920a4b0e"
