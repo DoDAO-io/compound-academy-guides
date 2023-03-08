@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains how compound works, how interest rates are calculated",
-  "created": "2023-03-08T17:34:16.943Z",
+  "created": "2023-03-08T17:42:50.612Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -144,7 +144,66 @@
       "uuid": "6d22ede4-3bfa-4165-9b4f-da454a60ee3b"
     },
     {
-      "content": "```\nUpdated recs (Option 2):\nborrowKink = 900000000000000000\nborrowPerSecondInterestRateBase = 157680000\nborrowPerSecondInterestRateSlopeHigh = 19552320000\nborrowPerSecondInterestRateSlopeLow = 1639871893\n\nsupplyKink = 900000000000000000\nsupplyPerSecondInterestRateBase = 0\nsupplyPerSecondInterestRateSlopeHigh = 9460800000\nsupplyPerSecondInterestRateSlopeLow = 1356048000\n```\n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-working-internals-compound/compund_3_eth_3.jpeg)\n",
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "5d4143ff"
+          ],
+          "choices": [
+            {
+              "content": "supply rate = interestRateBase + interestRateSlopeLow * utilization",
+              "key": "fcc0bc1a"
+            },
+            {
+              "content": "supply rate = interestRateBase + interestRateSlopeLow * kink",
+              "key": "d0f202ca"
+            },
+            {
+              "content": "supply rate = interestRateBase + interestRateSlopeHigh * (utilization - kink)",
+              "key": "5d4143ff"
+            },
+            {
+              "content": " None of the above",
+              "key": "6f4a4ec0"
+            }
+          ],
+          "content": "What is the formula for calculating supply rate when utilization is greater than the supplyKink?",
+          "type": "SingleChoice",
+          "uuid": "591f18f4-c9ab-4d90-911a-9cff20d9f1b5"
+        },
+        {
+          "answerKeys": [
+            "776f8728"
+          ],
+          "choices": [
+            {
+              "content": "borrow rate = interestRateBase + interestRateSlopeLow * utilization",
+              "key": "776f8728"
+            },
+            {
+              "content": " borrow rate = interestRateBase + interestRateSlopeLow * kink",
+              "key": "fbe16fa9"
+            },
+            {
+              "content": "borrow rate = interestRateBase + interestRateSlopeHigh * (utilization - kink)",
+              "key": "452c9333"
+            },
+            {
+              "content": "None of the above",
+              "key": "9f28a66b"
+            }
+          ],
+          "content": "What is the formula for calculating borrow rate when utilization is less than or equal to the borrowKink?",
+          "type": "SingleChoice",
+          "uuid": "27e2e0d6-9ccb-47df-b967-354d6c4f02c9"
+        }
+      ],
+      "uuid": "2e027542-1065-4a31-941b-c97907fb4151"
+    },
+    {
+      "content": "The initialization of variables that affect the calculation of borrow and supply rates occurs when a market is deployed on a blockchain. These variables can be modified through governance proposals even after the market has been created and deployed. The text below illustrates some of these variables.\n\n```\nborrowKink = 900000000000000000\nborrowPerSecondInterestRateBase = 157680000\nborrowPerSecondInterestRateSlopeHigh = 19552320000\nborrowPerSecondInterestRateSlopeLow = 1639871893\n\nsupplyKink = 900000000000000000\nsupplyPerSecondInterestRateBase = 0\nsupplyPerSecondInterestRateSlopeHigh = 9460800000\nsupplyPerSecondInterestRateSlopeLow = 1356048000\n```\nBased on these variables we can plot how the borrow and interest rates look like with utilization.\n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-working-internals-compound/compund_3_eth_3.jpeg)\n",
       "name": "Market Updates",
       "stepItems": [],
       "uuid": "00007ae1-2e33-43a0-ab40-b8d9bd635fa7"
