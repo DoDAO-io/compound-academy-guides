@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-08T14:43:26.121Z'
+created: '2023-03-08T14:46:16.020Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -60,33 +60,33 @@ steps:
   - content: >-
       ## About Governor Bravo
 
-      Governor Bravo allows incremental changes without breaking infrastructure
-      built around it. It is governed by Compound Governance. Users can send a
-      string along with their vote, explaining their voting reasoning. This is
-      stored along with the vote receipt. Governance parameters are settable,
-      including voting period, voting delay, and proposal threshold. This allows
-      for changes to the governance process without requiring new contracts to
-      be deployed.
+      Governor Bravo is a governance mechanism that facilitates incremental
+      changes to infrastructure without causing disruption. It is administered
+      by Compound Governance and allows users to provide a string explaining
+      their vote along with their vote receipt. The governance process can be
+      customized through adjustable parameters, such as voting period, voting
+      delay, and proposal threshold, which eliminates the need for deploying new
+      contracts to enable governance changes.
 
 
-      Proposer of a proposal can cancel their proposal at any point, making it
-      possible for an erroneous proposal to be canceled if needed. The settable
-      parameters and implementation are governed by the admin, which is set to
-      the Compound timelock.
+      In case of an error, the proposer of a proposal has the option to cancel
+      their proposal at any time. The admin, governed by the Compound timelock,
+      manages the configurable parameters and implementation.
 
 
       ## Compound III Updates
 
-      The updates to Compound III, falls into two categories
+      Updates to Compound III can be made through two methods:
 
       1. Configuration updates from Governor Bravo UI
 
-      2. Code changes which use migration to create Governor Bravo proposal
+      2. Code changes that utilize migration to generate a Governor Bravo
+      proposal
 
 
-      Both these methods have a slightly different starting points, but results
-      in Governor Bravo Proposal which then community votes upon to decide if
-      the changes should be applied or not.
+      Although these methods have slightly different starting points, both
+      culminate in a Governor Bravo Proposal, which is voted on by the community
+      to determine whether the changes should be implemented.
 
 
       ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/screenshot_2023-03-08%20at%2009.42.26.png)
@@ -94,8 +94,8 @@ steps:
 
       ## Create proposal from Governor Bravo UI
 
-      Anybody with 1% of COMP delegated to their address can propose a
-      governance proposal.
+      To propose a governance proposal, an individual must have 1% of COMP
+      delegated to their address. 
 
 
       ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/create_proposal.jpeg)
@@ -104,9 +104,9 @@ steps:
 
       ## Code updates and then create proposal
 
-      The following steps in the guide explains how to update the code and make
-      use of migration script to create a proposal that will apply those
-      changes.
+      The process for updating the code and using the migration script to create
+      a proposal that will implement those changes is outlined in the following
+      steps.
     name: Governor Bravo - Proposals
     stepItems: []
     uuid: d9acccfb-0962-4800-aee7-cb9d16494635
