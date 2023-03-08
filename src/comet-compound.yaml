@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-05T13:54:28.322Z'
+created: '2023-03-08T11:30:47.117Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -9,7 +9,7 @@ name: Comet Protocol
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: >+
+  - content: >
       ## Compound III
 
       Compound III is a computer program that holds a lot of money. People can
@@ -32,8 +32,18 @@ steps:
 
       ### Comet protocol
 
+      These are the smart contracts which have all the code related to lending
+      and borrowing and creation of markets in compound III
+
 
       ### Tests
+
+      The Compound protocol code base is under test through multiple frameworks.
+      First, there are unit tests for the Solidity smart contract functions
+      which are written in JavaScript with Mocha.js. And second, there are
+      “scenarios” which are like integration tests. Scenarios abstract away the
+      minutia required in a sequential series of EVM transactions to simulate a
+      real-world protocol interaction as an easy to follow story.
 
 
       ### Configurator
@@ -47,11 +57,10 @@ steps:
 
       ### Github Actions
 
-      A workflow is a set of tasks that can run automatically to check new code
-      changes. GitHub Actions is a tool that can be used to run these workflows.
-      Developers should make sure their code changes pass all the tests and
-      checks before proposing any changes to the protocol.
-
+      Compound III repository has an extensive list of Github Action that can be
+      invoked by the developers. Some of these are automatically executed
+      whenever you commit the code like `test`, while others actions can be
+      invoked from the Github UI, for example enacting of the migrations.
     name: Introduction
     stepItems: []
     uuid: 3b2af085-1e55-4e13-8f79-9b858692916d
