@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains how compound works, how interest rates are calculated",
-  "created": "2023-03-08T16:29:48.071Z",
+  "created": "2023-03-08T17:28:40.539Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -16,6 +16,61 @@
       "name": "Introduction",
       "stepItems": [],
       "uuid": "4bf5a6e0-7305-4fdc-aa05-e26ebd07ff90"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "5c77143b"
+          ],
+          "choices": [
+            {
+              "content": "It is denominated by borrow rate of the banks",
+              "key": "680976c4"
+            },
+            {
+              "content": "It is determined by a borrow rate model",
+              "key": "5c77143b"
+            },
+            {
+              "content": "It is set by governance and is static",
+              "key": "e1e0cc50"
+            },
+            {
+              "content": " It is determined for all the users at the time of market creation",
+              "key": "2d9a16e8"
+            }
+          ],
+          "content": "How is the interest rate determined for users who have a positive balance of the base asset?",
+          "type": "SingleChoice",
+          "uuid": "9adee371-52b6-4fbc-9281-879f5dcac873"
+        },
+        {
+          "answerKeys": [
+            "bffd70e3"
+          ],
+          "choices": [
+            {
+              "content": "They remain constant regardless of the utilization rate",
+              "key": "db2dfeb9"
+            },
+            {
+              "content": "They decrease as the utilization rate increases.",
+              "key": "21868ece"
+            },
+            {
+              "content": "They increase more rapidly above a certain utilization rate \"kink\"",
+              "key": "bffd70e3"
+            }
+          ],
+          "content": "How are the supply and borrow interest rates affected by the utilization rate of the base asset?\n",
+          "type": "SingleChoice",
+          "uuid": "7a178fb1-e553-4e44-9aaf-bb4ebd948742"
+        }
+      ],
+      "uuid": "235cff2f-9906-414c-9105-69488cad2e98"
     },
     {
       "content": "The most significant configuration variables for Compound III that impact the lend and borrow rates are as follows:\n\n`utilization` - The formula for producing the utilization is: `Utilization = TotalBorrows / TotalSupply`\n\n`supplyKink` - This represents the point in the supply rates where the low interest rate slope meets the high interest rate slope, and is measured in factors.\n\n`borrowKink` - This represents the point in the borrow rate where the low interest rate slope meets the high interest rate slope, and is measured in factors.\n\n`supplyPerSecondInterestRateBase` - This is the base interest rate for supply per second, measured in factors.\n\n`supplyPerSecondInterestRateSlopeLow` - This is the interest rate slope for supply per second when the utilization is below the kink point, measured in factors.\n\n`supplyPerSecondInterestRateSlopeHigh` - This is the interest rate slope for supply per second when the utilization is above the kink point, measured in factors.\n\n`borrowPerSecondInterestRateSlopeLow` - This is the interest rate slope for borrow per second when the utilization is below the kink point, measured in factors.\n\n`borrowPerSecondInterestRateSlopeHigh` - This is the interest rate slope for borrow per second when the utilization is above the kink point, measured in factors.\n\n`borrowPerSecondInterestRateBase` - This is the base interest rate for borrow per second, measured in factors.",
