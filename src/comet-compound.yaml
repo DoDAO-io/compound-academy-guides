@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-08T14:53:11.317Z'
+created: '2023-03-08T15:25:05.322Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -57,6 +57,38 @@ steps:
     name: Introduction
     stepItems: []
     uuid: 3b2af085-1e55-4e13-8f79-9b858692916d
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 5af3ed81
+        choices:
+          - content: To manage and apply all the updates for the Compound III protocol
+            key: 5af3ed81
+          - content: To contain the lending, borrowing, and market creation functions
+            key: a27e8948
+          - content: To execute Github Actions automatically upon code commit
+            key: 0a090056
+          - content: To make it easy for developer to add solidity configurations
+            key: e37de358
+        content: What is the purpose of the Configurator in Compound III?
+        type: SingleChoice
+        uuid: 40ee6038-ff8f-494b-8567-d1c62b5ae545
+      - answerKeys:
+          - 7bf4b819
+        choices:
+          - content: Java unit tests using JUnit
+            key: ec8ac03a
+          - content: Python unit tests using pytest
+            key: be9be06c
+          - content: Unit tests using Mocha.js written in JavaScript
+            key: 7bf4b819
+          - content: Ruby unit tests using RSpec
+            key: ee237ecd
+        content: Which testing frameworks are used to test the Compound III code base?
+        type: SingleChoice
+        uuid: f5a63411-4925-43b1-9e93-a8eec837e218
+    uuid: 0c8ad38a-289e-4a77-8650-274daa258dc6
   - content: >-
       ## About Governor Bravo
 
@@ -305,5 +337,9 @@ steps:
     name: Github Actions
     stepItems: []
     uuid: 20bda8f8-ca1a-4bc8-bdde-815d71401f36
+  - content: ''
+    name: Step 7
+    stepItems: []
+    uuid: 5d009408-61e3-47f4-9368-f221bbab857a
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png
 uuid: comet-compound

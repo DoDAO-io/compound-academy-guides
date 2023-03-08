@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Into to Comet smart contracts, deployments and configurator",
-  "created": "2023-03-08T14:53:11.317Z",
+  "created": "2023-03-08T15:25:05.322Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -16,6 +16,65 @@
       "name": "Introduction",
       "stepItems": [],
       "uuid": "3b2af085-1e55-4e13-8f79-9b858692916d"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "5af3ed81"
+          ],
+          "choices": [
+            {
+              "content": "To manage and apply all the updates for the Compound III protocol",
+              "key": "5af3ed81"
+            },
+            {
+              "content": "To contain the lending, borrowing, and market creation functions",
+              "key": "a27e8948"
+            },
+            {
+              "content": "To execute Github Actions automatically upon code commit",
+              "key": "0a090056"
+            },
+            {
+              "content": "To make it easy for developer to add solidity configurations",
+              "key": "e37de358"
+            }
+          ],
+          "content": "What is the purpose of the Configurator in Compound III?",
+          "type": "SingleChoice",
+          "uuid": "40ee6038-ff8f-494b-8567-d1c62b5ae545"
+        },
+        {
+          "answerKeys": [
+            "7bf4b819"
+          ],
+          "choices": [
+            {
+              "content": "Java unit tests using JUnit",
+              "key": "ec8ac03a"
+            },
+            {
+              "content": "Python unit tests using pytest",
+              "key": "be9be06c"
+            },
+            {
+              "content": "Unit tests using Mocha.js written in JavaScript",
+              "key": "7bf4b819"
+            },
+            {
+              "content": "Ruby unit tests using RSpec",
+              "key": "ee237ecd"
+            }
+          ],
+          "content": "Which testing frameworks are used to test the Compound III code base?",
+          "type": "SingleChoice",
+          "uuid": "f5a63411-4925-43b1-9e93-a8eec837e218"
+        }
+      ],
+      "uuid": "0c8ad38a-289e-4a77-8650-274daa258dc6"
     },
     {
       "content": "## About Governor Bravo\nGovernor Bravo is a governance mechanism that facilitates incremental changes to infrastructure without causing disruption. It is administered by Compound Governance and allows users to provide a string explaining their vote along with their vote receipt. The governance process can be customized through adjustable parameters, such as voting period, voting delay, and proposal threshold, which eliminates the need for deploying new contracts to enable governance changes.\n\nIn case of an error, the proposer of a proposal has the option to cancel their proposal at any time. The admin, governed by the Compound timelock, manages the configurable parameters and implementation.\n\n## Compound III Updates\nUpdates to Compound III can be made through two methods:\n1. Configuration updates from Governor Bravo UI\n2. Code changes that utilize migration to generate a Governor Bravo proposal\n\nAlthough these methods have slightly different starting points, both culminate in a Governor Bravo Proposal, which is voted on by the community to determine whether the changes should be implemented.\n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/screenshot_2023-03-08%20at%2009.42.26.png)\n\n## Create proposal from Governor Bravo UI\nTo propose a governance proposal, an individual must have 1% of COMP delegated to their address. \n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/create_proposal.jpeg)\n\n\n## Update code and then create proposal\nThe process for updating the code and using the migration script to create a proposal that will implement those changes is outlined in the following steps.",
@@ -40,6 +99,12 @@
       "name": "Github Actions",
       "stepItems": [],
       "uuid": "20bda8f8-ca1a-4bc8-bdde-815d71401f36"
+    },
+    {
+      "content": "",
+      "name": "Step 7",
+      "stepItems": [],
+      "uuid": "5d009408-61e3-47f4-9368-f221bbab857a"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png",
