@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-08T14:46:48.692Z'
+created: '2023-03-08T14:53:11.317Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -181,45 +181,6 @@ steps:
     stepItems: []
     uuid: 0743e67a-b458-4aab-b057-646ef4f96b44
   - content: >-
-      ## Enable Workflows and Add Secrets
-
-      After we update the code and add the tests, the first thing we need to do
-      is run our scenarios in our CI workflow. To do this, we need to commit our
-      code and push it to GitHub. For the forked comet repo we need to first
-      enable the workflows. The workflows in the forked repository run
-      independently from the official repository.
-
-
-      We will also need to add the same environment variables as Actions secrets
-      in the repository.
-
-
-      After adding all the keys, we can run the workflows in our fork. It's a
-      good idea to run tests in our fork CI before opening a pull request on the
-      official Comet repository. If our branch is up to date, all passing tests
-      in the fork CI will result in passing tests in the pull request to main.
-
-
-      ## Run workflow
-
-      We can click the Actions tab in forked github repo and select the Run
-      Scenarios workflow on the left. We click the Run workflow button on the
-      right, select our branch in the dropdown menu, and then click the green
-      Run workflow button. It will take several minutes to run. 
-
-
-      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/comet_workflow.png)
-
-
-      Lastly, we should consider that scenarios will check existing pending
-      on-chain governance proposals against the test to make sure there are no
-      conflicts caused. This might be the cause of a failing scenario that
-      previously succeeded, even when no code changes have been made in the
-      interim.
-    name: Continuous Integration
-    stepItems: []
-    uuid: 20bda8f8-ca1a-4bc8-bdde-815d71401f36
-  - content: >-
       Migrations are scripts that are used to deploy or modify contracts in a
       systematic way. The purpose of migration scripts is to make sure that
       users can see potential changes that are run prior to creating a
@@ -286,19 +247,12 @@ steps:
       actually modifying the on-chain state.
 
 
-      Here is the interface which describes the migration actions
+      If you look carefully you will see the following line towards end of
+      `enact` function, that creates the Governor Bravo proposal
 
 
-      ```javascript
+      `await governor.propose(...await proposal(actions, description))`
 
-      export interface Actions<T> {
-        prepare: (dm: DeploymentManager) => Promise<T>;
-        enact: (dm: DeploymentManager, t: T) => Promise<void>;
-        enacted?: (dm: DeploymentManager) => Promise<boolean>;
-        verify?: (dm: DeploymentManager) => Promise<void>;
-      }
-
-      ``` 
 
 
       The preferred way to run a migration is in GitHub, via manual workflow
@@ -315,5 +269,41 @@ steps:
     name: Migrations
     stepItems: []
     uuid: 73a81735-14c4-426c-8bd8-950b6e0a2bbf
+  - content: >-
+      ## Enable Workflows and Add Secrets
+
+      After we update the code and add the tests, the first thing we need to do
+      is run our scenarios in our CI workflow. To do this, we need to commit our
+      code and push it to GitHub. For the forked comet repo we need to first
+      enable the workflows. The workflows in the forked repository run
+      independently from the official repository.
+
+
+      We will also need to add the same environment variables as Actions secrets
+      in the repository.
+
+
+      After adding all the keys, we can run the workflows in our fork. It's a
+      good idea to run tests in our fork CI before opening a pull request on the
+      official Comet repository. If our branch is up to date, all passing tests
+      in the fork CI will result in passing tests in the pull request to main.
+
+
+      ## Run workflow
+
+      We can click the Actions tab in forked github repo and select the Run
+      Scenarios workflow on the left. We click the Run workflow button on the
+      right, select our branch in the dropdown menu, and then click the green
+      Run workflow button. It will take several minutes to run. 
+
+
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/comet_workflow.png)
+
+
+      After you execute the enact action, it will create a Governor Bravo
+      Proposal which can be voted upon by the community.  
+    name: Github Actions
+    stepItems: []
+    uuid: 20bda8f8-ca1a-4bc8-bdde-815d71401f36
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png
 uuid: comet-compound
