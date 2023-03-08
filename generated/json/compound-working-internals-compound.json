@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains how compound works, how interest rates are calculated",
-  "created": "2023-03-08T16:29:19.989Z",
+  "created": "2023-03-08T16:29:48.071Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -24,7 +24,7 @@
       "uuid": "942bd251-c524-4526-a23a-d7b4f87063e9"
     },
     {
-      "content": "The interest rates for supply and borrow can be calculated using the following formulas:\n\n### Supply Rate:\n\n* When utilization is less than or equal to the supplyKink:\n  `supply rate = interestRateBase + interestRateSlopeLow * utilization`\n* When utilization is greater than the supplyKink:\n  `supply rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`\n\n### Borrow Rate:\n* When utilization is less than or equal to the borrowKink:\n  `borrow rate = interestRateBase + interestRateSlopeLow * utilization`\n* When utilization is greater than the borrowKink:\n  `borrow rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`",
+      "content": "The interest rates for supply and borrow can be calculated using the following formulas:\n\n### Supply Rate:\n\n* When utilization is less than or equal to the supplyKink:\n\n  `supply rate = interestRateBase + interestRateSlopeLow * utilization`\n* When utilization is greater than the supplyKink:\n\n  `supply rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`\n\n### Borrow Rate:\n* When utilization is less than or equal to the borrowKink:\n\n  `borrow rate = interestRateBase + interestRateSlopeLow * utilization`\n* When utilization is greater than the borrowKink:\n\n  `borrow rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`",
       "name": "Calculations",
       "stepItems": [],
       "uuid": "6d22ede4-3bfa-4165-9b4f-da454a60ee3b"
