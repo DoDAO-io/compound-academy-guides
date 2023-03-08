@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-08T11:30:47.117Z'
+created: '2023-03-08T11:34:05.406Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -32,18 +32,19 @@ steps:
 
       ### Comet protocol
 
-      These are the smart contracts which have all the code related to lending
-      and borrowing and creation of markets in compound III
+      The "comet" smart contracts encompass all the code pertaining to lending,
+      borrowing, and market creation in Compound III.
 
 
       ### Tests
 
-      The Compound protocol code base is under test through multiple frameworks.
-      First, there are unit tests for the Solidity smart contract functions
-      which are written in JavaScript with Mocha.js. And second, there are
-      “scenarios” which are like integration tests. Scenarios abstract away the
-      minutia required in a sequential series of EVM transactions to simulate a
-      real-world protocol interaction as an easy to follow story.
+      The code base of the Compound protocol undergoes testing using multiple
+      frameworks. Firstly, the Solidity smart contract functions are subjected
+      to unit tests using Mocha.js written in JavaScript. Secondly, there are
+      "scenarios" that function as integration tests. These scenarios simplify
+      the complexity of replicating a real-world protocol interaction by
+      abstracting away the details of a sequential series of EVM transactions
+      and presenting them as a coherent story that is easy to follow.
 
 
       ### Configurator
@@ -57,10 +58,10 @@ steps:
 
       ### Github Actions
 
-      Compound III repository has an extensive list of Github Action that can be
-      invoked by the developers. Some of these are automatically executed
-      whenever you commit the code like `test`, while others actions can be
-      invoked from the Github UI, for example enacting of the migrations.
+      The Compound III repository contains an extensive list of Github Actions
+      that developers can trigger. Certain actions such as test are
+      automatically executed upon code commit, while others can be invoked
+      through the Github UI, such as enacting migrations.
     name: Introduction
     stepItems: []
     uuid: 3b2af085-1e55-4e13-8f79-9b858692916d
