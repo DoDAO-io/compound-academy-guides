@@ -1,6 +1,6 @@
 categories: []
 content: Explains how compound works, how interest rates are calculated
-created: '2023-03-08T16:23:32.569Z'
+created: '2023-03-08T16:24:00.847Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -10,8 +10,6 @@ publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
   - content: >+
-      ## Compound III Protocol
-
       To achieve greater capital efficiency, including reduced gas costs,
       Compound III allows users to supply volatile crypto assets and borrow a
       single asset(often a stable coin). 
@@ -91,8 +89,6 @@ steps:
     stepItems: []
     uuid: 942bd251-c524-4526-a23a-d7b4f87063e9
   - content: >-
-      ## Interest Rate Calculations
-
       Following statements show how interest rates are calculated
 
 
