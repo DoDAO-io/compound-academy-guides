@@ -1,6 +1,6 @@
 categories: []
 content: Explains how compound works, how interest rates are calculated
-created: '2023-03-04T02:16:43.534Z'
+created: '2023-03-08T16:09:33.098Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -9,45 +9,6 @@ name: Compound - Internals
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: >-
-      `supplyKink`  - The point in the supply rates separating the low interest
-      rate slope and the high interest rate slope (factor)
-
-
-      `borrowKink` - The point in the borrow rate separating the low interest
-      rate slope and the high interest rate slope (factor)
-
-
-      `supplyPerSecondInterestRateBase` - Per second supply base interest rate
-      (factor)
-
-
-      `supplyPerSecondInterestRateSlopeLow` - Per second supply interest rate
-      slope applied when utilization is below kink (factor)
-
-
-      `supplyPerSecondInterestRateSlopeHigh` - Per second supply interest rate
-      slope applied when utilization is above kink (factor)
-
-
-      `borrowPerSecondInterestRateSlopeLow` - Per second borrow interest rate
-      slope applied when utilization is below kink (factor)
-
-
-      `borrowPerSecondInterestRateSlopeHigh` - Per second borrow interest rate
-      slope applied when utilization is above kink (factor)
-
-
-      `borrowPerSecondInterestRateBase` - Per second borrow base interest rate
-      (factor)
-
-
-
-
-      `
-    name: Introduction
-    stepItems: []
-    uuid: 942bd251-c524-4526-a23a-d7b4f87063e9
   - content: >-
       ### Supply Rate
 
@@ -76,6 +37,50 @@ steps:
     name: Interest Rate Calculations
     stepItems: []
     uuid: 4bf5a6e0-7305-4fdc-aa05-e26ebd07ff90
+  - content: >-
+      The most significant configuration variables for Compound III that impact
+      the lend and borrow rates are as follows:
+
+
+      `supplyKink` - This represents the point in the supply rates where the low
+      interest rate slope meets the high interest rate slope, and is measured in
+      factors.
+
+
+      `borrowKink` - This represents the point in the borrow rate where the low
+      interest rate slope meets the high interest rate slope, and is measured in
+      factors.
+
+
+      `supplyPerSecondInterestRateBase` - This is the base interest rate for
+      supply per second, measured in factors.
+
+
+      `supplyPerSecondInterestRateSlopeLow` - This is the interest rate slope
+      for supply per second when the utilization is below the kink point,
+      measured in factors.
+
+
+      `supplyPerSecondInterestRateSlopeHigh` - This is the interest rate slope
+      for supply per second when the utilization is above the kink point,
+      measured in factors.
+
+
+      `borrowPerSecondInterestRateSlopeLow` - This is the interest rate slope
+      for borrow per second when the utilization is below the kink point,
+      measured in factors.
+
+
+      `borrowPerSecondInterestRateSlopeHigh` - This is the interest rate slope
+      for borrow per second when the utilization is above the kink point,
+      measured in factors.
+
+
+      `borrowPerSecondInterestRateBase` - This is the base interest rate for
+      borrow per second, measured in factors.
+    name: Variables
+    stepItems: []
+    uuid: 942bd251-c524-4526-a23a-d7b4f87063e9
   - content: ''
     name: Evaluation
     stepItems:
