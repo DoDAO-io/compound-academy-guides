@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Into to Comet smart contracts, deployments and configurator",
-  "created": "2023-03-08T15:25:05.322Z",
+  "created": "2023-03-08T15:31:14.552Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -83,6 +83,65 @@
       "uuid": "d9acccfb-0962-4800-aee7-cb9d16494635"
     },
     {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "2ea6b9ce"
+          ],
+          "choices": [
+            {
+              "content": "A solidity library that governs the number of functions",
+              "key": "cf1dc692"
+            },
+            {
+              "content": "A governance framework that facilitates incremental changes to Compound III",
+              "key": "2ea6b9ce"
+            },
+            {
+              "content": "A testing framework for Solidity code",
+              "key": "0089e8ef"
+            },
+            {
+              "content": "Title of the person who manages all the governance updates ",
+              "key": "fc747d55"
+            }
+          ],
+          "content": "What is Governor Bravo?",
+          "type": "SingleChoice",
+          "uuid": "ca030224-5cc3-49e3-9399-0d6f3914c639"
+        },
+        {
+          "answerKeys": [
+            "f84e0fa6"
+          ],
+          "choices": [
+            {
+              "content": "10%",
+              "key": "6843d115"
+            },
+            {
+              "content": "5%",
+              "key": "8fcece7e"
+            },
+            {
+              "content": "1%",
+              "key": "f84e0fa6"
+            },
+            {
+              "content": "0.1%",
+              "key": "58c22f6a"
+            }
+          ],
+          "content": "How much COMP must be delegated to an individual's address to propose a governance proposal?",
+          "type": "SingleChoice",
+          "uuid": "1229a6b9-fd1e-4a68-a841-9f538ca5f5ee"
+        }
+      ],
+      "uuid": "5d009408-61e3-47f4-9368-f221bbab857a"
+    },
+    {
       "content": "## Comet Contracts\nThe Comet protocol is made up of different contracts that work together to create a system for exchanging a digital asset called Comet.\n\nThe main contract, `Comet.sol`, is responsible for most of Comet's core functionalities. It uses another contract, `CometExt.sol`, for functions that don't fit within Comet.sol.\n\n`CometInterface.sol` is an abstract contract that contains all the functions and events for `Comet.sol` and `CometExt.sol` and is compatible with ERC-20.\n\nThe `Configurator` contracts manage Comet's configurations and deploy new implementations of Comet.\n\nThere are some supplementary contracts like `Bulker.sol`, which allows multiple Comet functions to be called in a single transaction, and CometRewards.sol, which allows users to claim rewards based on their protocol participation.\n\nFinally, there are Vendor contracts like `ConfiguratorProxy.sol` and `CometProxyAdmin.sol`, which inherit from OZ proxies and are used to deploy and upgrade Comet.\n\n## Scenario Tests\n\nScenarios are tests that check if Comet protocol is working correctly. To run these tests, you use a tool called Hardhat. You can run different scenarios against different versions of the Comet protocol. You can also change the number of workers, which can make the tests run faster.\n\nTo run the scenarios, Hardhat plugin is used. The command `npx hardhat scenario` is used to run the tests. You can also run scenarios against different versions of the Comet protocol using the `--bases` option. Additionally, the `--workers` option can be used to change the number of workers to speed up the testing process. Before we can run all the tests, we need to set some environment variables will be used to fetch existing data from supported blockchains.\n\n`npx hardhat scenario --bases development,goerli,fuji`\n\nTo add a new test, you create a new file in a folder called \"scenario\". You then write the test in the file using a programming language called TypeScript. The test checks that a specific feature of the Comet protocol works correctly.\n\nAll the steps are explained in detail [here](https://github.com/compound-finance/comet/blob/main/SCENARIO.md)\n\nSometimes, a scenario requires the most recent version of the Comet contract. In this case, you add a \"constraint\" to the scenario that says it needs to use the most recent version. This makes sure that the scenario can run on any network, even if some features are not available.",
       "name": "Contracts and Tests",
       "stepItems": [],
@@ -99,12 +158,6 @@
       "name": "Github Actions",
       "stepItems": [],
       "uuid": "20bda8f8-ca1a-4bc8-bdde-815d71401f36"
-    },
-    {
-      "content": "",
-      "name": "Step 7",
-      "stepItems": [],
-      "uuid": "5d009408-61e3-47f4-9368-f221bbab857a"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png",
