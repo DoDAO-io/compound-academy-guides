@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Into to Comet smart contracts, deployments and configurator",
-  "created": "2023-03-08T15:37:20.983Z",
+  "created": "2023-03-08T15:38:33.982Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -217,6 +217,19 @@
       "name": "Github Actions",
       "stepItems": [],
       "uuid": "20bda8f8-ca1a-4bc8-bdde-815d71401f36"
+    },
+    {
+      "content": "",
+      "name": "Your Info",
+      "stepItems": [
+        {
+          "label": "Nickname",
+          "required": true,
+          "type": "PublicShortInput",
+          "uuid": "8318dbcb-7530-4654-ab51-710ff0a44567"
+        }
+      ],
+      "uuid": "cba7af6a-5dad-489b-9ba7-c7ba97004166"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png",
