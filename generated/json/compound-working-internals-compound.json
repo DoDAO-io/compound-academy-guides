@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains how compound works, how interest rates are calculated",
-  "created": "2023-03-08T16:19:41.328Z",
+  "created": "2023-03-08T16:20:39.216Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -12,7 +12,7 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "content": "## Compound III Protocol\nTo achieve greater capital efficiency, including reduced gas costs, Compound III allows users to supply volatile crypto assets and borrow a single asset(often a stable coin). \n\nThis approach is in contrast to the current trend in DeFi where most borrowing involves supplying volatile crypto assets and borrowing a single borrowable base token. \n\nCompound III offers more value by providing fine-grained access controls for managing accounts, internalizing liquidation and profits, and optimizing for common usage with crypto collateral and borrows. \n\n## Interest Rate Calculations\nFollowing statements show how interest rates are calculated\n\n### Supply Rate\n##### when `utilization <= supplyKink`\nsupply rate  =  interestRateBase + interestRateSlopeLow * utilization \n\n##### when `utilization > supplyKink`\nsupply rate  =  interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)\n\n### Borrow Rate\n##### when `utilization <= borrowKink`\nborrow rate = interestRateBase + interestRateSlopeLow * utilization\n\n##### when `utilization > borrowKink`\nborrow rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)",
+      "content": "## Compound III Protocol\nTo achieve greater capital efficiency, including reduced gas costs, Compound III allows users to supply volatile crypto assets and borrow a single asset(often a stable coin). \n\nThis approach is in contrast to the current trend in DeFi where most borrowing involves supplying volatile crypto assets and borrowing a single borrowable base token. \n\nCompound III offers more value by providing fine-grained access controls for managing accounts, internalizing liquidation and profits, and optimizing for common usage with crypto collateral and borrows. \n\n",
       "name": "Introduction",
       "stepItems": [],
       "uuid": "4bf5a6e0-7305-4fdc-aa05-e26ebd07ff90"
@@ -24,36 +24,9 @@
       "uuid": "942bd251-c524-4526-a23a-d7b4f87063e9"
     },
     {
-      "content": "",
-      "name": "Evaluation",
-      "stepItems": [
-        {
-          "answerKeys": [
-            "c6bc0412"
-          ],
-          "choices": [
-            {
-              "content": "Planet",
-              "key": "8bf0fc5f"
-            },
-            {
-              "content": "Comet",
-              "key": "c6bc0412"
-            },
-            {
-              "content": "Galaxy",
-              "key": "422bb79c"
-            },
-            {
-              "content": "Star",
-              "key": "c781cda7"
-            }
-          ],
-          "content": "What are the smart contracts repository in V3 called?",
-          "type": "SingleChoice",
-          "uuid": "c66dfbf9-789c-45db-9da7-ccc337086bbf"
-        }
-      ],
+      "content": "## Interest Rate Calculations\nFollowing statements show how interest rates are calculated\n\n### Supply Rate\n##### when `utilization <= supplyKink`\nsupply rate  =  interestRateBase + interestRateSlopeLow * utilization \n\n##### when `utilization > supplyKink`\nsupply rate  =  interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)\n\n### Borrow Rate\n##### when `utilization <= borrowKink`\nborrow rate = interestRateBase + interestRateSlopeLow * utilization\n\n##### when `utilization > borrowKink`\nborrow rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)",
+      "name": "Calculations",
+      "stepItems": [],
       "uuid": "6d22ede4-3bfa-4165-9b4f-da454a60ee3b"
     },
     {

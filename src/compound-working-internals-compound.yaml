@@ -1,6 +1,6 @@
 categories: []
 content: Explains how compound works, how interest rates are calculated
-created: '2023-03-08T16:19:41.328Z'
+created: '2023-03-08T16:20:39.216Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -9,7 +9,7 @@ name: Compound - Internals
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: >-
+  - content: >+
       ## Compound III Protocol
 
       To achieve greater capital efficiency, including reduced gas costs,
@@ -26,36 +26,6 @@ steps:
       for managing accounts, internalizing liquidation and profits, and
       optimizing for common usage with crypto collateral and borrows. 
 
-
-      ## Interest Rate Calculations
-
-      Following statements show how interest rates are calculated
-
-
-      ### Supply Rate
-
-      ##### when `utilization <= supplyKink`
-
-      supply rate  =  interestRateBase + interestRateSlopeLow * utilization 
-
-
-      ##### when `utilization > supplyKink`
-
-      supply rate  =  interestRateBase + interestRateSlopeLow * kink +
-      interestRateSlopeHigh * (utilization - kink)
-
-
-      ### Borrow Rate
-
-      ##### when `utilization <= borrowKink`
-
-      borrow rate = interestRateBase + interestRateSlopeLow * utilization
-
-
-      ##### when `utilization > borrowKink`
-
-      borrow rate = interestRateBase + interestRateSlopeLow * kink +
-      interestRateSlopeHigh * (utilization - kink)
     name: Introduction
     stepItems: []
     uuid: 4bf5a6e0-7305-4fdc-aa05-e26ebd07ff90
@@ -107,23 +77,38 @@ steps:
     name: Variables
     stepItems: []
     uuid: 942bd251-c524-4526-a23a-d7b4f87063e9
-  - content: ''
-    name: Evaluation
-    stepItems:
-      - answerKeys:
-          - c6bc0412
-        choices:
-          - content: Planet
-            key: 8bf0fc5f
-          - content: Comet
-            key: c6bc0412
-          - content: Galaxy
-            key: 422bb79c
-          - content: Star
-            key: c781cda7
-        content: What are the smart contracts repository in V3 called?
-        type: SingleChoice
-        uuid: c66dfbf9-789c-45db-9da7-ccc337086bbf
+  - content: >-
+      ## Interest Rate Calculations
+
+      Following statements show how interest rates are calculated
+
+
+      ### Supply Rate
+
+      ##### when `utilization <= supplyKink`
+
+      supply rate  =  interestRateBase + interestRateSlopeLow * utilization 
+
+
+      ##### when `utilization > supplyKink`
+
+      supply rate  =  interestRateBase + interestRateSlopeLow * kink +
+      interestRateSlopeHigh * (utilization - kink)
+
+
+      ### Borrow Rate
+
+      ##### when `utilization <= borrowKink`
+
+      borrow rate = interestRateBase + interestRateSlopeLow * utilization
+
+
+      ##### when `utilization > borrowKink`
+
+      borrow rate = interestRateBase + interestRateSlopeLow * kink +
+      interestRateSlopeHigh * (utilization - kink)
+    name: Calculations
+    stepItems: []
     uuid: 6d22ede4-3bfa-4165-9b4f-da454a60ee3b
   - content: ''
     name: Your Info
