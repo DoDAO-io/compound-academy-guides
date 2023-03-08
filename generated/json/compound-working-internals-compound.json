@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Explains how compound works, how interest rates are calculated",
-  "created": "2023-03-08T17:28:40.539Z",
+  "created": "2023-03-08T17:34:16.943Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -77,6 +77,65 @@
       "name": "Variables",
       "stepItems": [],
       "uuid": "942bd251-c524-4526-a23a-d7b4f87063e9"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "25ea2b61"
+          ],
+          "choices": [
+            {
+              "content": "Utilization = TotalBorrows / TotalSupply",
+              "key": "25ea2b61"
+            },
+            {
+              "content": "Utilization = supplyPerSecondInterestRateSlopeHigh / borrowPerSecondInterestRateSlopeHigh",
+              "key": "ff4d9ebf"
+            },
+            {
+              "content": "Utilization = supplyKink / borrowKink",
+              "key": "8e0932c5"
+            },
+            {
+              "content": "Utilization = borrowPerSecondInterestRateBase / supplyPerSecondInterestRateBase",
+              "key": "d1527b12"
+            }
+          ],
+          "content": "How is the utilization of Compound III calculated?",
+          "type": "SingleChoice",
+          "uuid": "3c0fa7cc-4ef0-4f69-809e-6d6a11ec4b76"
+        },
+        {
+          "answerKeys": [
+            "be858115"
+          ],
+          "choices": [
+            {
+              "content": "It determines the base interest rate for supply per second",
+              "key": "69805950"
+            },
+            {
+              "content": "It represents the point where the low interest rate slope meets the high interest rate slope for supply rates",
+              "key": "d3413a49"
+            },
+            {
+              "content": "It calculates the utilization of Compound III",
+              "key": "84c36780"
+            },
+            {
+              "content": " It determines the interest rate slope for supply per second when the utilization is above the kink point",
+              "key": "be858115"
+            }
+          ],
+          "content": "What is the purpose of the supplyKink variable in Compound III?",
+          "type": "SingleChoice",
+          "uuid": "704f2602-cba8-4677-9093-731cb4d80d13"
+        }
+      ],
+      "uuid": "bbf6073b-9740-4420-ba5b-767432170b3f"
     },
     {
       "content": "The interest rates for supply and borrow can be calculated using the following formulas:\n\n### Supply Rate:\n\n* When utilization is less than or equal to the supplyKink:\n\n  `supply rate = interestRateBase + interestRateSlopeLow * utilization`\n* When utilization is greater than the supplyKink:\n\n  `supply rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`\n\n### Borrow Rate:\n* When utilization is less than or equal to the borrowKink:\n\n  `borrow rate = interestRateBase + interestRateSlopeLow * utilization`\n* When utilization is greater than the borrowKink:\n\n  `borrow rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`",
