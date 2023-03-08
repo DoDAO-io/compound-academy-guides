@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-08T14:07:48.860Z'
+created: '2023-03-08T14:43:26.121Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -57,7 +57,7 @@ steps:
     name: Introduction
     stepItems: []
     uuid: 3b2af085-1e55-4e13-8f79-9b858692916d
-  - content: >
+  - content: >-
       ## About Governor Bravo
 
       Governor Bravo allows incremental changes without breaking infrastructure
@@ -89,11 +89,24 @@ steps:
       the changes should be applied or not.
 
 
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/screenshot_2023-03-08%20at%2009.42.26.png)
+
+
       ## Create proposal from Governor Bravo UI
+
+      Anybody with 1% of COMP delegated to their address can propose a
+      governance proposal.
+
+
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/create_proposal.jpeg)
 
 
 
       ## Code updates and then create proposal
+
+      The following steps in the guide explains how to update the code and make
+      use of migration script to create a proposal that will apply those
+      changes.
     name: Governor Bravo - Proposals
     stepItems: []
     uuid: d9acccfb-0962-4800-aee7-cb9d16494635
