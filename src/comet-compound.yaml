@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-08T15:31:14.552Z'
+created: '2023-03-08T15:37:20.983Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -337,6 +337,44 @@ steps:
     name: Migrations
     stepItems: []
     uuid: 73a81735-14c4-426c-8bd8-950b6e0a2bbf
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 9dadc7e0
+        choices:
+          - content: To make DB updates
+            key: 62ea6f61
+          - content: >-
+              To make sure that package.json version is updated properly upon
+              deployment
+            key: 6e6bd143
+          - content: >-
+              To make sure that users can see potential changes that are run
+              prior to creating a governance proposal
+            key: 9dadc7e0
+          - content: Migrate data from testnet to mainnet
+            key: 6175f6dd
+        content: What is the purpose of migration scripts in contract deployment?
+        type: SingleChoice
+        uuid: a90c1041-96c3-4074-893f-b50e95f44cc8
+      - answerKeys:
+          - 8ef1e80a
+        choices:
+          - content: Propose and enact
+            key: 5fd5a532
+          - content: Prepare and enact
+            key: 8ef1e80a
+          - content: Deploy and update
+            key: 1c7cf8cd
+          - content: Upgrade and review
+            key: 7904d3c4
+        content: >-
+          What are the two methods that must be implemented in a migration
+          script?
+        type: SingleChoice
+        uuid: 26b97a55-7b09-49eb-a45a-1cb87cf7c97e
+    uuid: 5184b94a-c51c-4925-ad5e-f4edfb12fea4
   - content: >-
       ## Enable Workflows and Add Secrets
 
