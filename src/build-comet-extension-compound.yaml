@@ -1,6 +1,6 @@
 categories: []
 content: 'How to build a new comet extension '
-created: '2023-03-05T22:46:18.513Z'
+created: '2023-03-08T23:11:00.545Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -9,7 +9,7 @@ name: Build Comet Extension
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: >
+  - content: >-
       ## Extensions
 
       Compound III, has launched a new feature called "Extensions". This feature
@@ -40,48 +40,57 @@ steps:
 
       Some extensions have both a web extension and an operator, while others
       have only one or the other.
-
-
-      ## Initial Extensions
-
-      At launch, there are four extensions available to users:
-
-
-      1. Advanced Transactions – This extension allows users to bundle multiple
-      actions into a single transaction.
-
-      2. Position Migrator – This extension enables users to import positions
-      from Compound v2 and Aave v2 into their Compound III balance.
-
-      3. DeFi Saver – This extension adds sophisticated tools to manage a user's
-      Compound III position.
-
-      4. Comp.Vote – This extension provides a gas-free voting experience.
-
-
-      However, these four extensions are just the beginning. There are dozens of
-      other extensions waiting to be developed, limited only by the creativity
-      of community developers. 
     name: Introduction
     stepItems: []
     uuid: 33b6802d-f3ed-4dd3-a548-5c6b8b480431
-  - content: ''
-    name: Evaluation
-    stepItems:
-      - answerKeys:
-          - 050666c0
-        choices:
-          - content: Planet
-            key: c12b9ad2
-          - content: Comet
-            key: 050666c0
-          - content: Galaxy
-            key: '79875451'
-          - content: Star
-            key: dc51f00a
-        content: What are the smart contracts repository in V3 called?
-        type: SingleChoice
-        uuid: f7d2dd28-819d-4f97-9cc4-afc997a93a42
+  - content: >-
+      Web Extensions are used to expand the functionality of the Frontend by
+      allowing users to perform actions or retrieve information related to their
+      accounts. 
+
+
+      These extensions are incorporated into the main Compound III app as
+      iframes, but the inner window of the iframe lacks access to the web3
+      context required for signing messages or transactions when interacting
+      with smart contracts. To overcome this limitation, the Web Extension sends
+      a message to the parent window, which then uses the context and forwards
+      the message. `@compound-finance/comet-extension` provides all the glue
+      code needed to interact with the parent window.
+
+
+      ```javascript
+
+      import { useMemo, useEffect } from 'react';
+
+      import { RPC, buildRPC } from '@compound-finance/comet-extension';
+
+
+      export function useRPC(): RPC {
+        let rpc = useMemo<RPC>(buildRPC, []);
+
+        useEffect(() => {
+          rpc.attachHandler()
+          return rpc.detachHandler;
+        }, [rpc]);
+
+        return rpc;
+      }
+
+
+      ```
+
+
+      Compound also provides an extension template which has all the setup code
+      along with the latest frameworks needed to create a frontend application.
+
+
+      To develop a Comet Web Extension, the first step is for the developer to
+      clone the template repository's boilerplate onto their local machine.
+      Using Foundry and Vite, they can then construct the Extension's front end
+      and smart contracts while leveraging a localhost development environment
+      to ensure the code functions as intended.
+    name: Web Extensions
+    stepItems: []
     uuid: 7d7413e7-3855-499c-b961-d7d4920a4b0e
   - content: ''
     name: Your Info
