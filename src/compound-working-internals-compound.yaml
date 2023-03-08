@@ -1,6 +1,6 @@
 categories: []
 content: Explains how compound works, how interest rates are calculated
-created: '2023-03-08T16:24:00.847Z'
+created: '2023-03-08T16:29:19.989Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -89,33 +89,24 @@ steps:
     stepItems: []
     uuid: 942bd251-c524-4526-a23a-d7b4f87063e9
   - content: >-
-      Following statements show how interest rates are calculated
+      The interest rates for supply and borrow can be calculated using the
+      following formulas:
 
 
-      ### Supply Rate
-
-      ##### when `utilization <= supplyKink`
-
-      supply rate  =  interestRateBase + interestRateSlopeLow * utilization 
+      ### Supply Rate:
 
 
-      ##### when `utilization > supplyKink`
+      * When utilization is less than or equal to the supplyKink:
+        `supply rate = interestRateBase + interestRateSlopeLow * utilization`
+      * When utilization is greater than the supplyKink:
+        `supply rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`
 
-      supply rate  =  interestRateBase + interestRateSlopeLow * kink +
-      interestRateSlopeHigh * (utilization - kink)
+      ### Borrow Rate:
 
-
-      ### Borrow Rate
-
-      ##### when `utilization <= borrowKink`
-
-      borrow rate = interestRateBase + interestRateSlopeLow * utilization
-
-
-      ##### when `utilization > borrowKink`
-
-      borrow rate = interestRateBase + interestRateSlopeLow * kink +
-      interestRateSlopeHigh * (utilization - kink)
+      * When utilization is less than or equal to the borrowKink:
+        `borrow rate = interestRateBase + interestRateSlopeLow * utilization`
+      * When utilization is greater than the borrowKink:
+        `borrow rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`
     name: Calculations
     stepItems: []
     uuid: 6d22ede4-3bfa-4165-9b4f-da454a60ee3b
