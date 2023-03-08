@@ -1,6 +1,6 @@
 categories: []
 content: Into to Comet smart contracts, deployments and configurator
-created: '2023-03-08T11:34:05.406Z'
+created: '2023-03-08T14:02:10.114Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -65,6 +65,46 @@ steps:
     name: Introduction
     stepItems: []
     uuid: 3b2af085-1e55-4e13-8f79-9b858692916d
+  - content: >
+      ## About Governor Bravo
+
+      Governor Bravo allows incremental changes without breaking infrastructure
+      built around it. It is governed by Compound Governance. Users can send a
+      string along with their vote, explaining their voting reasoning. This is
+      stored along with the vote receipt. Governance parameters are settable,
+      including voting period, voting delay, and proposal threshold. This allows
+      for changes to the governance process without requiring new contracts to
+      be deployed.
+
+
+      Proposer of a proposal can cancel their proposal at any point, making it
+      possible for an erroneous proposal to be canceled if needed. The settable
+      parameters and implementation are governed by the admin, which is set to
+      the Compound timelock.
+
+
+      ## Compound III Updates
+
+      The updates to Compound III, falls into two categories
+
+      1. Configuration updates from Governor Bravo UI
+
+      2. Code changes which use migration to create Governor Bravo proposal
+
+
+      Both these methods have a slightly different starting points, but results
+      in Governor Bravo Proposal which then community votes upon to decide if
+      the changes should be applied or not.
+
+
+      ## Create proposal from Governor Bravo UI
+
+
+
+      ## Code updates and then create proposal
+    name: Governor Bravo - Proposals
+    stepItems: []
+    uuid: d9acccfb-0962-4800-aee7-cb9d16494635
   - content: >-
       ## Comet Contracts
 
@@ -270,9 +310,5 @@ steps:
     name: Migrations
     stepItems: []
     uuid: 73a81735-14c4-426c-8bd8-950b6e0a2bbf
-  - content: ''
-    name: Step 5
-    stepItems: []
-    uuid: d9acccfb-0962-4800-aee7-cb9d16494635
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png
 uuid: comet-compound

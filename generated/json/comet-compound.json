@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Into to Comet smart contracts, deployments and configurator",
-  "created": "2023-03-08T11:34:05.406Z",
+  "created": "2023-03-08T14:02:10.114Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -16,6 +16,12 @@
       "name": "Introduction",
       "stepItems": [],
       "uuid": "3b2af085-1e55-4e13-8f79-9b858692916d"
+    },
+    {
+      "content": "## About Governor Bravo\nGovernor Bravo allows incremental changes without breaking infrastructure built around it. It is governed by Compound Governance. Users can send a string along with their vote, explaining their voting reasoning. This is stored along with the vote receipt. Governance parameters are settable, including voting period, voting delay, and proposal threshold. This allows for changes to the governance process without requiring new contracts to be deployed.\n\nProposer of a proposal can cancel their proposal at any point, making it possible for an erroneous proposal to be canceled if needed. The settable parameters and implementation are governed by the admin, which is set to the Compound timelock.\n\n## Compound III Updates\nThe updates to Compound III, falls into two categories\n1. Configuration updates from Governor Bravo UI\n2. Code changes which use migration to create Governor Bravo proposal\n\nBoth these methods have a slightly different starting points, but results in Governor Bravo Proposal which then community votes upon to decide if the changes should be applied or not.\n\n## Create proposal from Governor Bravo UI\n\n\n## Code updates and then create proposal\n",
+      "name": "Governor Bravo - Proposals",
+      "stepItems": [],
+      "uuid": "d9acccfb-0962-4800-aee7-cb9d16494635"
     },
     {
       "content": "## Comet Contracts\nThe Comet protocol is made up of different contracts that work together to create a system for exchanging a digital asset called Comet.\n\nThe main contract, `Comet.sol`, is responsible for most of Comet's core functionalities. It uses another contract, `CometExt.sol`, for functions that don't fit within Comet.sol.\n\n`CometInterface.sol` is an abstract contract that contains all the functions and events for `Comet.sol` and `CometExt.sol` and is compatible with ERC-20.\n\nThe `Configurator` contracts manage Comet's configurations and deploy new implementations of Comet.\n\nThere are some supplementary contracts like `Bulker.sol`, which allows multiple Comet functions to be called in a single transaction, and CometRewards.sol, which allows users to claim rewards based on their protocol participation.\n\nFinally, there are Vendor contracts like `ConfiguratorProxy.sol` and `CometProxyAdmin.sol`, which inherit from OZ proxies and are used to deploy and upgrade Comet.\n\n## Scenario Tests\n\nScenarios are tests that check if Comet protocol is working correctly. To run these tests, you use a tool called Hardhat. You can run different scenarios against different versions of the Comet protocol. You can also change the number of workers, which can make the tests run faster.\n\nTo run the scenarios, Hardhat plugin is used. The command `npx hardhat scenario` is used to run the tests. You can also run scenarios against different versions of the Comet protocol using the `--bases` option. Additionally, the `--workers` option can be used to change the number of workers to speed up the testing process. Before we can run all the tests, we need to set some environment variables will be used to fetch existing data from supported blockchains.\n\n`npx hardhat scenario --bases development,goerli,fuji`\n\nTo add a new test, you create a new file in a folder called \"scenario\". You then write the test in the file using a programming language called TypeScript. The test checks that a specific feature of the Comet protocol works correctly.\n\nAll the steps are explained in detail [here](https://github.com/compound-finance/comet/blob/main/SCENARIO.md)\n\nSometimes, a scenario requires the most recent version of the Comet contract. In this case, you add a \"constraint\" to the scenario that says it needs to use the most recent version. This makes sure that the scenario can run on any network, even if some features are not available.",
@@ -34,12 +40,6 @@
       "name": "Migrations",
       "stepItems": [],
       "uuid": "73a81735-14c4-426c-8bd8-950b6e0a2bbf"
-    },
-    {
-      "content": "",
-      "name": "Step 5",
-      "stepItems": [],
-      "uuid": "d9acccfb-0962-4800-aee7-cb9d16494635"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png",
