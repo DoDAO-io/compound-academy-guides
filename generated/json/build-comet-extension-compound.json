@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "How to build a new comet extension ",
-  "created": "2023-03-09T01:32:54.539Z",
+  "created": "2023-03-09T01:37:45.795Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -85,7 +85,60 @@
     {
       "content": "",
       "name": "Evaluate",
-      "stepItems": [],
+      "stepItems": [
+        {
+          "answerKeys": [
+            "a9e43d0e"
+          ],
+          "choices": [
+            {
+              "content": "Web Extensions have direct access to the web3 context required for signing messages or transactions",
+              "key": "3c114398"
+            },
+            {
+              "content": " Web Extensions use window messaging system to send messages to parent window",
+              "key": "a9e43d0e"
+            },
+            {
+              "content": "Web Extensions are not able to interact with parent window",
+              "key": "a2cdc8ed"
+            },
+            {
+              "content": "Web Extensions must be authorized by Compound III and user both before interacting with  parent window",
+              "key": "97962d7d"
+            }
+          ],
+          "content": "How do Web Extensions interact with Compound III parent window UI?",
+          "type": "SingleChoice",
+          "uuid": "0003af4a-456c-411f-bce7-7b3c625c6047"
+        },
+        {
+          "answerKeys": [
+            "5c933c45"
+          ],
+          "choices": [
+            {
+              "content": "To provide a template for creating Web Extensions in Compound III",
+              "key": "e64630dd"
+            },
+            {
+              "content": " To provide a set of up-to-date frameworks for creating Web Extensions",
+              "key": "8134a80c"
+            },
+            {
+              "content": "To provide a development environment for testing Web Extensions",
+              "key": "04e17b1e"
+            },
+            {
+              "content": "To provide a messaging system for Web Extensions to interact with parent window",
+              "key": "5c933c45"
+            }
+          ],
+          "content": " What is the purpose of the @compound-finance/comet-extension package?",
+          "type": "SingleChoice",
+          "uuid": "8d3a30df-d5dd-4a72-8a56-69a248c0fc5a"
+        }
+      ],
       "uuid": "bea8d6a6-26fb-4a8c-932f-8bb9fa382824"
     },
     {
@@ -93,6 +146,12 @@
       "name": "Operator",
       "stepItems": [],
       "uuid": "de22dff2-73fd-46c9-b3ea-91f455ff4fc5"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [],
+      "uuid": "500d0d4d-3a54-4371-80a1-290773970395"
     },
     {
       "content": "",
