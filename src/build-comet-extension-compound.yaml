@@ -1,6 +1,6 @@
 categories: []
 content: 'How to build a new comet extension '
-created: '2023-03-09T01:37:45.795Z'
+created: '2023-03-09T01:41:28.021Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -233,7 +233,23 @@ steps:
     uuid: de22dff2-73fd-46c9-b3ea-91f455ff4fc5
   - content: ''
     name: Evaluation
-    stepItems: []
+    stepItems:
+      - answerKeys:
+          - d62bf03f
+        choices:
+          - content: To deploy smart contracts on Compound III
+            key: ba58e02e
+          - content: To extend the borrow position of Comet
+            key: 6afe9515
+          - content: ' To move a position from Compound II or other DeFi platforms'
+            key: d62bf03f
+          - content: >-
+              To compile and deploy the smart contracts needed for Comet
+              extensions.
+            key: 9d063b02
+        content: What is the purpose of the Comet Migrator Extension?
+        type: SingleChoice
+        uuid: d31c9679-cbc7-48ec-b34e-f9a522f21ac2
     uuid: 500d0d4d-3a54-4371-80a1-290773970395
   - content: ''
     name: Your Info
