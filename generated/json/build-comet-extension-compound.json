@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "How to build a new comet extension ",
-  "created": "2023-03-09T01:25:51.465Z",
+  "created": "2023-03-09T01:27:09.114Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -24,6 +24,12 @@
       "uuid": "7d7413e7-3855-499c-b961-d7d4920a4b0e"
     },
     {
+      "content": "Operators are smart contracts that have access to act on behalf of a user's Compound III position. For instance, the [Comet Migrator](https://github.com/compound-finance/comet-migrator) is a smart contract which moves a position from Compound II or other DeFi platforms, using a flash loan to move the position atomically.\n\nOperator extensions are normal smart contracts and they are call extensions because they mostly extend comet's functionality. Here is a simplest smart contract structure that is included in the comet-extension-template\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity 0.8.16;\n\nimport \"./interfaces/CometInterface.sol\";\n\n/**\n * @title My Extension\n * @notice A Compound III operator to ...\n * @author Compound\n */\ncontract MyCometExtension {\n  /// @notice The Comet contract\n  Comet public immutable comet;\n\n  /**\n   * @notice Construct a new MyExtension operator.\n   * @param comet_ The Comet contract.\n   **/\n  constructor(Comet comet_) payable {\n    comet = comet_;\n  }\n}\n``` \n[https://github.com/compound-finance/comet-extension-template](https://github.com/compound-finance/comet-extension-template) contains all the boilerplate code that is needed to compile and deploy the smart contracts. The operator code is built on [Foundry](https://book.getfoundry.sh/)\n\nYou can also choose you choice of frameworks for creating and deploying the operator smart contracts.\n\n",
+      "name": "Operator",
+      "stepItems": [],
+      "uuid": "de22dff2-73fd-46c9-b3ea-91f455ff4fc5"
+    },
+    {
       "content": "",
       "name": "Your Info",
       "stepItems": [
@@ -35,12 +41,6 @@
         }
       ],
       "uuid": "5c13563b-bf63-4431-aa8a-a10e07dfc874"
-    },
-    {
-      "content": "Operators are smart contracts that have access to act on behalf of a user's Compound III position. For instance, the [Comet Migrator](https://github.com/compound-finance/comet-migrator) is a smart contract which moves a position from Compound II or other DeFi platforms, using a flash loan to move the position atomically.\n\nOperator extensions are normal smart contracts and they are call extensions because they mostly extend comet's functionality. Here is a simplest smart contract structure that is included in the comet-extension-template\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity 0.8.16;\n\nimport \"./interfaces/CometInterface.sol\";\n\n/**\n * @title My Extension\n * @notice A Compound III operator to ...\n * @author Compound\n */\ncontract MyCometExtension {\n  /// @notice The Comet contract\n  Comet public immutable comet;\n\n  /**\n   * @notice Construct a new MyExtension operator.\n   * @param comet_ The Comet contract.\n   **/\n  constructor(Comet comet_) payable {\n    comet = comet_;\n  }\n}\n``` \n[https://github.com/compound-finance/comet-extension-template](https://github.com/compound-finance/comet-extension-template) contains all the boilerplate code that is needed to compile and deploy the smart contracts. The operator code is built on [Foundry](https://book.getfoundry.sh/)\n\n\n\n",
-      "name": "Operator",
-      "stepItems": [],
-      "uuid": "de22dff2-73fd-46c9-b3ea-91f455ff4fc5"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/build_comet_extension.png",
