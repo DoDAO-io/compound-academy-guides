@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "How to build a new comet extension ",
-  "created": "2023-03-08T23:18:16.161Z",
+  "created": "2023-03-09T01:25:51.465Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -18,7 +18,7 @@
       "uuid": "33b6802d-f3ed-4dd3-a548-5c6b8b480431"
     },
     {
-      "content": "Web Extensions are used to expand the functionality of the Frontend by allowing users to perform actions or retrieve information related to their accounts. \n\nThese extensions are incorporated into the main Compound III app as iframes, but the inner window of the iframe lacks access to the web3 context required for signing messages or transactions when interacting with smart contracts. To overcome this limitation, the Web Extension sends a message to the parent window, which then uses the context and forwards the message. `@compound-finance/comet-extension` provides all the glue code needed to interact with the parent window.\n\n```javascript\nimport { useMemo, useEffect } from 'react';\nimport { RPC, buildRPC } from '@compound-finance/comet-extension';\n\nexport function useRPC(): RPC {\n  let rpc = useMemo<RPC>(buildRPC, []);\n\n  useEffect(() => {\n    rpc.attachHandler()\n    return rpc.detachHandler;\n  }, [rpc]);\n\n  return rpc;\n}\n\n```\n\nCompound offers an extension template that includes all the necessary setup code and up-to-date frameworks for creating a frontend application.\n\nhttps://github.com/compound-finance/comet-extension-template\n\nTo create a Comet Web Extension, developers should start by cloning the template repository's boilerplate to their local machine. With Foundry and Vite, they can then develop the Extension's frontend and smart contracts while utilizing a localhost development environment to verify that the code works correctly.",
+      "content": "Web Extensions are used to expand the functionality of the Frontend by allowing users to perform actions or retrieve information related to their accounts. \n\nThese extensions are incorporated into the main Compound III app as iframes, but the inner window of the iframe lacks access to the web3 context required for signing messages or transactions when interacting with smart contracts. To overcome this limitation, the Web Extension sends a message to the parent window, which then uses the context and forwards the message. `@compound-finance/comet-extension` provides all the glue code needed to interact with the parent window.\n\n```javascript\nlet rpc: RPC = buildRPC();\n\n// Send transaction request\nlet chainId = await sendWeb3(rpc, 'eth_chainId', []);\n\n// Handle incoming messages\nrpc.on({setTheme: ({theme}) => {\n  console.log('theme', theme);\n});\n```\n```javascript\nlet rpc: RPC = buildRPC();\nlet provider = new RPCWeb3Provider(rpc);\n\nprovider.sendTransaction(...);\n```\n\nCompound offers an extension template that includes all the necessary setup code and up-to-date frameworks for creating a frontend application.\n\nhttps://github.com/compound-finance/comet-extension-template\n\nTo create a Comet Web Extension, developers should start by cloning the template repository's boilerplate to their local machine. With Foundry and Vite, they can then develop the Extension's frontend and smart contracts while utilizing a localhost development environment to verify that the code works correctly.",
       "name": "Web Extensions",
       "stepItems": [],
       "uuid": "7d7413e7-3855-499c-b961-d7d4920a4b0e"
@@ -35,6 +35,12 @@
         }
       ],
       "uuid": "5c13563b-bf63-4431-aa8a-a10e07dfc874"
+    },
+    {
+      "content": "Operators are smart contracts that have access to act on behalf of a user's Compound III position. For instance, the [Comet Migrator](https://github.com/compound-finance/comet-migrator) is a smart contract which moves a position from Compound II or other DeFi platforms, using a flash loan to move the position atomically.\n\nOperator extensions are normal smart contracts and they are call extensions because they mostly extend comet's functionality. Here is a simplest smart contract structure that is included in the comet-extension-template\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity 0.8.16;\n\nimport \"./interfaces/CometInterface.sol\";\n\n/**\n * @title My Extension\n * @notice A Compound III operator to ...\n * @author Compound\n */\ncontract MyCometExtension {\n  /// @notice The Comet contract\n  Comet public immutable comet;\n\n  /**\n   * @notice Construct a new MyExtension operator.\n   * @param comet_ The Comet contract.\n   **/\n  constructor(Comet comet_) payable {\n    comet = comet_;\n  }\n}\n``` \n[https://github.com/compound-finance/comet-extension-template](https://github.com/compound-finance/comet-extension-template) contains all the boilerplate code that is needed to compile and deploy the smart contracts. The operator code is built on [Foundry](https://book.getfoundry.sh/)\n\n\n\n",
+      "name": "Operator",
+      "stepItems": [],
+      "uuid": "de22dff2-73fd-46c9-b3ea-91f455ff4fc5"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/build_comet_extension.png",
