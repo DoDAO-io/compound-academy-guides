@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "How to build Liquidator for the new version of Compound",
-  "created": "2023-03-13T12:54:37.117Z",
+  "created": "2023-03-13T12:58:46.202Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -18,36 +18,9 @@
       "uuid": "90c244a7-4594-4935-ae57-cfce23c24be8"
     },
     {
-      "content": "To keep the system solvent, Compound III absorbs underwater borrower accounts by using the protocol's reserves. The protocol repays the borrower's open borrow of the base asset using the protocol reserves and seizes the entire collateral assets. However, if the protocol reserves are below a governance threshold, searchers can extract value after an account is absorbed. The protocol determines a discounted price of the seized collateral using the protocol price feed and sells it publicly. Any account can purchase the discounted collateral using the base asset, and a liquidator can exchange the collateral asset on a DEX at a higher price, pocketing the difference in a single EVM transaction.",
+      "content": "This is an example of how Compound III handles liquidations:\n\n1. If a borrower doesn't have enough collateral to cover their loan or the value of their collateral drops too much, their account can be liquidated.\n2. A person who notices the liquidation creates a transaction to make money through arbitrage.\n3. The first step in the process is for the protocol to move the borrower's collateral to cover the loan.\n4. The person making the transaction can only make money through arbitrage if the protocol's reserves are reduced enough after the collateral is moved.\n5. The person then figures out how much of the borrower's collateral they can buy with the base asset.\n6. They can pay for this with their own money or by using another protocol to borrow the base asset.\n7. Once they have the collateral, they can sell it at a higher price on a DEX like Uniswap.\n8. They use the profits to repay any borrowed base asset and keep the remaining balance for themselves.",
       "name": "Liquidation Process",
-      "stepItems": [
-        {
-          "answerKeys": [
-            "e1fe6ee1"
-          ],
-          "choices": [
-            {
-              "content": "Planet",
-              "key": "48664ca2"
-            },
-            {
-              "content": "Comet",
-              "key": "e1fe6ee1"
-            },
-            {
-              "content": "Galaxy",
-              "key": "dfc8ed74"
-            },
-            {
-              "content": "Star",
-              "key": "45635101"
-            }
-          ],
-          "content": "What are the smart contracts repository in V3 called?",
-          "type": "SingleChoice",
-          "uuid": "71ad9ab9-2d4d-4fa4-b39e-3df2c97b3c7b"
-        }
-      ],
+      "stepItems": [],
       "uuid": "07ea4ffb-c587-4446-b3a3-53bd57f3ed0b"
     },
     {
