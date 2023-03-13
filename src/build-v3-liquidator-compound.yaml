@@ -1,6 +1,6 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-13T09:05:50.072Z'
+created: '2023-03-13T09:48:18.165Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -70,11 +70,7 @@ steps:
       their account to their hot wallet or contract.
 
     name: Example Liquidation Scenario
-    stepItems:
-      - label: Nickname
-        required: true
-        type: PublicShortInput
-        uuid: ecfa9016-99cf-4dd4-81e3-94befbb86fb0
+    stepItems: []
     uuid: a7cbb86b-5c61-4c55-af12-e70efd6d3335
   - content: >-
       Liquidations can occur on any blockchain where Compound III is deployed,

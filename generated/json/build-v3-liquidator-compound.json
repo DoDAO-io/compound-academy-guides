@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "How to build Liquidator for the new version of Compound",
-  "created": "2023-03-13T09:05:50.072Z",
+  "created": "2023-03-13T09:48:18.165Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -53,14 +53,7 @@
     {
       "content": "The process of a Compound III liquidation is as follows. A protocol price feed update or an interest accrual occurs that renders a borrower account underwater. A searcher detects this change and creates an EVM transaction that executes the liquidation and captures value through arbitrage. The searcher calls the Comet absorb function, which moves the borrower's collateral to the protocol balance sheet and reduces reserves to cover the entire borrow. The searcher then determines the amount of the base asset that can be exchanged for the seized collateral by checking the collateralBalanceOf the Comet contract address for each collateral asset, getting its price using the price feed, and using the quoteCollateral function to find the discounted rate. The searcher can pay the base asset out of their pocket or open a flash loan using another protocol. The searcher then calls buyCollateral to purchase as much of the discounted collateral as possible. Once the searcher holds the discounted collateral, they can sell it at market price using a DEX like Uniswap. The searcher repays the flashswap and sends the remaining balance of the base asset in their account to their hot wallet or contract.\n\n",
       "name": "Example Liquidation Scenario",
-      "stepItems": [
-        {
-          "label": "Nickname",
-          "required": true,
-          "type": "PublicShortInput",
-          "uuid": "ecfa9016-99cf-4dd4-81e3-94befbb86fb0"
-        }
-      ],
+      "stepItems": [],
       "uuid": "a7cbb86b-5c61-4c55-af12-e70efd6d3335"
     },
     {
