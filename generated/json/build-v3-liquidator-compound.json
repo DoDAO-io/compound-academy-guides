@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "How to build Liquidator for the new version of Compound",
-  "created": "2023-03-13T09:48:18.165Z",
+  "created": "2023-03-13T12:54:37.117Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -12,7 +12,7 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "content": "The Compound protocol has introduced a new liquidation system in its latest version, which absorbs borrower accounts that violate collateral requirements. Liquidation becomes necessary if the borrower accrues too much interest on their borrow, the value of their collateral reduces too much, or the value of their borrow increases too much. In this article, we will discuss how the liquidation process works in Compound III, the incentive for liquidators, an example scenario of a Compound III liquidation, and the blockchains where liquidations can occur.\n\n",
+      "content": "## Changes to the liquidation system in Compound III\nThe latest version of the Compound protocol has undergone changes in its liquidation system. To ensure the system's solvency, the protocol takes over borrower accounts that violate the collateral requirements. Underwater borrowers are repaid using the protocol's reserves. However, if the protocol reserves fall below a governance-selected threshold, anyone can extract value after the account is absorbed.\n\n## Liquidation criteria in Compound III\nLike other DeFi projects, Compound III demands that borrowers maintain a greater value of collateral locked in the protocol than the total value of their borrow at all times, a process called over-collateralization. When a borrower accrues excessive interest on their borrow, or the USD value of their collateral decreases too much, or the USD value of their borrow rises too much, the account becomes liquidatable.\n\n## Incentives for liquidators in Compound III\nDuring the liquidation process, any account can extract value through an arbitrage opportunity. When the protocol absorbs an account, it repays its open borrow of the base asset using the protocol reserves and seizes the entire collateral assets of the account. Using the protocol's price feed, the seized collateral's discounted price is determined and then publicly sold. Any account can purchase the discounted collateral using the base asset. A liquidator can purchase the discounted collateral asset, trade it on a DEX at a higher price, and earn the difference in a single EVM transaction.",
       "name": "Introduction",
       "stepItems": [],
       "uuid": "90c244a7-4594-4935-ae57-cfce23c24be8"
