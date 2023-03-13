@@ -1,6 +1,6 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-13T13:40:03.622Z'
+created: '2023-03-13T21:21:24.209Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -45,7 +45,7 @@ steps:
     stepItems: []
     uuid: 90c244a7-4594-4935-ae57-cfce23c24be8
   - content: >-
-      This is an example of how Compound III handles liquidations:
+      This is an example of how Compound III handles liquidations
 
 
       1. If a borrower doesn't have enough collateral to cover their loan or the
@@ -59,25 +59,30 @@ steps:
 
 
       3. The first step in the process is for the protocol to move the
-      borrower's collateral to cover the loan. This is done by invoking the
-      `absorb` function on the Comet Smart Contract.
+      borrower's collateral to the protocol balance sheet to cover the loan.
+      This is done by invoking the `absorb` function on the Comet smart
+      contract.
 
 
-      4. The person making the transaction can only make money through arbitrage
-      if the protocol's reserves are reduced enough after the collateral is
-      moved.
+      4. The person then figures out how much of the borrower's collateral they
+      can buy with the base asset. To ascertain the payment for the base asset,
+      the searcher should inspect the `collateralBalanceOf` of the Comet
+      contract address associated with each collateral asset. After obtaining
+      the asset's price through the price feed, they can utilize the
+      quoteCollateral function to determine the discounted rate.
 
 
-      5. The person then figures out how much of the borrower's collateral they
-      can buy with the base asset.
 
-      6. They can pay for this with their own money or by using another protocol
+
+      5. They can pay for this with their own money or by using another protocol
       to borrow the base asset.
 
-      7. Once they have the collateral, they can sell it at a higher price on a
+
+      6. Once they have the collateral, they can sell it at a higher price on a
       DEX like Uniswap.
 
-      8. They use the profits to repay any borrowed base asset and keep the
+
+      7. They use the profits to repay any borrowed base asset and keep the
       remaining balance for themselves.
     name: Liquidation Process
     stepItems: []
