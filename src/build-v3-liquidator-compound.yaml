@@ -1,6 +1,6 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-13T12:58:46.202Z'
+created: '2023-03-13T13:40:03.622Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -50,16 +50,23 @@ steps:
 
       1. If a borrower doesn't have enough collateral to cover their loan or the
       value of their collateral drops too much, their account can be liquidated.
+      This can be checked at any time programmatically using the Comet
+      `isLiquidatable` function, which returns a boolean.
+
 
       2. A person who notices the liquidation creates a transaction to make
       money through arbitrage.
 
+
       3. The first step in the process is for the protocol to move the
-      borrower's collateral to cover the loan.
+      borrower's collateral to cover the loan. This is done by invoking the
+      `absorb` function on the Comet Smart Contract.
+
 
       4. The person making the transaction can only make money through arbitrage
       if the protocol's reserves are reduced enough after the collateral is
       moved.
+
 
       5. The person then figures out how much of the borrower's collateral they
       can buy with the base asset.
