@@ -1,7 +1,7 @@
 {
   "categories": [],
-  "content": "Learn from the projects that are built on top of Compound",
-  "created": "2023-03-14T21:22:25.440Z",
+  "content": "For developers wishing to develop on Compound III",
+  "created": "2023-03-14T21:56:01.784Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -22,6 +22,12 @@
       "name": "Code Examples",
       "stepItems": [],
       "uuid": "7b4eccfc-3676-410d-9a11-65fc72f4f4ae"
+    },
+    {
+      "content": "The Compound team wants developers to collaborate in any capacity. Some of the many several ways to collaborate are:\n\n1. You can extend or update the Comet contracts.\n2. You can develop an analytics dashboard.\n3. You can create educational content, similar to this one.\n4. You can build applications on top of the Comet smart contracts.\n5. Alternatively, you can come up with your own idea - all ideas are welcome.\n\nTo get involved, please join the #development room in the Compound community Discord server and the forums at comp.xyz. Compound Labs and the community members are eager to help you build an application on top of Compound III. If you have any questions or can't find what you're looking for, don't hesitate to ask. Your feedback helps us improve.\n\nFor documentation on the Compound III Protocol, please visit https://docs.compound.finance.",
+      "name": "Next Steps",
+      "stepItems": [],
+      "uuid": "94940518-6e8f-4943-90a2-1e0ca11810e0"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/developing_on_compound.png",
