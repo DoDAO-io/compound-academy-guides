@@ -1,6 +1,6 @@
 categories: []
 content: Learn from the projects that are built on top of Compound
-created: '2023-03-14T21:17:07.163Z'
+created: '2023-03-14T21:21:35.053Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -56,6 +56,12 @@ steps:
 
       ## Supply
 
+      The below code block supplies WETH as collateral, approves Comet to move
+      WETH collateral, sends initial supply to Compound, and then prints the
+      current WETH collateral balance. It uses JavaScript to interact with the
+      Comet protocol.
+
+
 
       ```javascript
           const provider = new ethers.providers.JsonRpcProvider(jsonRpcUrl);
@@ -81,6 +87,14 @@ steps:
 
 
       ## Borrow
+
+      The below code borrows a specific amount of base assets from the Compound
+      platform using JS. It starts by defining the user account, provider, and
+      signer. It also sets up the contracts for Comet, WETH, and USDC. The user
+      then deposits WETH collateral, approves Comet to move it, and supplies it
+      to the Compound platform. After that, the user borrows a specified amount
+      of USDC from Compound and checks their current balance of base assets.
+
 
       ```javascript
           const provider = new ethers.providers.JsonRpcProvider(jsonRpcUrl);
