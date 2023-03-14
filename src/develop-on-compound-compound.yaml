@@ -1,6 +1,6 @@
 categories: []
 content: For developers wishing to develop on Compound III
-created: '2023-03-14T21:56:59.454Z'
+created: '2023-03-14T22:00:44.077Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -49,6 +49,45 @@ steps:
     name: Introduction
     stepItems: []
     uuid: afa31391-4f45-4d9a-a101-c4a381270913
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - '84146335'
+        choices:
+          - content: >-
+              To encourage developers to collaborate and build on top of the new
+              Compound III code base.
+            key: '84146335'
+          - content: >-
+              To allow users to supply volatile assets and borrow a single
+              stable asset.
+            key: 14d008df
+          - content: To reduce gas costs and increase capital efficiency.
+            key: 6ba80af4
+          - content: To strengthen the builder community during bear market conditions.
+            key: 074a7439
+        content: What is the main objective of the Compound Grants Program?
+        type: SingleChoice
+        uuid: 6b21e44a-a3ab-41ca-b489-2900163c41c9
+      - answerKeys:
+          - 34c918bf
+        choices:
+          - content: Through a centralized authority
+            key: 221a5147
+          - content: Core team decides
+            key: c6a923af
+          - content: >-
+              Through 4 domain allocators who are experts in their specific
+              domains
+            key: 34c918bf
+          - content: Through on-chain voting
+            key: f7223565
+        content: |
+          How does CGP 2.0 allocate grants?
+        type: SingleChoice
+        uuid: 3098fbc7-fc1a-43ed-869b-18bb629c2659
+    uuid: 5547b3b4-edfc-4818-9da0-4b12a022a459
   - content: >-
       These straightforward examples demonstrate the simplicity of working with
       Comet Smart Contracts for supplying and borrowing.

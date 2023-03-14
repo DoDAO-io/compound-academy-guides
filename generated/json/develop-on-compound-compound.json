@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "For developers wishing to develop on Compound III",
-  "created": "2023-03-14T21:56:59.454Z",
+  "created": "2023-03-14T22:00:44.077Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -16,6 +16,65 @@
       "name": "Introduction",
       "stepItems": [],
       "uuid": "afa31391-4f45-4d9a-a101-c4a381270913"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "84146335"
+          ],
+          "choices": [
+            {
+              "content": "To encourage developers to collaborate and build on top of the new Compound III code base.",
+              "key": "84146335"
+            },
+            {
+              "content": "To allow users to supply volatile assets and borrow a single stable asset.",
+              "key": "14d008df"
+            },
+            {
+              "content": "To reduce gas costs and increase capital efficiency.",
+              "key": "6ba80af4"
+            },
+            {
+              "content": "To strengthen the builder community during bear market conditions.",
+              "key": "074a7439"
+            }
+          ],
+          "content": "What is the main objective of the Compound Grants Program?",
+          "type": "SingleChoice",
+          "uuid": "6b21e44a-a3ab-41ca-b489-2900163c41c9"
+        },
+        {
+          "answerKeys": [
+            "34c918bf"
+          ],
+          "choices": [
+            {
+              "content": "Through a centralized authority",
+              "key": "221a5147"
+            },
+            {
+              "content": "Core team decides",
+              "key": "c6a923af"
+            },
+            {
+              "content": "Through 4 domain allocators who are experts in their specific domains",
+              "key": "34c918bf"
+            },
+            {
+              "content": "Through on-chain voting",
+              "key": "f7223565"
+            }
+          ],
+          "content": "How does CGP 2.0 allocate grants?\n",
+          "type": "SingleChoice",
+          "uuid": "3098fbc7-fc1a-43ed-869b-18bb629c2659"
+        }
+      ],
+      "uuid": "5547b3b4-edfc-4818-9da0-4b12a022a459"
     },
     {
       "content": "These straightforward examples demonstrate the simplicity of working with Comet Smart Contracts for supplying and borrowing.\n\n## Supply\nThe below code block supplies WETH as collateral, approves Comet to move WETH collateral, sends initial supply to Compound, and then prints the current WETH collateral balance. It uses JavaScript to interact with the Comet protocol.\n\n\n```javascript\n    const provider = new ethers.providers.JsonRpcProvider(jsonRpcUrl);\n    const signer = provider.getSigner(me);\n    const comet = new ethers.Contract(cometAddress, cometAbi, signer);\n    const weth = new ethers.Contract(wethAddress, wethAbi, signer);\n    const wethMantissa = 1e18; // WETH and ETH have 18 decimal places\n\n    let tx = await weth.deposit({ value: ethers.utils.parseEther('10') });\n    await tx.wait(1);\n\n    console.log('\\tApproving Comet to move WETH collateral...');\n    tx = await weth.approve(cometAddress, ethers.constants.MaxUint256);\n    await tx.wait(1);\n\n    console.log('\\tSending initial supply to Compound...');\n    tx = await comet.supply(wethAddress, ethers.utils.parseEther('10'));\n    await tx.wait(1);\n\n    let collateralBalance = await comet.callStatic.collateralBalanceOf(me, wethAddress);\n    console.log('\\tMy current WETH collateral balance:', +collateralBalance.toString() / wethMantissa);\n```\n\n## Borrow\nThe below code borrows a specific amount of base assets from the Compound platform using JS. It starts by defining the user account, provider, and signer. It also sets up the contracts for Comet, WETH, and USDC. The user then deposits WETH collateral, approves Comet to move it, and supplies it to the Compound platform. After that, the user borrows a specified amount of USDC from Compound and checks their current balance of base assets.\n\n```javascript\n    const provider = new ethers.providers.JsonRpcProvider(jsonRpcUrl);\n    const signer = provider.getSigner(me);\n    const comet = new ethers.Contract(cometAddress, cometAbi, signer);\n    const weth = new ethers.Contract(wethAddress, wethAbi, signer);\n    const wethMantissa = 1e18; // WETH and ETH have 18 decimal places\n    const usdc = new ethers.Contract(baseAssetAddress, stdErc20Abi, signer);\n    const baseAssetMantissa = 1e6; // USDC has 6 decimal places\n\n    let tx = await weth.deposit({ value: ethers.utils.parseEther('10') });\n    await tx.wait(1);\n\n    console.log('\\tApproving Comet to move WETH collateral...');\n    tx = await weth.approve(cometAddress, ethers.constants.MaxUint256);\n    await tx.wait(1);\n\n    console.log('\\tSending initial WETH supply of collateral to Compound...');\n    tx = await comet.supply(wethAddress, ethers.utils.parseEther('10'));\n    await tx.wait(1);\n\n    // Accounts cannot hold a borrow smaller than baseBorrowMin (100 USDC).\n    const borrowSize = 1000;\n    console.log('\\tExecuting initial borrow of the base asset from Compound...');\n    console.log('\\tBorrow size:', borrowSize);\n\n    tx = await comet.withdraw(usdcAddress, (borrowSize * baseAssetMantissa).toString());\n    await tx.wait(1);\n\n    let bal = await usdc.callStatic.balanceOf(me);\n    console.log('\\tMy current base asset balance:', +bal.toString() / baseAssetMantissa);\n```",
