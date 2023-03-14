@@ -1,6 +1,6 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-13T21:21:24.209Z'
+created: '2023-03-14T13:04:22.402Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -61,21 +61,27 @@ steps:
       3. The first step in the process is for the protocol to move the
       borrower's collateral to the protocol balance sheet to cover the loan.
       This is done by invoking the `absorb` function on the Comet smart
-      contract.
+      contract. 
+
+
+      4. The absorb function guarantees that the current reserves value is lower
+      than targetReserves. Once targetReserves is achieved, the v3 contracts
+      retain the collateral assets and provide compensation to the liquidator
+      through rewards. However, reaching the high value of targetReserves is
+      unlikely.
 
 
       4. The person then figures out how much of the borrower's collateral they
       can buy with the base asset. To ascertain the payment for the base asset,
-      the searcher should inspect the `collateralBalanceOf` of the Comet
-      contract address associated with each collateral asset. After obtaining
-      the asset's price through the price feed, they can utilize the
-      quoteCollateral function to determine the discounted rate.
-
-
+      the searcher should inspect the `collateralBalanceOf` for each associated
+      collateral asset. After obtaining the asset's price through the price
+      feed, they can utilize the `quoteCollateral` function to determine the
+      discounted rate.
 
 
       5. They can pay for this with their own money or by using another protocol
-      to borrow the base asset.
+      to borrow the base asset. This can be done by calling `buyCollateral` to
+      purchase as much of the discounted collateral as they can.
 
 
       6. Once they have the collateral, they can sell it at a higher price on a
