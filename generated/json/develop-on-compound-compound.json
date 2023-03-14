@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "Learn from the projects that are built on top of Compound",
-  "created": "2023-02-03T22:58:33.216Z",
+  "created": "2023-03-14T21:03:03.444Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -12,7 +12,7 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "content": "\n## Coming Soon        ",
+      "content": "## Compound III\nCompound II was one of the most forked project in DeFi. Many of the DeFi projects either used Compound Smart contracts directly or borrowed the concepts for implementing their protocol.\n\nGiven that most borrowing activity in DeFi today consists of supplying volatile crypto assets and borrowing a single borrowable base token, Compound III aims to achieve greater capital efficiency (including gas costs) by building a specialized protocol which allows you to supply volatile assets, and borrow only a single asset(e.g. stable).\n\nThe Compound III Smart Contracts or Coment repository uses a business source license, which Compound governance can grant usage to, as it sees fit, by making changes to compound-community-licenses.eth, a new ENS domain owned by the community.\n\n## Compound Grants Program\nCompound wants builders to collaborate and build on the new Compound III code base. This is exactly how Web 3.0 is different from Web 2.0.  Compound Grants Programs favours composability, and want to promote developers who want to collaborate and provide new features or functionality on or related to Compound III  \n\nThe program's primary objectives are:\n\n1. To expand Compound's grant program by increasing the number of builders who apply and build on top of the platform.\n\n2. To delegate capital allocation to members of the community, rather than a central disbursing committee, to identify, attract, and fund projects and builders that the grant program may not have funded otherwise.\n\n3. To strengthen the builder community during bear market conditions, which is vital to keeping builder activity alive. Building fosters innovation and optimism in a bleak market environment, while also promoting participation and transparency across the broader community.\n\n## CGP 2.0 Details\n\nThis program focuses on getting the community to participate in the process of delegating capital allocation. The program disburses $800K (22087.24 COMP) through 4 domain allocators. Each domain allocator chosen will be an expert in their specific domain and someone involved in the Compound community.\n\nEach domain allocator runs their respective grants program on-chain for full transparency using Questbook. The data and performance across key metrics will be visible for the community.\ndashboard.\n\nThe disbursement of the grant happens on-chain from a multi-sig wallet controlled by the program manager & the domain allocator. The domain allocator approves or rejects the application based on their evaluation. The program manager will then coordinate with the compound community to ensure that the application is aligned with the Compound growth before signing the disbursal. The sole purpose of the multi-sig is to make sure capital is not being siphoned. However, the allocators are encouraged to make independent decisions regarding the approval of the application based on their expertise.",
       "name": "Introduction",
       "stepItems": [],
       "uuid": "afa31391-4f45-4d9a-a101-c4a381270913"
