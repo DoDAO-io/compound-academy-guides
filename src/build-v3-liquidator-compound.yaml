@@ -1,6 +1,6 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-14T16:15:09.378Z'
+created: '2023-03-14T16:20:23.999Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -9,7 +9,7 @@ name: Build V3 Liquidator
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: >
+  - content: >-
       ## Liquidation
 
       Liquidation refers to the process of seizing and selling collateral in
@@ -34,18 +34,34 @@ steps:
       ## Liquidation Process
 
       When a borrower places cryptocurrency as collateral and borrows another
-      cryptocurrency, the lending platform monitors the value of the
-      collateral. 
+      cryptocurrency, the lending platform constantly monitors the value of the
+      collateral. If the value falls below the liquidation ratio, the loan is
+      considered undercollateralized, and liquidation can occur.
 
 
-      If the value falls below the liquidation ratio, a liquidator can purchase
-      the collateral at a discounted price to cover the outstanding loan, and
-      the proceeds are used to repay the loan. 
+      The liquidation process involves a liquidator purchasing the collateral at
+      a discounted price to cover the outstanding loan. The liquidator receives
+      a discount on the collateral to compensate for the risk they are taking
+      on. The discount is determined by the lending platform and is designed to
+      incentivize liquidators to participate in the liquidation process.
 
 
-      If the proceeds are not enough to cover the outstanding loan, the borrower
-      is responsible for the difference, and the lending platform may absorb
-      some losses.
+      The proceeds from the sale of the collateral are then used to repay the
+      outstanding loan. If the proceeds are greater than the outstanding loan,
+      the excess is returned to the borrower. However, if the proceeds are not
+      enough to cover the outstanding loan, the borrower is responsible for the
+      difference. In some cases, the lending platform may absorb some of the
+      losses.
+
+
+      It's important for borrowers to be aware of the liquidation process and
+      the risks involved. They should also make sure to maintain their
+      collateral above the liquidation ratio to avoid liquidation. On the other
+      hand, liquidators can benefit from the discounted collateral prices, but
+      they also take on the risk of the collateral value decreasing further
+      after the purchase. Overall, the liquidation process is designed to
+      protect the lending platform and its users from significant losses due to
+      undercollateralized loans.
     name: Intro to Liquidation
     stepItems: []
     uuid: d692c44e-aa66-4bdd-9b32-6c4febbf3f21
@@ -68,6 +84,19 @@ steps:
       borrower accrues excessive interest on their borrow, or the USD value of
       their collateral decreases too much, or the USD value of their borrow
       rises too much, the account becomes liquidatable.
+
+
+      ## Blockchains for Liquidation
+
+      Liquidations can occur on any blockchain where Compound III is deployed,
+      and the protocol is written in Solidity and can be deployed to any EVM
+      chain that has a price feed, sufficient liquidity, and a means for
+      on-chain governance. However, running the liquidator bot contract example
+      in the Comet repository is not recommended as it only serves as an
+      educational tool, and running it may result in reverted transactions and
+      EVM gas wasted as a result of losing the battle to better running
+      searchers.
+
 
 
       ## Incentives for liquidators in Compound III
@@ -109,10 +138,10 @@ steps:
       remaining reserves are lower than a governance-set target, liquidators can
       purchase the collateral at a discount using the base asset, which boosts
       the protocol's reserves of the base asset.
-
-
-      ## Step by Step Process
-
+    name: V3 Liquidation Process
+    stepItems: []
+    uuid: 07ea4ffb-c587-4446-b3a3-53bd57f3ed0b
+  - content: >-
       This is an example of how Compound III handles liquidations
 
 
@@ -158,41 +187,7 @@ steps:
 
       7. They use the profits to repay any borrowed base asset and keep the
       remaining balance for themselves.
-    name: Liquidation Process
-    stepItems: []
-    uuid: 07ea4ffb-c587-4446-b3a3-53bd57f3ed0b
-  - content: >+
-      The process of a Compound III liquidation is as follows. A protocol price
-      feed update or an interest accrual occurs that renders a borrower account
-      underwater. A searcher detects this change and creates an EVM transaction
-      that executes the liquidation and captures value through arbitrage. The
-      searcher calls the Comet absorb function, which moves the borrower's
-      collateral to the protocol balance sheet and reduces reserves to cover the
-      entire borrow. The searcher then determines the amount of the base asset
-      that can be exchanged for the seized collateral by checking the
-      collateralBalanceOf the Comet contract address for each collateral asset,
-      getting its price using the price feed, and using the quoteCollateral
-      function to find the discounted rate. The searcher can pay the base asset
-      out of their pocket or open a flash loan using another protocol. The
-      searcher then calls buyCollateral to purchase as much of the discounted
-      collateral as possible. Once the searcher holds the discounted collateral,
-      they can sell it at market price using a DEX like Uniswap. The searcher
-      repays the flashswap and sends the remaining balance of the base asset in
-      their account to their hot wallet or contract.
-
-    name: Example Liquidation Scenario
-    stepItems: []
-    uuid: a7cbb86b-5c61-4c55-af12-e70efd6d3335
-  - content: >-
-      Liquidations can occur on any blockchain where Compound III is deployed,
-      and the protocol is written in Solidity and can be deployed to any EVM
-      chain that has a price feed, sufficient liquidity, and a means for
-      on-chain governance. However, running the liquidator bot contract example
-      in the Comet repository is not recommended as it only serves as an
-      educational tool, and running it may result in reverted transactions and
-      EVM gas wasted as a result of losing the battle to better running
-      searchers.
-    name: Blockchains for Liquidation
+    name: Step by Step Process
     stepItems: []
     uuid: 9158616f-321a-4bf0-ba8c-1127daf16fdb
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_liquidator.png
