@@ -1,6 +1,6 @@
 categories: []
 content: Learn from the projects that are built on top of Compound
-created: '2023-03-14T21:21:35.053Z'
+created: '2023-03-14T21:22:25.440Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -50,8 +50,8 @@ steps:
     stepItems: []
     uuid: afa31391-4f45-4d9a-a101-c4a381270913
   - content: >-
-      Here are some simple Supply and Borrow examples which show how easy it to
-      work with Comet Smart Contracts
+      These straightforward examples demonstrate the simplicity of working with
+      Comet Smart Contracts for supplying and borrowing.
 
 
       ## Supply
@@ -130,14 +130,6 @@ steps:
     name: Code Examples
     stepItems: []
     uuid: 7b4eccfc-3676-410d-9a11-65fc72f4f4ae
-  - content: ''
-    name: Your Info
-    stepItems:
-      - label: Nickname
-        required: true
-        type: PublicShortInput
-        uuid: a36a2e1c-faef-4d88-8743-4f329cc3447b
-    uuid: 177abe31-cc74-4c1e-a13d-ebf1bac70f13
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/academy/compound/developing_on_compound.png
 uuid: develop-on-compound-compound
