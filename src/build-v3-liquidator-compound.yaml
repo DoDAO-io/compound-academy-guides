@@ -1,6 +1,6 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-14T18:55:09.715Z'
+created: '2023-03-14T20:17:35.470Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -285,5 +285,13 @@ steps:
     name: Step by Step Process
     stepItems: []
     uuid: 9158616f-321a-4bf0-ba8c-1127daf16fdb
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Nickname
+        required: true
+        type: PublicShortInput
+        uuid: 9febdcb7-9aca-4c35-b0ad-f716cfbaed8e
+    uuid: 3755a0e5-9b67-43c1-8d4e-2f81e1d66bb9
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_liquidator.png
 uuid: build-v3-liquidator-compound
