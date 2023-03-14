@@ -1,6 +1,6 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-14T15:51:46.672Z'
+created: '2023-03-14T16:15:09.378Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -9,6 +9,46 @@ name: Build V3 Liquidator
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
+  - content: >
+      ## Liquidation
+
+      Liquidation refers to the process of seizing and selling collateral in
+      DeFi lending and borrowing platforms when its value drops below a specific
+      threshold known as the liquidation ratio. 
+
+
+      This ratio is set by the lending platform to ensure that there is enough
+      collateral to cover the outstanding loan, and it represents the minimum
+      ratio of the collateral's value to the loan value. To avoid liquidation,
+      borrowers must usually provide collateral that exceeds the loan amount,
+      which is called over-collateralization. 
+
+
+      The degree of over-collateralization required varies depending on the
+      lending platform and the cryptocurrency used as collateral.
+      Over-collateralization helps to mitigate the risk of default or a decrease
+      in collateral value, ensuring there is enough collateral to cover
+      outstanding debt and minimizing risk for lenders and the lending platform.
+
+
+      ## Liquidation Process
+
+      When a borrower places cryptocurrency as collateral and borrows another
+      cryptocurrency, the lending platform monitors the value of the
+      collateral. 
+
+
+      If the value falls below the liquidation ratio, a liquidator can purchase
+      the collateral at a discounted price to cover the outstanding loan, and
+      the proceeds are used to repay the loan. 
+
+
+      If the proceeds are not enough to cover the outstanding loan, the borrower
+      is responsible for the difference, and the lending platform may absorb
+      some losses.
+    name: Intro to Liquidation
+    stepItems: []
+    uuid: d692c44e-aa66-4bdd-9b32-6c4febbf3f21
   - content: >-
       ## Changes to the liquidation system in Compound III
 

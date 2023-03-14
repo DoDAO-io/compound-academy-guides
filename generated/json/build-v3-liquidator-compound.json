@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "How to build Liquidator for the new version of Compound",
-  "created": "2023-03-14T15:51:46.672Z",
+  "created": "2023-03-14T16:15:09.378Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -11,6 +11,12 @@
   "publishStatus": "Live",
   "showIncorrectOnCompletion": true,
   "steps": [
+    {
+      "content": "## Liquidation\nLiquidation refers to the process of seizing and selling collateral in DeFi lending and borrowing platforms when its value drops below a specific threshold known as the liquidation ratio. \n\nThis ratio is set by the lending platform to ensure that there is enough collateral to cover the outstanding loan, and it represents the minimum ratio of the collateral's value to the loan value. To avoid liquidation, borrowers must usually provide collateral that exceeds the loan amount, which is called over-collateralization. \n\nThe degree of over-collateralization required varies depending on the lending platform and the cryptocurrency used as collateral. Over-collateralization helps to mitigate the risk of default or a decrease in collateral value, ensuring there is enough collateral to cover outstanding debt and minimizing risk for lenders and the lending platform.\n\n## Liquidation Process\nWhen a borrower places cryptocurrency as collateral and borrows another cryptocurrency, the lending platform monitors the value of the collateral. \n\nIf the value falls below the liquidation ratio, a liquidator can purchase the collateral at a discounted price to cover the outstanding loan, and the proceeds are used to repay the loan. \n\nIf the proceeds are not enough to cover the outstanding loan, the borrower is responsible for the difference, and the lending platform may absorb some losses.\n",
+      "name": "Intro to Liquidation",
+      "stepItems": [],
+      "uuid": "d692c44e-aa66-4bdd-9b32-6c4febbf3f21"
+    },
     {
       "content": "## Changes to the liquidation system in Compound III\nThe latest version of the Compound protocol has undergone changes in its liquidation system. To ensure the system's solvency, the protocol takes over borrower accounts that violate the collateral requirements. Underwater borrowers are repaid using the protocol's reserves. However, if the protocol reserves fall below a governance-selected threshold, anyone can extract value after the account is absorbed.\n\n## Liquidation criteria in Compound III\nLike other DeFi projects, Compound III demands that borrowers maintain a greater value of collateral locked in the protocol than the total value of their borrow at all times, a process called over-collateralization. When a borrower accrues excessive interest on their borrow, or the USD value of their collateral decreases too much, or the USD value of their borrow rises too much, the account becomes liquidatable.\n\n## Incentives for liquidators in Compound III\nDuring the liquidation process, any account can extract value through an arbitrage opportunity. When the protocol absorbs an account, it repays its open borrow of the base asset using the protocol reserves and seizes the entire collateral assets of the account. Using the protocol's price feed, the seized collateral's discounted price is determined and then publicly sold. Any account can purchase the discounted collateral using the base asset. A liquidator can purchase the discounted collateral asset, trade it on a DEX at a higher price, and earn the difference in a single EVM transaction.",
       "name": "Introduction",
