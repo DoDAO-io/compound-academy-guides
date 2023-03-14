@@ -1,6 +1,6 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-14T13:04:22.402Z'
+created: '2023-03-14T15:51:46.672Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -45,6 +45,34 @@ steps:
     stepItems: []
     uuid: 90c244a7-4594-4935-ae57-cfce23c24be8
   - content: >-
+      Liquidation is determined based on liquidation collateral factors, which
+      are distinct and higher than borrow collateral factors used for
+      determining initial borrowing capacity. This mechanism safeguards both
+      borrowers and the protocol by ensuring a price buffer for all new
+      positions. Additionally, this system enables governance to decrease borrow
+      collateral factors without initiating the liquidation of existing
+      positions.
+
+
+      When an account's borrowing balance surpasses the limits set by
+      liquidation collateral factors, it becomes qualified for liquidation. The
+      absorb function can be activated by a liquidator (a bot, contract, or
+      user), which transfers ownership of the account's collateral and refunds
+      the user the value of the collateral minus a penalty (liquidationFactor)
+      in the base asset. Following liquidation, the user has no outstanding debt
+      and will usually have an excess balance of the base asset, which can earn
+      interest.
+
+
+      The protocol's reserves of the base asset fund each absorption. In
+      exchange, the protocol gains ownership of the collateral assets. If the
+      remaining reserves are lower than a governance-set target, liquidators can
+      purchase the collateral at a discount using the base asset, which boosts
+      the protocol's reserves of the base asset.
+
+
+      ## Step by Step Process
+
       This is an example of how Compound III handles liquidations
 
 
