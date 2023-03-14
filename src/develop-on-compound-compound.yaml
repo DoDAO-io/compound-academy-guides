@@ -1,6 +1,6 @@
 categories: []
 content: Learn from the projects that are built on top of Compound
-created: '2023-03-14T21:11:49.308Z'
+created: '2023-03-14T21:17:07.163Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -49,23 +49,72 @@ steps:
     name: Introduction
     stepItems: []
     uuid: afa31391-4f45-4d9a-a101-c4a381270913
-  - content: ''
-    name: Evaluation
-    stepItems:
-      - answerKeys:
-          - e0b88fa2
-        choices:
-          - content: Planet
-            key: de1d6d51
-          - content: Comet
-            key: e0b88fa2
-          - content: Galaxy
-            key: 8818224d
-          - content: Star
-            key: fda09fd9
-        content: What are the smart contracts repository in V3 called?
-        type: SingleChoice
-        uuid: d0449a33-b279-404e-9436-6e2f56783214
+  - content: >-
+      Here are some simple Supply and Borrow examples which show how easy it to
+      work with Comet Smart Contracts
+
+
+      ## Supply
+
+
+      ```javascript
+          const provider = new ethers.providers.JsonRpcProvider(jsonRpcUrl);
+          const signer = provider.getSigner(me);
+          const comet = new ethers.Contract(cometAddress, cometAbi, signer);
+          const weth = new ethers.Contract(wethAddress, wethAbi, signer);
+          const wethMantissa = 1e18; // WETH and ETH have 18 decimal places
+
+          let tx = await weth.deposit({ value: ethers.utils.parseEther('10') });
+          await tx.wait(1);
+
+          console.log('\tApproving Comet to move WETH collateral...');
+          tx = await weth.approve(cometAddress, ethers.constants.MaxUint256);
+          await tx.wait(1);
+
+          console.log('\tSending initial supply to Compound...');
+          tx = await comet.supply(wethAddress, ethers.utils.parseEther('10'));
+          await tx.wait(1);
+
+          let collateralBalance = await comet.callStatic.collateralBalanceOf(me, wethAddress);
+          console.log('\tMy current WETH collateral balance:', +collateralBalance.toString() / wethMantissa);
+      ```
+
+
+      ## Borrow
+
+      ```javascript
+          const provider = new ethers.providers.JsonRpcProvider(jsonRpcUrl);
+          const signer = provider.getSigner(me);
+          const comet = new ethers.Contract(cometAddress, cometAbi, signer);
+          const weth = new ethers.Contract(wethAddress, wethAbi, signer);
+          const wethMantissa = 1e18; // WETH and ETH have 18 decimal places
+          const usdc = new ethers.Contract(baseAssetAddress, stdErc20Abi, signer);
+          const baseAssetMantissa = 1e6; // USDC has 6 decimal places
+
+          let tx = await weth.deposit({ value: ethers.utils.parseEther('10') });
+          await tx.wait(1);
+
+          console.log('\tApproving Comet to move WETH collateral...');
+          tx = await weth.approve(cometAddress, ethers.constants.MaxUint256);
+          await tx.wait(1);
+
+          console.log('\tSending initial WETH supply of collateral to Compound...');
+          tx = await comet.supply(wethAddress, ethers.utils.parseEther('10'));
+          await tx.wait(1);
+
+          // Accounts cannot hold a borrow smaller than baseBorrowMin (100 USDC).
+          const borrowSize = 1000;
+          console.log('\tExecuting initial borrow of the base asset from Compound...');
+          console.log('\tBorrow size:', borrowSize);
+
+          tx = await comet.withdraw(usdcAddress, (borrowSize * baseAssetMantissa).toString());
+          await tx.wait(1);
+
+          let bal = await usdc.callStatic.balanceOf(me);
+          console.log('\tMy current base asset balance:', +bal.toString() / baseAssetMantissa);
+      ```
+    name: Code Examples
+    stepItems: []
     uuid: 7b4eccfc-3676-410d-9a11-65fc72f4f4ae
   - content: ''
     name: Your Info
