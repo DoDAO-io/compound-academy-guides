@@ -1,6 +1,6 @@
 categories: []
 content: Learn from the projects that are built on top of Compound
-created: '2023-03-14T21:11:27.051Z'
+created: '2023-03-14T21:11:49.308Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -21,7 +21,7 @@ steps:
       compound-community-licenses.eth, a new ENS domain owned by the community.
 
 
-      ## Compound Grants Program
+      ## Compound Grants Program (CGP)
 
       Compound is encouraging developers to collaborate and build on top of the
       new Compound III code base through the Compound Grants Program. This
