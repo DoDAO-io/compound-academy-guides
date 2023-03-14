@@ -1,6 +1,6 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-14T16:21:22.158Z'
+created: '2023-03-14T18:55:09.715Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -65,6 +65,42 @@ steps:
     name: Intro to Liquidation
     stepItems: []
     uuid: d692c44e-aa66-4bdd-9b32-6c4febbf3f21
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - db454319
+        choices:
+          - content: The minimum ratio of the collateral's value to the loan value
+            key: ba84d823
+          - content: The maximum ratio of the collateral's value to the loan value
+            key: 09cbac3b
+          - content: The minimum ratio of the loan value to the collateral's value
+            key: db454319
+          - content: The maximum ratio of the loan value to the collateral's value
+            key: 479c9031
+        content: What is the liquidation ratio in DeFi lending and borrowing platforms?
+        type: SingleChoice
+        uuid: e48a0c6b-9e29-4d23-b70b-3da0a2d8ba67
+      - answerKeys:
+          - c6397177
+        choices:
+          - content: The borrower is not responsible for the difference
+            key: 27d6103a
+          - content: The liquidator is responsible for the difference
+            key: 7656a852
+          - content: The lending platform absorbs all the losses
+            key: ab61cf8b
+          - content: >-
+              The borrower is responsible for the difference, and the lending
+              platform may absorb some of the losses
+            key: c6397177
+        content: >-
+          What happens if the proceeds from the sale of the collateral are not
+          enough to cover the outstanding loan in a liquidation?
+        type: SingleChoice
+        uuid: 75731824-9d18-40ad-8ff5-5b7220f7b188
+    uuid: 3acab8cb-51f5-4640-8dfa-021f04534788
   - content: >
       ## Changes to the liquidation system in Compound III
 
@@ -112,6 +148,42 @@ steps:
     name: Liquidation in Compound III
     stepItems: []
     uuid: 90c244a7-4594-4935-ae57-cfce23c24be8
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 7f57bf4d
+        choices:
+          - content: They are returned to the borrower
+            key: bcfb2b41
+          - content: They are burned and removed from the protocol
+            key: dee36559
+          - content: They are sold at a discounted price
+            key: 7f57bf4d
+          - content: They are locked in the protocol indefinitely
+            key: 5ed63526
+        content: >-
+          What happens to the collateral assets of a liquidated borrower's
+          account in Compound III?
+        type: SingleChoice
+        uuid: d31ed2c3-b5f3-4497-b7e3-2184657c5047
+      - answerKeys:
+          - df95c81b
+        choices:
+          - content: They receive a percentage of the borrower's collateral assets
+            key: a451e980
+          - content: >-
+              They can purchase the discounted collateral assets and sell them
+              at a higher price
+            key: df95c81b
+          - content: They can liquidate accounts without penalty
+            key: 96720bbb
+          - content: They can manipulate the protocol's price feed to their advantage.
+            key: 013ac8ff
+        content: What is the incentive for liquidators in Compound III?
+        type: SingleChoice
+        uuid: 3807b86f-4e18-4868-adb7-9d2102b93632
+    uuid: 86e2cbcb-5b66-49c5-bd72-8f391c2e0cea
   - content: >-
       Liquidation is determined based on liquidation collateral factors, which
       are distinct and higher than borrow collateral factors used for
@@ -140,6 +212,30 @@ steps:
     name: V3 Liquidation Process
     stepItems: []
     uuid: 07ea4ffb-c587-4446-b3a3-53bd57f3ed0b
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 70c1ba36
+        choices:
+          - content: Governance-set liquidation amount
+            key: e93d5091
+          - content: Initial borrowing capacity
+            key: ac604978
+          - content: >-
+              Liquidation collateral factors that is less than Borrow collateral
+              factors
+            key: a5ec8f34
+          - content: >-
+              Liquidation collateral factors that is more than Borrow collateral
+              factors
+            key: 70c1ba36
+        content: >
+          What safeguards both borrowers and the protocol by ensuring a price
+          buffer for all new positions in liquidation?
+        type: SingleChoice
+        uuid: c2be1ff3-f46f-4031-9e2c-9ca55f1eacfc
+    uuid: e5c89d55-34b5-4a56-8b5c-0ff5c39cd64b
   - content: >-
       This is an example of how Compound III handles liquidations
 
