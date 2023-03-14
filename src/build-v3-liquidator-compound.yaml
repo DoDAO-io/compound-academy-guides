@@ -1,6 +1,6 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-14T16:20:23.999Z'
+created: '2023-03-14T16:21:22.158Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
@@ -65,7 +65,7 @@ steps:
     name: Intro to Liquidation
     stepItems: []
     uuid: d692c44e-aa66-4bdd-9b32-6c4febbf3f21
-  - content: >-
+  - content: >
       ## Changes to the liquidation system in Compound III
 
       The latest version of the Compound protocol has undergone changes in its
@@ -86,19 +86,6 @@ steps:
       rises too much, the account becomes liquidatable.
 
 
-      ## Blockchains for Liquidation
-
-      Liquidations can occur on any blockchain where Compound III is deployed,
-      and the protocol is written in Solidity and can be deployed to any EVM
-      chain that has a price feed, sufficient liquidity, and a means for
-      on-chain governance. However, running the liquidator bot contract example
-      in the Comet repository is not recommended as it only serves as an
-      educational tool, and running it may result in reverted transactions and
-      EVM gas wasted as a result of losing the battle to better running
-      searchers.
-
-
-
       ## Incentives for liquidators in Compound III
 
       During the liquidation process, any account can extract value through an
@@ -110,7 +97,19 @@ steps:
       asset. A liquidator can purchase the discounted collateral asset, trade it
       on a DEX at a higher price, and earn the difference in a single EVM
       transaction.
-    name: Introduction
+
+
+      ## Blockchains for Liquidation
+
+      Liquidations can occur on any blockchain where Compound III is deployed,
+      and the protocol is written in Solidity and can be deployed to any EVM
+      chain that has a price feed, sufficient liquidity, and a means for
+      on-chain governance. However, running the liquidator bot contract example
+      in the Comet repository is not recommended as it only serves as an
+      educational tool, and running it may result in reverted transactions and
+      EVM gas wasted as a result of losing the battle to better running
+      searchers.
+    name: Liquidation in Compound III
     stepItems: []
     uuid: 90c244a7-4594-4935-ae57-cfce23c24be8
   - content: >-
