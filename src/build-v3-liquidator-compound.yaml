@@ -1,11 +1,11 @@
 categories: []
 content: How to build Liquidator for the new version of Compound
-created: '2023-03-14T20:17:35.470Z'
+created: '2023-03-15T14:34:49.964Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: course
 key: build-v3-liquidator-compound
-name: Build V3 Liquidator
+name: Compound III Liquidator
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
